@@ -140,6 +140,15 @@ del empty-caucasus.miz >nul 2>&1
 del empty-persiangulf.miz >nul 2>&1
 del empty-syria.miz >nul 2>&1
 del template.miz >nul 2>&1
+del "docs\initialize a new Mission Folder.*" >nul 2>&1
+del readme.md >nul 2>&1
+del readme.fr.md >nul 2>&1
+ren readme-build.md readme.md >nul 2>&1
+ren readme-build.fr.md readme.fr.md >nul 2>&1
+del readme.html >nul 2>&1
+del readme.fr.html >nul 2>&1
+ren readme-build.html readme.html >nul 2>&1
+ren readme-build.fr.html readme.fr.html >nul 2>&1
 
 echo.
 echo ----------------------------------------

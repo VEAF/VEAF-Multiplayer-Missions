@@ -1,6 +1,6 @@
 dictionary = {
-    ["DictKey_ActionText_10001"] = "VEAF_DYNAMIC_PATH = [[D:\\dev\\_VEAF\\VEAF-Multiplayer-Missions\\VEAF-Operation-Daguet\\node_modules\\veaf-mission-creation-tools\\]]",
-    ["DictKey_ActionText_10002"] = "VEAF_DYNAMIC_MISSIONPATH = [[D:\\dev\\_VEAF\\VEAF-Multiplayer-Missions\\VEAF-Operation-Daguet\\]]",
+    ["DictKey_ActionText_10001"] = "VEAF_DYNAMIC_PATH = [[d:\\dev\\_VEAF\\VEAF-Mission-Creation-Tools]]",
+    ["DictKey_ActionText_10002"] = "VEAF_DYNAMIC_MISSIONPATH = [[D:\\dev\\_VEAF\\VEAF-Open-Training-Mission\\]]",
     ["DictKey_ActionText_10101"] = "env.info(\"DYNAMIC LOADING\")",
     ["DictKey_ActionText_10102"] = "assert(loadfile(VEAF_DYNAMIC_PATH .. \"/src/scripts/community/mist.lua\"))()",
     ["DictKey_ActionText_10103"] = "assert(loadfile(VEAF_DYNAMIC_PATH .. \"/src/scripts/community/Moose.lua\"))()",

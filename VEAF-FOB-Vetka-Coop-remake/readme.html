@@ -1,0 +1,53 @@
+<p>Ce document est également disponible <a href="readme-build.fr.html">en français</a></p>
+<h2 id="how-to-build-a-mission">How to build a mission?</h2>
+<h3 id="prerequisites">Prerequisites</h3>
+<h4 id="manual-installation">Manual installation</h4>
+<p>You need a few things set up on your PC for these scripts to function.</p>
+<ul>
+<li>LUA : you need a working LUA interpreter, in your PATH, ready to be called with the <code>lua</code> command</li>
+<li>7zip : you need 7zip, or another zip tool, in your PATH, ready to be called with the <code>7zip</code> command</li>
+<li>Powershell : you need Powershell, and you need it to be configured to allow script execution (read <a href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-7.1">this article</a>) ; basically you need to run this command in an elevated (admin) Powershell prompt : <code>Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope LocalMachine</code></li>
+<li>npm : you need the NPM package manager from NodeJS to get the VEAF mission creation tools ; see <a href="https://www.npmjs.com/get-npm">here</a></li>
+</ul>
+<h4 id="using-chocolatey">Using Chocolatey</h4>
+<p>The required tools can easily be installed using <em>Chocolatey</em> (see <a href="https://chocolatey.org/">here</a>).</p>
+<p><strong>WARNING</strong> : do not do both <em>manual installation</em> and <em>Chocolatey installation</em></p>
+<p>To install Chocolatey, use this command in an elevated (admin) Powershell prompt : <code>Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))</code></p>
+<p>After <em>Chocolatey</em> is installed, use these simple commands (in a regular command prompt) to install the required tools :</p>
+<ul>
+<li>LUA : <code>choco install -y lua</code></li>
+<li>7zip : <code>choco install -y 7zip.commandline</code></li>
+<li>npm : <code>choco install -y nodejs</code></li>
+</ul>
+<h3 id="build-the-mission">Build the mission</h3>
+<p>Building the mission from source is easy ; you simply have to run the <code>build.cmd</code> script. You don’t even need to run it in a <code>cmd</code> window, double-clicking it will be ok.</p>
+<p>The process will take all the files in the <code>src</code> folder, fetch the latest version of the <em>VEAF Mission Creation Tools</em> (from GitHub), and compile all of this in a ready-to-use mission for DCS (in a <code>.miz</code> file).</p>
+<p>This file will be named after the mission (this is configured in the first line of the <code>build.cmd</code> script), and placed in the <code>build</code> folder.</p>
+<h3 id="editing-a-compiled-mission">Editing a compiled mission</h3>
+<p>After a mission has been compiled, copy it from the <code>build</code> folder to the main mission folder (the folder where <code>extract.cmd</code> and <code>build.cmd</code> are stored). Then, you can open it in the DCS Mission Editor and edit it (add/remove units, add triggers, change zones, etc.).</p>
+<p>Also, you can edit the mission source files in parallel (using a text editor, I recommend Notepad++ or Visual Studio Code); specifically, you can edit :</p>
+<ul>
+<li>the mission configuration file <code>src/scripts/missionConfig.lua</code>, to setup the mission parameters ; this is the main file you’ll edit.</li>
+<li>the radio presets file <code>src/radio/radioSettings.lua</code>, to setup the radio presets pushed to the aircrafts.</li>
+<li>the weather presets in <code>src/weatherAndTime</code></li>
+</ul>
+<p>If you edit one of these files, and because they’re compiled <em>into</em> the mission <code>.miz</code> file, you’ll have to <em>rebuild</em> your mission before you can test your editions in the game.</p>
+<p>There’s a way to easily test these changes : the first trigger has a LUA predicate, that conditions the scripts loading method. If set to <code>false</code>, the scripts are loading statically (i.e. they’re loading <em>from the mission</em>) ; if set to <code>true</code>, the scripts will be loaded dynamically, so each time you restart the mission in DCS (Left-SHIFT + R) you can test whatever change you saved to the files.</p>
+<figure>
+<img src="https://user-images.githubusercontent.com/172286/109670752-bac72180-7b73-11eb-9d20-cadd84bff1a5.jpg" alt="triggers" /><figcaption aria-hidden="true">triggers</figcaption>
+</figure>
+<h3 id="extract-an-edited-version-of-the-mission">Extract an edited version of the mission</h3>
+<p>Once a mission has been edited and saved in the DCS mission editor, you need to <em>extract</em> its content to the <code>src</code> folder, in order to reinject it later with the <code>build</code> script.</p>
+<p>To do this, simply run the <code>extract.cmd</code> script. You don’t even need to run it in a <code>cmd</code> window, double-clicking it will be ok.</p>
+<p>This script will take any mission file starting with the mission name (configured in the beginning of the script), in the mission folder (the folder where <code>extract.cmd</code> and <code>build.cmd</code> are stored, not the <code>build</code> folder), extract its content, process them and store them in <code>src</code>.</p>
+<h3 id="advanced-settings">Advanced settings</h3>
+<h4 id="setting-the-location-of-the-7zip-executable">Setting the location of the 7zip executable</h4>
+<p>If your 7zip tool is not in your PATH, you can set its location in the <code>SEVENZIP</code> environment variable. It’s a string which should point to the <code>7za</code> executable (e.g. <code>c:\tools\7zip\bin\7zip.exe</code>)</p>
+<h4 id="setting-the-location-of-the-lua-executable">Setting the location of the LUA executable</h4>
+<p>In the same way, you can set its location of the LUA executable in the <code>LUA</code> environment variable. It’s a string which should point to the <code>lua</code> executable (e.g. <code>c:\tools\lua\bin\lua.exe</code>)</p>
+<h4 id="skip-the-pauses">Skip the pauses</h4>
+<p>If you set the <code>NOPAUSE</code> environment variable to “true”, then the pauses in the script will not be marked.</p>
+<h2 id="how-to-use-this---graphic-version">How to use this - graphic version</h2>
+<figure>
+<img src="https://user-images.githubusercontent.com/172286/109007616-9ddeaa00-76ac-11eb-89ba-370e16810240.jpg" alt="schema" /><figcaption aria-hidden="true">schema</figcaption>
+</figure>

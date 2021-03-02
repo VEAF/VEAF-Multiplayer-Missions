@@ -24529,7 +24529,7 @@ mission = {
             [4] = 1,
         }, -- end of ["red"]
     }, -- end of ["coalitions"]
-    ["currentKey"] = 514351,
+    ["currentKey"] = 517066,
     ["date"] = {
         ["Day"] = 24,
         ["Month"] = 6,

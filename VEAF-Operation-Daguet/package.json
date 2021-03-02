@@ -1,5 +1,5 @@
 {
-  "name": "veaf-operation-daguet",
+  "name": "VEAF-Operation-Daguet",
   "version": "1.0.0",
   "description": "DCS mission with VEAF scripting",
   "dependencies": {

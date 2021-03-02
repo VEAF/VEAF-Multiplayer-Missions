@@ -1,8 +1,8 @@
+Ce document est également disponible [en français](readme-build.fr.md)
 
-## How to use this ?
+## How to build a mission?
 
 ### Prerequisites
-
 
 #### Manual installation
 
@@ -27,73 +27,54 @@ After *Chocolatey* is installed, use these simple commands (in a regular command
 - 7zip : `choco install -y 7zip.commandline`
 - npm : `choco install -y nodejs`
 
-### Choose a starting mission
+### Build the mission
 
-You must start with a DCS mission file as the basis of your VEAF scripted mission.
+Building the mission from source is easy ; you simply have to run the `build.cmd` script. You don't even need to run it in a `cmd` window, double-clicking it will be ok.
 
-We provided a blank canvas for Caucasus (`empty-caucasus.miz`), Syria (`empty-syria.miz`) and Persian Gulf (`empty-persiangulf.miz`)
+The process will take all the files in the `src` folder, fetch the latest version of the *VEAF Mission Creation Tools* (from GitHub), and compile all of this in a ready-to-use mission for DCS (in a `.miz` file).
 
-Copy the mission of your choice in the root of this folder, and name it `template.miz`.
+This file will be named after the mission (this is configured in the first line of the `build.cmd` script), and placed in the `build` folder.
 
-### Run the init.cmd script
+### Editing a compiled mission
 
-In a command shell, simply type `init.cmd` with the name of the mission you want to build (no space, no underscore, please).
+After a mission has been compiled, copy it from the `build` folder to the main mission folder (the folder where `extract.cmd` and `build.cmd` are stored). Then, you can open it in the DCS Mission Editor and edit it (add/remove units, add triggers, change zones, etc.).
 
-The name of the mission will be the name of your project. It should also be the same name as your mission folder (not mandatory, but recommended).
+Also, you can edit the mission source files in parallel (using a text editor, I recommend Notepad++ or Visual Studio Code); specifically, you can edit :
 
-It should not contain any space or underscore, and no trailing .miz (it's not a mission file name) !
+- the mission configuration file `src/scripts/missionConfig.lua`, to setup the mission parameters ; this is the main file you'll edit.
+- the radio presets file `src/radio/radioSettings.lua`, to setup the radio presets pushed to the aircrafts.
+- the weather presets in `src/weatherAndTime`
 
-#### Example
+If you edit one of these files, and because they're compiled *into* the mission `.miz` file, you'll have to *rebuild* your mission before you can test your editions in the game.
 
-Let's say I want to initialize a new mission called "My cool and shiny mission - Caucasus".
+There's a way to easily test these changes : the first trigger has a LUA predicate, that conditions the scripts loading method. If set to `false`, the scripts are loading statically (i.e. they're loading *from the mission*) ; if set to `true`, the scripts will be loaded dynamically, so each time you restart the mission in DCS (Left-SHIFT + R) you can test whatever change you saved to the files.
 
-I'll start with replacing spaces with dashes : "My-cool-and-shiny-mission-Caucasus". I'll make a fresh copy of this `VEAF-mission-directory-template` folder and name it `My-cool-and-shiny-mission-Caucasus` (we'll refer to this as "mission folder").
-
-As I want to create a mission in Caucasus, and I have no existing mission, I'll copy the `empty-caucasus.miz` to `template.miz` in my mission folder.
-
-Then I'll start a command prompt, `cd` into the mission folder, and run : `init.cmd My-cool-and-shiny-mission-Caucasus`
+![triggers](https://user-images.githubusercontent.com/172286/109670752-bac72180-7b73-11eb-9d20-cadd84bff1a5.jpg)
 
 
-The script will take `template.miz` (which I copied from `empty-caucasus.miz`) as its basis, and prepare the folder with everything needed to compile the mission.
+### Extract an edited version of the mission
+
+Once a mission has been edited and saved in the DCS mission editor, you need to *extract* its content to the `src` folder, in order to reinject it later with the `build` script.
+
+To do this, simply run the `extract.cmd` script. You don't even need to run it in a `cmd` window, double-clicking it will be ok.
+
+This script will take any mission file starting with the mission name (configured in the beginning of the script), in the mission folder (the folder where `extract.cmd` and `build.cmd` are stored, not the `build` folder), extract its content, process them and store them in `src`.
 
 ### Advanced settings
 
-#### Selecting a specific template mission file
-
-By default, the script looks for a `template.miz` file and uses it as the basis for the new mission.
-
-It's possible to specifiy a specific file as the template ; for example : `init.cmd My-cool-and-shiny-mission-Caucasus empty-caucasus.miz`
-
-#### Setting the logging level of the trigger injector
-
-By setting a value to the `LUA_SCRIPTS_DEBUG_PARAMETER` variable, it is possible to tune the logging level of the trigger injector LUA program.
-
-Possible values are :
-
-- `-debug` : debug level, additional information
-- `-trace` : trace level, everything is written
-
-This is useful to understand why a specific run does not work
-
 #### Setting the location of the 7zip executable
 
-If your 7zip tool is not in your path, you can set its location in the `SEVENZIP` variable. It's a string which should point to the 7za executable (e.g. `c:\tools\7zip\bin\7zip.exe`)
+If your 7zip tool is not in your PATH, you can set its location in the `SEVENZIP` environment variable. It's a string which should point to the `7za` executable (e.g. `c:\tools\7zip\bin\7zip.exe`)
 
 #### Setting the location of the LUA executable
 
-In the same way, you can set its location of the LUA executable in the `LUA` variable. It's a string which should point to the LUA executable (e.g. `c:\tools\lua\bin\lua.exe`)
+In the same way, you can set its location of the LUA executable in the `LUA` environment variable. It's a string which should point to the `lua` executable (e.g. `c:\tools\lua\bin\lua.exe`)
 
 #### Skip the pauses
 
-If you set the `NOPAUSE` variable to "true", then the pauses in the script will not be marked.
+If you set the `NOPAUSE` environment variable to "true", then the pauses in the script will not be marked.
 
 ## How to use this - graphic version
-
-### Initialize a new Mission Folder with this tool
-
-![schema](https://user-images.githubusercontent.com/172286/109006666-9a96ee80-76ab-11eb-871c-a77a1ffa4fd9.jpg)
-
-### Use an initialized Mission Folder
 
 ![schema](https://user-images.githubusercontent.com/172286/109007616-9ddeaa00-76ac-11eb-89ba-370e16810240.jpg)
 
