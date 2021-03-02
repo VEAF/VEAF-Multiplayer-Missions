@@ -1,4 +1,4 @@
-Ce document est également disponible [en français](readme-build.fr.md)
+Ce document est également disponible [en français](readme.fr.md)
 
 ## How to build a mission?
 
