@@ -20,7 +20,7 @@ Ces outils nécessaires peuvent être installés facilement en utilisant *Chocol
 
 Pour installer Chocolatey, lancez cette commande dans une fenêtre Powershell (en mode administrateur) : `Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))`
 
-Une fois que *Chocolatey* est installé, vous pouvez installer les outils à l'aide de ces simples commandes (dans une fenêtre *cmd* standard) :
+Une fois que *Chocolatey* est installé, vous pouvez installer les outils à l'aide de ces simples commandes dans une fenêtre *cmd* (en mode administrateur) :
 
 - LUA : `choco install -y lua`
 - 7zip : `choco install -y 7zip.commandline`
