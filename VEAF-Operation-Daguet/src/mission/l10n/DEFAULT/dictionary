@@ -31,30 +31,33 @@ Les troupes au sol doivent survivre.",
 la situation devient critique ",
     ["DictKey_ActionText_1664"] = "nous avons perdu les renforts. ",
     ["DictKey_ActionText_1665"] = "L Offensive au sol est un échec la ville est de nouveau sous controle Russe.\
-Il est imperatif de les empecher de passer le pont maintenant...\
+Il est impératif de les empécher de passer le pont maintenant...\
 ",
-    ["DictKey_ActionText_1666"] = "Les russes ont franchis le pont et se dirige droit sur Ruhi.\
+    ["DictKey_ActionText_1666"] = "Les russes ont franchis le pont et se dirigent droit sur Ruhi.\
 La mission est un échec.",
     ["DictKey_ActionText_1667"] = "Le premier convoi russe a été éliminé. \
-Félicitation",
+Félicitation!",
     ["DictKey_ActionText_1668"] = "Le deuxieme convoi russe a été éliminé. \
-Félicitation",
+Félicitation!",
     ["DictKey_ActionText_1669"] = "Le Troisieme convoi russe a été éliminé. \
-Félicitation",
+Félicitation!",
     ["DictKey_ActionText_1670"] = "Le quatrieme convoi russe a été éliminé. \
-Félicitation",
+Félicitation!",
     ["DictKey_ActionText_1671"] = "La mission est un succes la contre offensive a été stopper la ville est sécurisée. \
-Mission Accomplie",
+Mission Accomplie.",
     ["DictKey_ActionText_1672"] = "Attention offensive en cours sur le groupe naval. ",
-    ["DictKey_ActionText_1673"] = "Nous avons perdu le Porte Avion, la protection du groupe naval a echouée.\
-La mission est un echec ",
+    ["DictKey_ActionText_1673"] = "Nous avons perdu le Porte Avion, la protection du groupe naval a échouée.\
+La mission est un echec. ",
     ["DictKey_ActionText_1691"] = "Le groupe naval subi de lourds dégats.",
-    ["DictKey_descriptionBlueTask_174"] = "",
+    ["DictKey_ActionText_1708"] = "Les Bombardiers Russes sont rentrés.\
+Fin de la mission de protection du groupe naval.",
+    ["DictKey_descriptionBlueTask_174"] = "Porteger les troupes au sols\
+Porteger le groupe Naval",
     ["DictKey_descriptionRedTask_173"] = "\
 \
 ",
-    ["DictKey_descriptionText_172"] = "Cvn 74 Harry S Truman: 227 Am\
-Tacan: 74X\
+    ["DictKey_descriptionText_172"] = "Cvn 75 Harry S Truman: 227 Am\
+Tacan: 12X\
 \
 Kobuleti: 262 Am\
 Tacan: 67X\
@@ -62,31 +65,34 @@ Tacan: 67X\
 Kutaisi: 263 Am\
 Tacan:44x\
 \
-Awacs: 280 Am\
+Awacs: 282.2 Am\
 \
 Texaco: 290 Am\
 Tacan: 60Y\
+\
+Arco: 290.500 Am\
+Tacan: 64Y\
 \
 \
 ",
     ["DictKey_GroupName_1058"] = "Convoi Rus 3",
     ["DictKey_GroupName_1135"] = "Convoi Rus 2 ",
-    ["DictKey_GroupName_1193"] = "A-10C 2 Kutaisi",
-    ["DictKey_GroupName_1206"] = "Mirage HOT Kobuleti",
+    ["DictKey_GroupName_1193"] = "A-10C² Kutaisi Cold",
+    ["DictKey_GroupName_1206"] = "M2000C HOT Kobuleti",
     ["DictKey_GroupName_1213"] = "F16 HOT Kobuleti",
     ["DictKey_GroupName_123"] = "US AWACS",
     ["DictKey_GroupName_1231"] = "Mig 21",
-    ["DictKey_GroupName_1237"] = "A10C  HOT Kutaisi",
-    ["DictKey_GroupName_1250"] = "F18C Kutaisi",
-    ["DictKey_GroupName_1256"] = "F18C HOT Kutaisi",
+    ["DictKey_GroupName_1237"] = "A10C²  HOT Kutaisi",
+    ["DictKey_GroupName_1250"] = "F/A-18C Ergo Kutaisi",
+    ["DictKey_GroupName_1256"] = "F/A-18C HOT Kutaisi",
     ["DictKey_GroupName_1284"] = "Convoi Rus 4",
     ["DictKey_GroupName_1302"] = "Convoi Rus 1",
     ["DictKey_GroupName_1331"] = "Convoi 1 Us",
     ["DictKey_GroupName_1372"] = "Su30",
-    ["DictKey_GroupName_1397"] = "A10C Kobuleti",
-    ["DictKey_GroupName_143"] = "US CVN-74",
-    ["DictKey_GroupName_1457"] = "A-10C 1 Kutaisi",
-    ["DictKey_GroupName_1476"] = "Texaco",
+    ["DictKey_GroupName_1397"] = "F18 Willy Kobuleti",
+    ["DictKey_GroupName_143"] = "Groupe Naval Us",
+    ["DictKey_GroupName_1457"] = "A-10C² Thor Kutaisi",
+    ["DictKey_GroupName_1476"] = "Texaco-1",
     ["DictKey_GroupName_148"] = "US PATRIOT-1",
     ["DictKey_GroupName_1487"] = "Escorte F15",
     ["DictKey_GroupName_1506"] = "Mirage 2000C Rouge",
@@ -96,8 +102,10 @@ Tacan: 60Y\
     ["DictKey_GroupName_1607"] = "Patriot Kutaisi",
     ["DictKey_GroupName_1654"] = "Defense Ville",
     ["DictKey_GroupName_1678"] = "Convoi 2 Us",
-    ["DictKey_GroupName_1696"] = "F-16 Kobuleti",
+    ["DictKey_GroupName_1696"] = "F-16 Kobuleti Cold",
     ["DictKey_GroupName_17"] = "RU AWACS",
+    ["DictKey_GroupName_1787"] = "Sa-6 Sochi",
+    ["DictKey_GroupName_1808"] = "Arco-1",
     ["DictKey_GroupName_19"] = "RU Su-27 (SWEEP)",
     ["DictKey_GroupName_24"] = "RU Tu-22m3-1 (ANTISHIP)",
     ["DictKey_GroupName_26"] = "RU Tu-22m3-2 (ANTISHIP)",
@@ -191,12 +199,12 @@ Tacan: 60Y\
     ["DictKey_GroupName_696"] = "Smoke #004",
     ["DictKey_GroupName_699"] = "Smoke #005",
     ["DictKey_GroupName_702"] = "Smoke #006",
-    ["DictKey_GroupName_714"] = "F18 Truman",
-    ["DictKey_GroupName_725"] = "F16 Kobuleti",
+    ["DictKey_GroupName_714"] = "F/A-18C Sierra CVN-75",
+    ["DictKey_GroupName_725"] = "F16 Carter Kobuleti",
     ["DictKey_GroupName_744"] = "JF-17",
     ["DictKey_GroupName_750"] = "Mig29 Sweep",
-    ["DictKey_GroupName_759"] = "F14B Truman",
-    ["DictKey_GroupName_776"] = "Mirage 2000 Kobuleti",
+    ["DictKey_GroupName_759"] = "F14B Maverick CVN-75",
+    ["DictKey_GroupName_776"] = "M2000C Hotel Kobuleti",
     ["DictKey_sortie_175"] = "Operation Daguet ",
     ["DictKey_UnitName_1116"] = "Ground-19-37",
     ["DictKey_UnitName_1117"] = "Ground-19-38",
@@ -270,9 +278,7 @@ Tacan: 60Y\
     ["DictKey_UnitName_1394"] = "Mirage SI MORT-1",
     ["DictKey_UnitName_1395"] = "Mirage SI MORT-2",
     ["DictKey_UnitName_1396"] = "Mirage SI MORT-3",
-    ["DictKey_UnitName_1398"] = "Aerial-1-8",
-    ["DictKey_UnitName_1402"] = "A10 Kobu-1",
-    ["DictKey_UnitName_1403"] = "A10 Kobu-2",
+    ["DictKey_UnitName_1398"] = "F18 Kobuleti Sead",
     ["DictKey_UnitName_1434"] = "Mirage 2000 Kobuleti-1",
     ["DictKey_UnitName_1435"] = "Mirage 2000 Kobuleti-2",
     ["DictKey_UnitName_1436"] = "Mirage 2000 Kobuleti-3",
@@ -283,7 +289,6 @@ Tacan: 60Y\
     ["DictKey_UnitName_1460"] = "A10II 2 kutaisi-1",
     ["DictKey_UnitName_1461"] = "A10II 2 kutaisi-2",
     ["DictKey_UnitName_1462"] = "A10II 2 kutaisi-3",
-    ["DictKey_UnitName_1465"] = "A10II Kobu-1",
     ["DictKey_UnitName_1468"] = "Jf17-1",
     ["DictKey_UnitName_1469"] = "A-10C II Kutaisi-1",
     ["DictKey_UnitName_147"] = "Harry S Truman",
@@ -385,7 +390,24 @@ Tacan: 60Y\
     ["DictKey_UnitName_1700"] = "F-16 Kobuleti-1",
     ["DictKey_UnitName_1701"] = "F-16 Kobuleti-2",
     ["DictKey_UnitName_1702"] = "F-16 Kobuleti-3",
+    ["DictKey_UnitName_1788"] = "Convoi 1 Us-1-2",
+    ["DictKey_UnitName_1789"] = "Convoi 1 Us-1-3",
+    ["DictKey_UnitName_1790"] = "Convoi 1 Us-1-4",
+    ["DictKey_UnitName_1791"] = "Convoi 1 Us-1-5",
+    ["DictKey_UnitName_1792"] = "Convoi 1 Us-1-6",
+    ["DictKey_UnitName_1793"] = "Convoi 1 Us-1-7",
+    ["DictKey_UnitName_1794"] = "Convoi 1 Us-1-8",
+    ["DictKey_UnitName_1795"] = "Convoi 1 Us-1-9",
+    ["DictKey_UnitName_1796"] = "Convoi 1 Us-1-10",
+    ["DictKey_UnitName_1797"] = "Convoi 1 Us-1-11",
+    ["DictKey_UnitName_1798"] = "Convoi 1 Us-1-12",
     ["DictKey_UnitName_18"] = "RU-AWACS",
+    ["DictKey_UnitName_1805"] = "F18 Kobuleti Sead-1",
+    ["DictKey_UnitName_1806"] = "F18 Kobuleti Sead-2",
+    ["DictKey_UnitName_1807"] = "F18 Kobuleti Sead-3",
+    ["DictKey_UnitName_1809"] = "Arco",
+    ["DictKey_UnitName_1816"] = "F14B Maverick CVN-75-1",
+    ["DictKey_UnitName_1817"] = "F14B Maverick CVN-75-2",
     ["DictKey_UnitName_22"] = "Pilot #8",
     ["DictKey_UnitName_23"] = "Pilot #7",
     ["DictKey_UnitName_25"] = "Pilot #21",
@@ -454,7 +476,6 @@ Tacan: 60Y\
     ["DictKey_WptName_1378"] = "",
     ["DictKey_WptName_1389"] = "",
     ["DictKey_WptName_1399"] = "",
-    ["DictKey_WptName_1401"] = "",
     ["DictKey_WptName_1459"] = "",
     ["DictKey_WptName_1463"] = "",
     ["DictKey_WptName_1478"] = "",
@@ -483,13 +504,20 @@ Tacan: 60Y\
     ["DictKey_WptName_1692"] = "",
     ["DictKey_WptName_1698"] = "",
     ["DictKey_WptName_1703"] = "",
+    ["DictKey_WptName_1704"] = "",
+    ["DictKey_WptName_1707"] = "",
+    ["DictKey_WptName_1799"] = "",
+    ["DictKey_WptName_1800"] = "",
+    ["DictKey_WptName_1801"] = "",
+    ["DictKey_WptName_1810"] = "",
+    ["DictKey_WptName_1811"] = "",
+    ["DictKey_WptName_1812"] = "",
     ["DictKey_WptName_183"] = "",
     ["DictKey_WptName_184"] = "",
     ["DictKey_WptName_185"] = "",
     ["DictKey_WptName_186"] = "",
     ["DictKey_WptName_188"] = "",
     ["DictKey_WptName_196"] = "",
-    ["DictKey_WptName_197"] = "",
     ["DictKey_WptName_198"] = "",
     ["DictKey_WptName_199"] = "",
     ["DictKey_WptName_200"] = "",

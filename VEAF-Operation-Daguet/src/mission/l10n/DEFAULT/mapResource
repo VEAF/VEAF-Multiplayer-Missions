@@ -28,5 +28,6 @@ mapResource = {
     ["DictKey_ActionText_10228"] = "veafSkynetIadsHelper.lua",
     ["DictKey_ActionText_10229"] = "veafSanctuary.lua",
     ["DictKey_ActionText_10401"] = "missionConfig.lua",
-    ["ResKey_ImageBriefing_5"] = "SU27 CAMP MAP9{88D30F8B-EC16-41e6-9292-3DFDEBD5A00F}.jpg",
+    ["ResKey_ImageBriefing_1814"] = "Tu.jpg",
+    ["ResKey_ImageBriefing_1815"] = "Tu.jpg",
 } -- end of mapResource
