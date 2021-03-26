@@ -191,10 +191,9 @@ rem -- cleanup the veaf-mission-creation-tools scripts
 rd /s /q .\build\tempscripts
 
 rem -- generate the time and weather versions
-rem echo generate the time and weather versions
-rem echo ----------------------------------------
-rem we'll do it on the server
-rem node node_modules\veaf-mission-creation-tools\src\nodejs\app.js injectall --quiet "%MISSION_FILE%.miz" "%MISSION_FILE%-${version}.miz" src\weatherAndTime\versions.json
+echo generate the time and weather versions
+echo ----------------------------------------
+node node_modules\veaf-mission-creation-tools\src\nodejs\app.js injectall --quiet "%MISSION_FILE%.miz" "%MISSION_FILE%-${version}.miz" src\weatherAndTime\versions.json
 
 echo.
 echo ----------------------------------------
