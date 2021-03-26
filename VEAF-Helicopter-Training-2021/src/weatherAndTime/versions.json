@@ -1,0 +1,30 @@
+{
+  "variableForMetar": "METAR",
+  "targets": [
+    {
+      "version": "0830-real",
+      "realweather": true,
+      "time": 30600
+    },
+    {
+      "version": "0830-overcast",
+      "weather": "UGKO 221200Z 28010KT 9999 SCT034 OVC061 22/15 Q1007 NOSIG",
+      "time": 30600
+    },
+    {
+      "version": "0830-broken",
+      "weather": "KQND 150856Z AUTO VRB04G11KT 9999 SCT050 BKN100 39/05 A2989 RMK AO2 SLP103 WND DATA ESTMD T03900045 50007",
+      "time": 30600
+    },
+    {
+      "version": "1700-real",
+      "realweather": true,
+      "time": 61200
+    },
+    {
+      "version": "2030-real",
+      "realweather": true,
+      "time": 73800
+    }
+  ]
+}
