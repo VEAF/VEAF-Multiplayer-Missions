@@ -689,10 +689,10 @@ end
 if veafSkynet then
     veaf.logInfo("init - veafSkynet")
     veafSkynet.initialize(
-        true, --includeRedInRadio=true
+        false, --includeRedInRadio=true
         false, --debugRed
-        true, --includeBlueInRadio
-        false --debugBlue
+        false, --includeBlueInRadio
+        false  --debugBlue
     )
 end
 
