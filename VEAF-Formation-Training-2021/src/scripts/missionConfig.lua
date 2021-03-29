@@ -692,12 +692,36 @@ end
 if veafSkynet then
     veaf.logInfo("init - veafSkynet")
     veafSkynet.initialize(
-        true, --includeRedInRadio=true
+        false, --includeRedInRadio=true
         false, --debugRed
-        true, --includeBlueInRadio
+        false, --includeBlueInRadio
         false --debugBlue
     )
 end
 
 -- example of automatic activation of a combat zone
 --veafCombatZone.ActivateZone("combatZone_MaykopDefenses", true)
+smokeFlags = {}
+function activateSmoke(unitName, deactivate)
+    env.info(string.format("MISSION - D - activateSmoke(%s, %s)", veaf.p(unitName), veaf.p(deactivate)))
+    env.info(string.format("MISSION - D - smokeFlags[unitName]=[%s]", veaf.p(smokeFlags[unitName])))
+    if deactivate and smokeFlags[unitName] then 
+        trigger.action.outText(unitName .. " - Smoke off !", 5)
+        trigger.action.ctfColorTag(unitName, 0)
+        smokeFlags[unitName] = false
+    elseif not smokeFlags[unitName] then
+        trigger.action.outText(unitName .. " - Smoke on !", 5)
+        trigger.action.ctfColorTag(unitName, 2)
+        smokeFlags[unitName] = true
+        mist.scheduleFunction(activateSmoke, {unitName, true}, timer.getTime() + 20)
+    end
+end
+
+env.info("MISSION - Formation training 1.0.0")
+
+-- add a radio menu to activate smoke on the leader aircrafts when blind
+local _radioRootPath = missionCommands.addSubMenu("Blind on leader !")
+missionCommands.addCommand("Lièvre 1 - 25000ft", _radioRootPath, activateSmoke, "Lièvre-1")
+missionCommands.addCommand("Lièvre 2 - 15000ft", _radioRootPath, activateSmoke, "Lièvre-2")
+missionCommands.addCommand("Lièvre 3 -  5000ft", _radioRootPath, activateSmoke, "Lièvre-3")
+missionCommands.addCommand("Texaco   - 22000ft", _radioRootPath, activateSmoke, "Texaco")
