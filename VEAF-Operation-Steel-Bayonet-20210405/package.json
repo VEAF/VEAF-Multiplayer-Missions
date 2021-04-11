@@ -1,0 +1,8 @@
+{
+  "name": "VEAF-Operation-Enduring-Tooth",
+  "version": "1.0.0",
+  "description": "DCS mission with VEAF scripting",
+  "dependencies": {
+    "veaf-mission-creation-tools": "^2.30.0"
+  }
+}

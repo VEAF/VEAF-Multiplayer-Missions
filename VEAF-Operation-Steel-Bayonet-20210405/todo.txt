@@ -1,0 +1,8 @@
+/air start CAP-Novorossiysk-N/Good/1 silent
+/air start CAP-Novorossiysk-E/Good/1 silent
+/air start CAP-Krasnodar-1/Excellent/2 silent
+
+
+- désactiver les zones de guerre c'est bien mais il faut supprimer les unités
+- ne pas oublier les CAP
+- vérifier la météo (QNH)

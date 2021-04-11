@@ -1,0 +1,30 @@
+{
+  "variableForMetar": "METAR",
+  "targets": [
+    {
+      "version": "0200-scattered",
+      "weather": "UGKO 180600Z 09009KTG16KT 060V130 SCT040 29/17 Q1004 NOSIG",
+      "time": 7200
+    },
+    {
+      "version": "0630-scattered",
+      "weather": "UGKO 180600Z 09009KTG16KT 060V130 SCT040 29/17 Q1004 NOSIG",
+      "time": 23400
+    },
+    {
+      "version": "0800-scattered",
+      "weather": "UGKO 180600Z 09009KTG16KT 060V130 SCT040 29/17 Q1004 NOSIG",
+      "time": 28800
+    },
+    {
+      "version": "1700-scattered",
+      "weather": "UGKO 180600Z 09009KTG16KT 060V130 SCT040 29/17 Q1004 NOSIG",
+      "time": 61200
+    },
+    {
+      "version": "2030-scattered",
+      "weather": "UGKO 180600Z 09009KTG16KT 060V130 SCT040 29/17 Q1004 NOSIG",
+      "time": 73800
+    }
+  ]
+}
