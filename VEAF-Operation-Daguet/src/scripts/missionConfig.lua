@@ -2,9 +2,12 @@
 -- Mission configuration file for the VEAF framework
 -- see https://github.com/VEAF/VEAF-Mission-Creation-Tools
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
+veaf.config.MISSION_NAME = "Operation-Daguet"
+veaf.config.MISSION_EXPORT_PATH = nil -- use default folder
 
--- activate the QRA
---qraMinevody="ready";
+-- play the radio beacons (for the public OT mission)
+veafBeacons = false
+
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- initialize all the scripts
@@ -161,7 +164,6 @@ if veafNamedPoints then
 		{name="AIRBASE Nalchik",             point={x=-125500,y=0,z=759543, atc=true, tower="V136, U265", runways={ {name="06", hdg=55}, {name="24", hdg=235, ils="110.50"}}}},
 		{name="AIRBASE Novorossiysk",        point={x=-040299,y=0,z=279854, atc=true, tower="V123, U252", runways={ {name="04", hdg=40}, {name="22", hdg=220}}}},
 		{name="AIRBASE Sochi",               point={x=-165163,y=0,z=460902, atc=true, tower="V127, U256", runways={ {name="06", hdg=62, ils="111.10"}, {name="24", hdg=242}}}},
-
 	}
 
     veafNamedPoints.logInfo("Loading configuration")
@@ -203,7 +205,6 @@ end
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 if veafCarrierOperations then
     veaf.logInfo("init - veafCarrierOperations")
-        -- the carriers will be automatically found
     veafCarrierOperations.initialize(true)
 end
 
@@ -697,5 +698,3 @@ if veafSkynet then
     )
 end
 
--- example of automatic activation of a combat zone
---veafCombatZone.ActivateZone("combatZone_MaykopDefenses", true)

@@ -2,9 +2,12 @@
 -- Mission configuration file for the VEAF framework
 -- see https://github.com/VEAF/VEAF-Mission-Creation-Tools
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
+veaf.config.MISSION_NAME = "FOB-Vetka-Coop-remake"
+veaf.config.MISSION_EXPORT_PATH = nil -- use default folder
 
--- activate the QRA
---qraMinevody="ready";
+-- play the radio beacons (for the public OT mission)
+veafBeacons = false
+
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- initialize all the scripts
@@ -161,7 +164,6 @@ if veafNamedPoints then
 		{name="AIRBASE Nalchik",             point={x=-125500,y=0,z=759543, atc=true, tower="V136, U265", runways={ {name="06", hdg=55}, {name="24", hdg=235, ils="110.50"}}}},
 		{name="AIRBASE Novorossiysk",        point={x=-040299,y=0,z=279854, atc=true, tower="V123, U252", runways={ {name="04", hdg=40}, {name="22", hdg=220}}}},
 		{name="AIRBASE Sochi",               point={x=-165163,y=0,z=460902, atc=true, tower="V127, U256", runways={ {name="06", hdg=62, ils="111.10"}, {name="24", hdg=242}}}},
-
 	}
 
     veafNamedPoints.logInfo("Loading configuration")
@@ -249,7 +251,7 @@ if ctld then
     -- In future i'd like it to be a FARP but so far that seems impossible...
     -- You can also enable troop Pickup at FOBS
 
-    ctld.cratesRequiredForFOB = 3 -- The amount of crates required to build a FOB. Once built, helis can spawn crates at this outpost to be carried and deployed in another area.
+    ctld.cratesRequiredForFOB = 1 -- The amount of crates required to build a FOB. Once built, helis can spawn crates at this outpost to be carried and deployed in another area.
     -- The large crates can only be loaded and dropped by large aircraft, like the C-130 and listed in ctld.vehicleTransportEnabled
     -- Small FOB crates can be moved by helicopter. The FOB will require ctld.cratesRequiredForFOB larges crates and small crates are 1/3 of a large fob crate
     -- To build the FOB entirely out of small crates you will need ctld.cratesRequiredForFOB * 3
@@ -696,5 +698,3 @@ if veafSkynet then
     )
 end
 
--- example of automatic activation of a combat zone
---veafCombatZone.ActivateZone("combatZone_MaykopDefenses", true)

@@ -1,0 +1,39 @@
+{
+  "variableForMetar": "METAR",
+  "moments": [
+    {
+      "night" : 7200,
+      "dawn" : 19800,
+      "morning" : 23400,
+      "day" : 54000,
+      "evening" : 68400
+    }
+  ],
+  "targets": [
+    {
+      "version": "dawn-scattered",
+      "weather": "UGKO 180600Z 09009KTG16KT 060V130 SCT040 29/17 Q1004 NOSIG",
+      "moment": "dawn"
+    },
+    {
+      "version": "morning-scattered",
+      "weather": "UGKO 180600Z 09009KTG16KT 060V130 SCT040 29/17 Q1004 NOSIG",
+      "moment": "morning"
+    },
+    {
+      "version": "day-scattered",
+      "weather": "UGKO 180600Z 09009KTG16KT 060V130 SCT040 29/17 Q1004 NOSIG",
+      "moment": "day"
+    },
+    {
+      "version": "evening-scattered",
+      "weather": "UGKO 180600Z 09009KTG16KT 060V130 SCT040 29/17 Q1004 NOSIG",
+      "moment": "evening"
+    },
+    {
+      "version": "night-scattered",
+      "weather": "UGKO 180600Z 09009KTG16KT 060V130 SCT040 29/17 Q1004 NOSIG",
+      "moment": "night"
+    }
+  ]
+}

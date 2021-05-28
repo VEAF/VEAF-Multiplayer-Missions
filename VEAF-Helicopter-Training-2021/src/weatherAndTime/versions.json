@@ -1,30 +1,44 @@
 {
   "variableForMetar": "METAR",
+  "moments": [
+    {
+      "night" : 7200,
+      "dawn" : 19800,
+      "morning" : 23400,
+      "day" : 54000,
+      "evening" : 68400
+    }
+  ],
   "targets": [
     {
-      "version": "0830-real",
-      "realweather": true,
-      "time": 30600
+      "version": "dawn-scattered",
+      "weatherfile": "scattered-1.lua",
+      "moment": "dawn"
     },
     {
-      "version": "0830-overcast",
-      "weather": "UGKO 221200Z 28010KT 9999 SCT034 OVC061 22/15 Q1007 NOSIG",
-      "time": 30600
+      "version": "morning-scattered",
+      "weatherfile": "scattered-1.lua",
+      "moment": "morning"
     },
     {
-      "version": "0830-broken",
-      "weather": "KQND 150856Z AUTO VRB04G11KT 9999 SCT050 BKN100 39/05 A2989 RMK AO2 SLP103 WND DATA ESTMD T03900045 50007",
-      "time": 30600
+      "version": "morning-overcast-rain",
+      "weatherfile": "overcast-rain-1.lua",
+      "moment": "morning"
     },
     {
-      "version": "1700-broken",
-      "weather": "KQND 150856Z AUTO VRB04G11KT 9999 SCT050 BKN100 39/05 A2989 RMK AO2 SLP103 WND DATA ESTMD T03900045 50007",
-      "time": 61200
+      "version": "day-broken",
+      "weatherfile": "broken-1.lua",
+      "moment": "day"
     },
     {
-      "version": "2030-broken",
-      "weather": "KQND 150856Z AUTO VRB04G11KT 9999 SCT050 BKN100 39/05 A2989 RMK AO2 SLP103 WND DATA ESTMD T03900045 50007",
-      "time": 73800
+      "version": "day-overcast-rain",
+      "weatherfile": "overcast-rain-1.lua",
+      "moment": "day"
+    },
+    {
+      "version": "evening-scattered",
+      "weatherfile": "scattered-1.lua",
+      "moment": "evening"
     }
   ]
 }

@@ -1,0 +1,11 @@
+màj la doc pour expliquer qu'il faut faire la config de Powershell même en mode avec Choco
+Lancer le script init.cmd - dire qu'il faut aller dans le répertoire
+lancer init.cmd -> mettre un espace
+expliquer le extract.cmd
+corriger le schéma FR de https://github.com/VEAF/VEAF-Multiplayer-Missions/blob/master/VEAF-Carrier-Training-2021/readme.md
+vérifier la version de missionConfig dans l'injecteur
+
+ajouter à la doc les prérequis pour qu'une mission VEAF fonctionne :
+ - un game master bleu
+ - au moins une unité (air, mer, sol) bleue
+ - au moins une unité (air, mer, sol) rouge
