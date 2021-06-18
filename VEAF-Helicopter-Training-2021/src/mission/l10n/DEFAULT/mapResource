@@ -1,6 +1,5 @@
 mapResource = {
     ["DictKey_ActionText_10202"] = "mist.lua",
-    ["DictKey_ActionText_10203"] = "Moose.lua",
     ["DictKey_ActionText_10204"] = "CTLD.lua",
     ["DictKey_ActionText_10205"] = "WeatherMark.lua",
     ["DictKey_ActionText_10206"] = "skynet-iads-compiled.lua",
@@ -28,6 +27,7 @@ mapResource = {
     ["DictKey_ActionText_10228"] = "veafSkynetIadsHelper.lua",
     ["DictKey_ActionText_10229"] = "veafSanctuary.lua",
     ["DictKey_ActionText_10401"] = "missionConfig.lua",
+    ["ResKey_Action_676"] = "DCS-SimpleTextToSpeech.lua",
     ["ResKey_ImageBriefing_308"] = "Situation map.jpg",
     ["ResKey_ImageBriefing_309"] = "Relief EASY-1.jpg",
     ["ResKey_ImageBriefing_310"] = "Relief MEDIUM-2.jpg",
