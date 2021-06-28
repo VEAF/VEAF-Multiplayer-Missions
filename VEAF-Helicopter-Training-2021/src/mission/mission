@@ -320,14 +320,10 @@ mission = {
                                             ["action"] = "Turning Point",
                                             ["alt"] = 2000,
                                             ["alt_type"] = "BARO",
-                                            ["ETA"] = 418.20569491807,
+                                            ["ETA"] = 373.95281701287,
                                             ["ETA_locked"] = false,
                                             ["formation_template"] = "",
                                             ["name"] = "ZONE EASY-1",
-                                            ["properties"] = {
-                                                ["addopt"] = {
-                                                }, -- end of ["addopt"]
-                                            }, -- end of ["properties"]
                                             ["speed"] = 46.25,
                                             ["speed_locked"] = true,
                                             ["task"] = {
@@ -338,8 +334,8 @@ mission = {
                                                 }, -- end of ["params"]
                                             }, -- end of ["task"]
                                             ["type"] = "Turning Point",
-                                            ["x"] = -284736.8632092,
-                                            ["y"] = 684182.64481617,
+                                            ["x"] = -284700.74113746,
+                                            ["y"] = 684123.67469885,
                                         }, -- end of [2]
                                         [3] = {
                                             ["action"] = "Turning Point",
@@ -1104,8 +1100,8 @@ mission = {
                                                 }, -- end of ["params"]
                                             }, -- end of ["task"]
                                             ["type"] = "TakeOffGround",
-                                            ["x"] = -273244.53735286,
-                                            ["y"] = 697334.11501941,
+                                            ["x"] = -273217.95082097,
+                                            ["y"] = 697334.7817212,
                                         }, -- end of [1]
                                         [2] = {
                                             ["action"] = "Turning Point",
@@ -1238,7 +1234,7 @@ mission = {
                                         ["callsign"] = 105,
                                         ["hardpoint_racks"] = true,
                                         ["heading"] = -2.2964679785977,
-                                        ["livery_id"] = "ukrainian army aviation",
+                                        ["livery_id"] = "99.735 Coyotes - Crocodile - VEAF",
                                         ["name"] = "helicargo #001",
                                         ["onboard_num"] = "050",
                                         ["payload"] = {
@@ -1317,12 +1313,12 @@ mission = {
                                         ["speed"] = 46.25,
                                         ["type"] = "Mi-24P",
                                         ["unitId"] = 174,
-                                        ["x"] = -273244.53735286,
-                                        ["y"] = 697334.11501941,
+                                        ["x"] = -273217.95082097,
+                                        ["y"] = 697334.7817212,
                                     }, -- end of [1]
                                 }, -- end of ["units"]
-                                ["x"] = -273244.53735286,
-                                ["y"] = 697334.11501941,
+                                ["x"] = -273217.95082097,
+                                ["y"] = 697334.7817212,
                             }, -- end of [5]
                             [6] = {
                                 ["communication"] = true,
@@ -1367,8 +1363,8 @@ mission = {
                                                 }, -- end of ["params"]
                                             }, -- end of ["task"]
                                             ["type"] = "TakeOffGround",
-                                            ["x"] = -273270.1296452,
-                                            ["y"] = 697335.44448914,
+                                            ["x"] = -273250.92859932,
+                                            ["y"] = 697335.78104781,
                                         }, -- end of [1]
                                         [2] = {
                                             ["action"] = "Turning Point",
@@ -1501,7 +1497,7 @@ mission = {
                                         ["callsign"] = 105,
                                         ["hardpoint_racks"] = true,
                                         ["heading"] = -2.2964679785977,
-                                        ["livery_id"] = "ukrainian army aviation",
+                                        ["livery_id"] = "99.735 Coyotes - Crocodile - VEAF",
                                         ["name"] = "helicargo #002",
                                         ["onboard_num"] = "050",
                                         ["payload"] = {
@@ -1580,12 +1576,12 @@ mission = {
                                         ["speed"] = 46.25,
                                         ["type"] = "Mi-24P",
                                         ["unitId"] = 175,
-                                        ["x"] = -273270.1296452,
-                                        ["y"] = 697335.44448914,
+                                        ["x"] = -273250.92859932,
+                                        ["y"] = 697335.78104781,
                                     }, -- end of [1]
                                 }, -- end of ["units"]
-                                ["x"] = -273270.1296452,
-                                ["y"] = 697335.44448914,
+                                ["x"] = -273250.92859932,
+                                ["y"] = 697335.78104781,
                             }, -- end of [6]
                             [7] = {
                                 ["communication"] = true,
@@ -1630,8 +1626,8 @@ mission = {
                                                 }, -- end of ["params"]
                                             }, -- end of ["task"]
                                             ["type"] = "TakeOffGround",
-                                            ["x"] = -273292.43133066,
-                                            ["y"] = 697337.13391549,
+                                            ["x"] = -273286.40469421,
+                                            ["y"] = 697334.7817212,
                                         }, -- end of [1]
                                         [2] = {
                                             ["action"] = "Turning Point",
@@ -1764,7 +1760,7 @@ mission = {
                                         ["callsign"] = 105,
                                         ["hardpoint_racks"] = true,
                                         ["heading"] = -2.2964679785977,
-                                        ["livery_id"] = "ukrainian army aviation",
+                                        ["livery_id"] = "99.735 Coyotes - Crocodile - VEAF",
                                         ["name"] = "helicargo #003",
                                         ["onboard_num"] = "050",
                                         ["payload"] = {
@@ -1843,12 +1839,12 @@ mission = {
                                         ["speed"] = 46.25,
                                         ["type"] = "Mi-24P",
                                         ["unitId"] = 176,
-                                        ["x"] = -273292.43133066,
-                                        ["y"] = 697337.13391549,
+                                        ["x"] = -273286.40469421,
+                                        ["y"] = 697334.7817212,
                                     }, -- end of [1]
                                 }, -- end of ["units"]
-                                ["x"] = -273292.43133066,
-                                ["y"] = 697337.13391549,
+                                ["x"] = -273286.40469421,
+                                ["y"] = 697334.7817212,
                             }, -- end of [7]
                             [8] = {
                                 ["communication"] = true,
@@ -1893,8 +1889,8 @@ mission = {
                                                 }, -- end of ["params"]
                                             }, -- end of ["task"]
                                             ["type"] = "TakeOffGround",
-                                            ["x"] = -273319.45981006,
-                                            ["y"] = 697337.13391549,
+                                            ["x"] = -273323.87944233,
+                                            ["y"] = 697334.7817212,
                                         }, -- end of [1]
                                         [2] = {
                                             ["action"] = "Turning Point",
@@ -2027,7 +2023,7 @@ mission = {
                                         ["callsign"] = 105,
                                         ["hardpoint_racks"] = true,
                                         ["heading"] = -2.2964679785977,
-                                        ["livery_id"] = "ukrainian army aviation",
+                                        ["livery_id"] = "99.735 Coyotes - Crocodile - VEAF",
                                         ["name"] = "helicargo #004",
                                         ["onboard_num"] = "050",
                                         ["payload"] = {
@@ -2106,12 +2102,12 @@ mission = {
                                         ["speed"] = 46.25,
                                         ["type"] = "Mi-24P",
                                         ["unitId"] = 177,
-                                        ["x"] = -273319.45981006,
-                                        ["y"] = 697337.13391549,
+                                        ["x"] = -273323.87944233,
+                                        ["y"] = 697334.7817212,
                                     }, -- end of [1]
                                 }, -- end of ["units"]
-                                ["x"] = -273319.45981006,
-                                ["y"] = 697337.13391549,
+                                ["x"] = -273323.87944233,
+                                ["y"] = 697334.7817212,
                             }, -- end of [8]
                             [9] = {
                                 ["communication"] = true,
@@ -2156,8 +2152,8 @@ mission = {
                                                 }, -- end of ["params"]
                                             }, -- end of ["task"]
                                             ["type"] = "TakeOffGroundHot",
-                                            ["x"] = -273244.20498543,
-                                            ["y"] = 697361.70151634,
+                                            ["x"] = -273216.95149435,
+                                            ["y"] = 697379.75141894,
                                         }, -- end of [1]
                                         [2] = {
                                             ["action"] = "Turning Point",
@@ -2247,7 +2243,7 @@ mission = {
                                             ["action"] = "Turning Point",
                                             ["alt"] = 2000,
                                             ["alt_type"] = "BARO",
-                                            ["ETA"] = 4705.7972765573,
+                                            ["ETA"] = 4236.0338226422,
                                             ["ETA_locked"] = false,
                                             ["formation_template"] = "",
                                             ["name"] = "ZONE HARD-5",
@@ -2290,7 +2286,7 @@ mission = {
                                         ["callsign"] = 105,
                                         ["hardpoint_racks"] = true,
                                         ["heading"] = -2.2964679785977,
-                                        ["livery_id"] = "ukrainian army aviation",
+                                        ["livery_id"] = "99.735 Coyotes - Crocodile - VEAF",
                                         ["name"] = "helicargo #005",
                                         ["onboard_num"] = "050",
                                         ["payload"] = {
@@ -2369,12 +2365,12 @@ mission = {
                                         ["speed"] = 46.25,
                                         ["type"] = "Mi-24P",
                                         ["unitId"] = 178,
-                                        ["x"] = -273244.20498543,
-                                        ["y"] = 697361.70151634,
+                                        ["x"] = -273216.95149435,
+                                        ["y"] = 697379.75141894,
                                     }, -- end of [1]
                                 }, -- end of ["units"]
-                                ["x"] = -273244.20498543,
-                                ["y"] = 697361.70151634,
+                                ["x"] = -273216.95149435,
+                                ["y"] = 697379.75141894,
                             }, -- end of [9]
                             [10] = {
                                 ["communication"] = true,
@@ -2419,8 +2415,8 @@ mission = {
                                                 }, -- end of ["params"]
                                             }, -- end of ["task"]
                                             ["type"] = "TakeOffGroundHot",
-                                            ["x"] = -273269.1325429,
-                                            ["y"] = 697363.69572093,
+                                            ["x"] = -273250.42893601,
+                                            ["y"] = 697380.25108225,
                                         }, -- end of [1]
                                         [2] = {
                                             ["action"] = "Turning Point",
@@ -2553,7 +2549,7 @@ mission = {
                                         ["callsign"] = 105,
                                         ["hardpoint_racks"] = true,
                                         ["heading"] = -2.2964679785977,
-                                        ["livery_id"] = "ukrainian army aviation",
+                                        ["livery_id"] = "99.735 Coyotes - Crocodile - VEAF",
                                         ["name"] = "helicargo #006",
                                         ["onboard_num"] = "050",
                                         ["payload"] = {
@@ -2632,12 +2628,12 @@ mission = {
                                         ["speed"] = 46.25,
                                         ["type"] = "Mi-24P",
                                         ["unitId"] = 179,
-                                        ["x"] = -273269.1325429,
-                                        ["y"] = 697363.69572093,
+                                        ["x"] = -273250.42893601,
+                                        ["y"] = 697380.25108225,
                                     }, -- end of [1]
                                 }, -- end of ["units"]
-                                ["x"] = -273269.1325429,
-                                ["y"] = 697363.69572093,
+                                ["x"] = -273250.42893601,
+                                ["y"] = 697380.25108225,
                             }, -- end of [10]
                             [11] = {
                                 ["communication"] = true,
@@ -2682,8 +2678,8 @@ mission = {
                                                 }, -- end of ["params"]
                                             }, -- end of ["task"]
                                             ["type"] = "TakeOffGroundHot",
-                                            ["x"] = -273292.06589577,
-                                            ["y"] = 697363.69572093,
+                                            ["x"] = -273284.40604097,
+                                            ["y"] = 697378.75209233,
                                         }, -- end of [1]
                                         [2] = {
                                             ["action"] = "Turning Point",
@@ -2816,7 +2812,7 @@ mission = {
                                         ["callsign"] = 105,
                                         ["hardpoint_racks"] = true,
                                         ["heading"] = -2.2964679785977,
-                                        ["livery_id"] = "ukrainian army aviation",
+                                        ["livery_id"] = "99.735 Coyotes - Crocodile - VEAF",
                                         ["name"] = "helicargo #007",
                                         ["onboard_num"] = "050",
                                         ["payload"] = {
@@ -2895,12 +2891,12 @@ mission = {
                                         ["speed"] = 46.25,
                                         ["type"] = "Mi-24P",
                                         ["unitId"] = 180,
-                                        ["x"] = -273292.06589577,
-                                        ["y"] = 697363.69572093,
+                                        ["x"] = -273284.40604097,
+                                        ["y"] = 697378.75209233,
                                     }, -- end of [1]
                                 }, -- end of ["units"]
-                                ["x"] = -273292.06589577,
-                                ["y"] = 697363.69572093,
+                                ["x"] = -273284.40604097,
+                                ["y"] = 697378.75209233,
                             }, -- end of [11]
                             [12] = {
                                 ["communication"] = true,
@@ -2945,8 +2941,8 @@ mission = {
                                                 }, -- end of ["params"]
                                             }, -- end of ["task"]
                                             ["type"] = "TakeOffGroundHot",
-                                            ["x"] = -273318.6552904,
-                                            ["y"] = 697364.3604558,
+                                            ["x"] = -273322.3804524,
+                                            ["y"] = 697379.75141894,
                                         }, -- end of [1]
                                         [2] = {
                                             ["action"] = "Turning Point",
@@ -3079,7 +3075,7 @@ mission = {
                                         ["callsign"] = 105,
                                         ["hardpoint_racks"] = true,
                                         ["heading"] = -2.2964679785977,
-                                        ["livery_id"] = "ukrainian army aviation",
+                                        ["livery_id"] = "99.735 Coyotes - Crocodile - VEAF",
                                         ["name"] = "helicargo #008",
                                         ["onboard_num"] = "050",
                                         ["payload"] = {
@@ -3158,12 +3154,12 @@ mission = {
                                         ["speed"] = 46.25,
                                         ["type"] = "Mi-24P",
                                         ["unitId"] = 181,
-                                        ["x"] = -273318.6552904,
-                                        ["y"] = 697364.3604558,
+                                        ["x"] = -273322.3804524,
+                                        ["y"] = 697379.75141894,
                                     }, -- end of [1]
                                 }, -- end of ["units"]
-                                ["x"] = -273318.6552904,
-                                ["y"] = 697364.3604558,
+                                ["x"] = -273322.3804524,
+                                ["y"] = 697379.75141894,
                             }, -- end of [12]
                         }, -- end of ["group"]
                     }, -- end of ["helicopter"]
@@ -3283,14 +3279,10 @@ mission = {
                                             ["action"] = "Turning Point",
                                             ["alt"] = 2000,
                                             ["alt_type"] = "BARO",
-                                            ["ETA"] = 3153.399630303,
+                                            ["ETA"] = 2839.3774286273,
                                             ["ETA_locked"] = false,
                                             ["formation_template"] = "",
                                             ["name"] = "ZONE HARD-4",
-                                            ["properties"] = {
-                                                ["addopt"] = {
-                                                }, -- end of ["addopt"]
-                                            }, -- end of ["properties"]
                                             ["speed"] = 46.25,
                                             ["speed_locked"] = true,
                                             ["task"] = {
@@ -4211,8 +4203,6 @@ mission = {
                                             ["formation_template"] = "",
                                             ["name"] = "SENAKI",
                                             ["properties"] = {
-                                                ["addopt"] = {
-                                                }, -- end of ["addopt"]
                                                 ["angle"] = 0,
                                                 ["scale"] = 0,
                                                 ["steer"] = 2,
@@ -4391,8 +4381,6 @@ mission = {
                                             ["formation_template"] = "",
                                             ["name"] = "HARD-4",
                                             ["properties"] = {
-                                                ["addopt"] = {
-                                                }, -- end of ["addopt"]
                                                 ["angle"] = 0,
                                                 ["scale"] = 0,
                                                 ["steer"] = 2,
@@ -4448,6 +4436,7 @@ mission = {
                                 ["task"] = "CAS",
                                 ["tasks"] = {
                                 }, -- end of ["tasks"]
+                                ["uncontrollable"] = false,
                                 ["uncontrolled"] = false,
                                 ["units"] = {
                                     [1] = {
@@ -6988,14 +6977,10 @@ mission = {
                                             ["action"] = "Turning Point",
                                             ["alt"] = 2000,
                                             ["alt_type"] = "BARO",
-                                            ["ETA"] = 4705.7972765573,
+                                            ["ETA"] = 4703.0139733575,
                                             ["ETA_locked"] = false,
                                             ["formation_template"] = "",
                                             ["name"] = "ZONE HARD-5",
-                                            ["properties"] = {
-                                                ["addopt"] = {
-                                                }, -- end of ["addopt"]
-                                            }, -- end of ["properties"]
                                             ["speed"] = 41.666666666667,
                                             ["speed_locked"] = true,
                                             ["task"] = {
@@ -9347,7 +9332,7 @@ mission = {
                                     ["points"] = {
                                         [1] = {
                                             ["action"] = "Off Road",
-                                            ["alt"] = 45,
+                                            ["alt"] = 43,
                                             ["alt_type"] = "BARO",
                                             ["ETA"] = 0,
                                             ["ETA_locked"] = true,
@@ -9363,8 +9348,8 @@ mission = {
                                                 }, -- end of ["params"]
                                             }, -- end of ["task"]
                                             ["type"] = "Turning Point",
-                                            ["x"] = -285801.19946107,
-                                            ["y"] = 684254.80618306,
+                                            ["x"] = -286422.69321287,
+                                            ["y"] = 683410.15277022,
                                         }, -- end of [1]
                                     }, -- end of ["points"]
                                     ["routeRelativeTOT"] = true,
@@ -9390,23 +9375,23 @@ mission = {
                                 ["units"] = {
                                     [1] = {
                                         ["heading"] = 2.0034884355963,
-                                        ["name"] = "#command=\"_spawn armorgroup, defense 0\" #spawnRadius=2500",
+                                        ["name"] = "#command=\"-armor, size 4, armor 2, defense 0, radius 500\"",
                                         ["playerCanDrive"] = false,
                                         ["skill"] = "Average",
                                         ["transportable"] = {
                                             ["randomTransportable"] = false,
                                         }, -- end of ["transportable"]
-                                        ["type"] = "T-55",
+                                        ["type"] = "BMD-1",
                                         ["unitId"] = 20,
                                         ["wagons"] = {
                                         }, -- end of ["wagons"]
-                                        ["x"] = -285801.19946107,
-                                        ["y"] = 684254.80618306,
+                                        ["x"] = -286422.69321287,
+                                        ["y"] = 683410.15277022,
                                     }, -- end of [1]
                                 }, -- end of ["units"]
                                 ["visible"] = false,
-                                ["x"] = -285801.19946107,
-                                ["y"] = 684254.80618306,
+                                ["x"] = -286422.69321287,
+                                ["y"] = 683410.15277022,
                             }, -- end of [1]
                             [2] = {
                                 ["groupId"] = 15,
@@ -9433,8 +9418,8 @@ mission = {
                                                 }, -- end of ["params"]
                                             }, -- end of ["task"]
                                             ["type"] = "Turning Point",
-                                            ["x"] = -284820.39161015,
-                                            ["y"] = 684161.08879276,
+                                            ["x"] = -285282.44205967,
+                                            ["y"] = 683224.60894352,
                                         }, -- end of [1]
                                     }, -- end of ["points"]
                                     ["routeRelativeTOT"] = true,
@@ -9460,36 +9445,21 @@ mission = {
                                 ["units"] = {
                                     [1] = {
                                         ["heading"] = 2.0034884355963,
-                                        ["name"] = "#command=\"_spawn armorgroup, side red, defense 0, size 2\" #spawnRadius=1000",
+                                        ["name"] = "#command=\"-transport, defense 0, size 10, radius 1000\"",
                                         ["playerCanDrive"] = false,
                                         ["skill"] = "Average",
                                         ["transportable"] = {
                                             ["randomTransportable"] = false,
                                         }, -- end of ["transportable"]
-                                        ["type"] = "ZSU-23-4 Shilka",
+                                        ["type"] = "ATZ-5",
                                         ["unitId"] = 22,
-                                        ["wagons"] = {
-                                        }, -- end of ["wagons"]
-                                        ["x"] = -284820.39161015,
-                                        ["y"] = 684161.08879276,
+                                        ["x"] = -285282.44205967,
+                                        ["y"] = 683224.60894352,
                                     }, -- end of [1]
-                                    [2] = {
-                                        ["heading"] = 2.0034884355963,
-                                        ["name"] = "#command=\"_spawn transportgroup, side red, defense 0, size 3\" #spawnRadius=1000",
-                                        ["playerCanDrive"] = false,
-                                        ["skill"] = "Average",
-                                        ["transportable"] = {
-                                            ["randomTransportable"] = false,
-                                        }, -- end of ["transportable"]
-                                        ["type"] = "BTR-80",
-                                        ["unitId"] = 37,
-                                        ["x"] = -285001.44399058,
-                                        ["y"] = 683509.99657853,
-                                    }, -- end of [2]
                                 }, -- end of ["units"]
                                 ["visible"] = false,
-                                ["x"] = -284820.39161015,
-                                ["y"] = 684161.08879276,
+                                ["x"] = -285282.44205967,
+                                ["y"] = 683224.60894352,
                             }, -- end of [2]
                             [3] = {
                                 ["groupId"] = 21,
@@ -9543,13 +9513,13 @@ mission = {
                                 ["units"] = {
                                     [1] = {
                                         ["heading"] = 2.0034884355963,
-                                        ["name"] = "#command=\"_spawn samgroup, side red, defense 1\" #spawnRadius=500",
+                                        ["name"] = "#command=\"-sam, defense 1, size 2, radius 150\"",
                                         ["playerCanDrive"] = false,
                                         ["skill"] = "Average",
                                         ["transportable"] = {
                                             ["randomTransportable"] = false,
                                         }, -- end of ["transportable"]
-                                        ["type"] = "Strela-1 9P31",
+                                        ["type"] = "ZSU-23-4 Shilka",
                                         ["unitId"] = 38,
                                         ["wagons"] = {
                                         }, -- end of ["wagons"]
@@ -9558,7 +9528,7 @@ mission = {
                                     }, -- end of [1]
                                     [2] = {
                                         ["heading"] = 2.0034884355963,
-                                        ["name"] = "#command=\"_spawn transportgroup, side red, defense 1\" #spawnRadius=500",
+                                        ["name"] = "#command=\"-transport, armor 1, defense 1, size 15, radius 150\"",
                                         ["playerCanDrive"] = false,
                                         ["skill"] = "Good",
                                         ["transportable"] = {
@@ -9566,8 +9536,8 @@ mission = {
                                         }, -- end of ["transportable"]
                                         ["type"] = "BTR-80",
                                         ["unitId"] = 39,
-                                        ["x"] = -253774.35847771,
-                                        ["y"] = 713243.75599043,
+                                        ["x"] = -253641.80582104,
+                                        ["y"] = 713558.95652225,
                                     }, -- end of [2]
                                 }, -- end of ["units"]
                                 ["visible"] = false,
@@ -9626,7 +9596,7 @@ mission = {
                                 ["units"] = {
                                     [1] = {
                                         ["heading"] = 2.0034884355963,
-                                        ["name"] = "#command=\"_spawn samgroup, side red, defense 2\" #spawnRadius=500",
+                                        ["name"] = "#command=\"-sam, defense 2, size 2, radius 500\"",
                                         ["playerCanDrive"] = false,
                                         ["skill"] = "High",
                                         ["transportable"] = {
@@ -9641,7 +9611,7 @@ mission = {
                                     }, -- end of [1]
                                     [2] = {
                                         ["heading"] = 2.0034884355963,
-                                        ["name"] = "#command=\"_spawn armorgroup, side red, defense 2\" #spawnRadius=500",
+                                        ["name"] = "#command=\"-transport, armor 2, defense 1, size 15, radius 500\"",
                                         ["playerCanDrive"] = false,
                                         ["skill"] = "Average",
                                         ["transportable"] = {
@@ -9709,7 +9679,7 @@ mission = {
                                 ["units"] = {
                                     [1] = {
                                         ["heading"] = 2.0034884355963,
-                                        ["name"] = "#command=\"_spawn samgroup, side red, defense 3\" #spawnRadius=500",
+                                        ["name"] = "#command=\"-sam, defense 3, size 3, radius 500\"",
                                         ["playerCanDrive"] = false,
                                         ["skill"] = "Average",
                                         ["transportable"] = {
@@ -9724,7 +9694,7 @@ mission = {
                                     }, -- end of [1]
                                     [2] = {
                                         ["heading"] = 2.0034884355963,
-                                        ["name"] = "#command=\"_spawn armorgroup, side red, defense 3\" #spawnRadius=500",
+                                        ["name"] = "#command=\"-transport, armor 3, defense 1, size 15, radius 500\"",
                                         ["playerCanDrive"] = false,
                                         ["skill"] = "Excellent",
                                         ["transportable"] = {
@@ -9792,7 +9762,7 @@ mission = {
                                 ["units"] = {
                                     [1] = {
                                         ["heading"] = 2.0034884355963,
-                                        ["name"] = "#command=\"_spawn samgroup, side red, defense 4\" #spawnRadius=500",
+                                        ["name"] = "#command=\"-sam, defense 4, size 5, radius 500\"",
                                         ["playerCanDrive"] = false,
                                         ["skill"] = "Average",
                                         ["transportable"] = {
@@ -9807,7 +9777,7 @@ mission = {
                                     }, -- end of [1]
                                     [2] = {
                                         ["heading"] = 2.0034884355963,
-                                        ["name"] = "#command=\"_spawn armorgroup, side red, defense 4\" #spawnRadius=500",
+                                        ["name"] = "#command=\"-transport, armor 4, defense 1, size 15, radius 500\"",
                                         ["playerCanDrive"] = false,
                                         ["skill"] = "Excellent",
                                         ["transportable"] = {
@@ -11360,8 +11330,8 @@ mission = {
                                 ["uncontrollable"] = false,
                                 ["units"] = {
                                     [1] = {
-                                        ["heading"] = 3.5013471782753,
-                                        ["name"] = "#command=\"_spawn transportgroup, side red, defense 0, size 5\" #spawnRadius=0",
+                                        ["heading"] = 3.5013471781059,
+                                        ["name"] = "#command=\"-transport, defense 0, size 5, radius 0\"",
                                         ["playerCanDrive"] = false,
                                         ["skill"] = "Average",
                                         ["transportable"] = {
@@ -11377,6 +11347,76 @@ mission = {
                                 ["x"] = -272194.32176425,
                                 ["y"] = 690998.69588467,
                             }, -- end of [23]
+                            [24] = {
+                                ["groupId"] = 79,
+                                ["hidden"] = false,
+                                ["lateActivation"] = true,
+                                ["name"] = "Training zone EASY-1 #003",
+                                ["route"] = {
+                                    ["points"] = {
+                                        [1] = {
+                                            ["action"] = "Off Road",
+                                            ["alt"] = 47,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 0,
+                                            ["ETA_locked"] = true,
+                                            ["formation_template"] = "",
+                                            ["name"] = "",
+                                            ["speed"] = 5.5555555555556,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -284503.15798752,
+                                            ["y"] = 685241.9763684,
+                                        }, -- end of [1]
+                                    }, -- end of ["points"]
+                                    ["routeRelativeTOT"] = true,
+                                    ["spans"] = {
+                                        [1] = {
+                                            [1] = {
+                                                ["x"] = -328047.96645123,
+                                                ["y"] = 631701.59986951,
+                                            }, -- end of [1]
+                                            [2] = {
+                                                ["x"] = -328515.66160439,
+                                                ["y"] = 632714.18257975,
+                                            }, -- end of [2]
+                                        }, -- end of [1]
+                                    }, -- end of ["spans"]
+                                }, -- end of ["route"]
+                                ["start_time"] = 0,
+                                ["task"] = "Ground Nothing",
+                                ["tasks"] = {
+                                }, -- end of ["tasks"]
+                                ["taskSelected"] = true,
+                                ["uncontrollable"] = false,
+                                ["units"] = {
+                                    [1] = {
+                                        ["heading"] = 2.0034884355963,
+                                        ["name"] = "#command=\"-armor, armor 3, defense 0, size 2, radius 500\"",
+                                        ["playerCanDrive"] = false,
+                                        ["skill"] = "Average",
+                                        ["transportable"] = {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "T-55",
+                                        ["unitId"] = 183,
+                                        ["wagons"] = {
+                                        }, -- end of ["wagons"]
+                                        ["x"] = -284503.15798752,
+                                        ["y"] = 685241.9763684,
+                                    }, -- end of [1]
+                                }, -- end of ["units"]
+                                ["visible"] = false,
+                                ["x"] = -284503.15798752,
+                                ["y"] = 685241.9763684,
+                            }, -- end of [24]
                         }, -- end of ["group"]
                     }, -- end of ["vehicle"]
                 }, -- end of [1]
@@ -11479,7 +11519,7 @@ mission = {
             [10] = 47,
         }, -- end of ["red"]
     }, -- end of ["coalitions"]
-    ["currentKey"] = 25837,
+    ["currentKey"] = 34609,
     ["date"] = {
         ["Day"] = 23,
         ["Month"] = 5,
@@ -17739,17 +17779,17 @@ mission = {
             ["artillery_commander"] = {
                 ["blue"] = 5,
                 ["neutrals"] = 0,
-                ["red"] = 5,
+                ["red"] = 2,
             }, -- end of ["artillery_commander"]
             ["forward_observer"] = {
                 ["blue"] = 5,
                 ["neutrals"] = 0,
-                ["red"] = 5,
+                ["red"] = 2,
             }, -- end of ["forward_observer"]
             ["instructor"] = {
-                ["blue"] = 1,
+                ["blue"] = 5,
                 ["neutrals"] = 0,
-                ["red"] = 1,
+                ["red"] = 2,
             }, -- end of ["instructor"]
             ["observer"] = {
                 ["blue"] = 20,
@@ -17759,11 +17799,11 @@ mission = {
         }, -- end of ["roles"]
     }, -- end of ["groundControl"]
     ["map"] = {
-        ["centerX"] = -273209.34956102,
-        ["centerY"] = 697060.54487572,
-        ["zoom"] = 2455.51687881,
+        ["centerX"] = -253374.72533872,
+        ["centerY"] = 715229.81201965,
+        ["zoom"] = 14956.507009921,
     }, -- end of ["map"]
-    ["maxDictId"] = 677,
+    ["maxDictId"] = 680,
     ["pictureFileNameB"] = {
         [1] = "ResKey_ImageBriefing_308",
         [2] = "ResKey_ImageBriefing_309",
@@ -17809,9 +17849,9 @@ mission = {
     ["theatre"] = "Caucasus",
     ["trig"] = {
         ["actions"] = {
-            [1] = "a_do_script(\"VEAF_DYNAMIC_PATH = [[D:\\\\dev\\\\_VEAF\\\\VEAF-Multiplayer-Missions\\\\VEAF-Helicopter-Training-2021\\\\node_modules\\\\veaf-mission-creation-tools\\\\]]\");a_do_script(\"VEAF_DYNAMIC_MISSIONPATH = [[D:\\\\dev\\\\_VEAF\\\\VEAF-Multiplayer-Missions\\\\VEAF-Helicopter-Training-2021\\\\]]\");",
-            [2] = "a_do_script(\"env.info(\\\"DYNAMIC LOADING\\\")\");a_do_script(\"assert(loadfile(VEAF_DYNAMIC_PATH .. \\\"/src/scripts/community/mist.lua\\\"))()\");a_do_script(\"assert(loadfile(VEAF_DYNAMIC_PATH .. \\\"/src/scripts/community/DCS-SimpleTextToSpeech.lua\\\"))()\");a_do_script(\"assert(loadfile(VEAF_DYNAMIC_PATH .. \\\"/src/scripts/community/CTLD.lua\\\"))()\");a_do_script(\"assert(loadfile(VEAF_DYNAMIC_PATH .. \\\"/src/scripts/community/WeatherMark.lua\\\"))()\");a_do_script(\"assert(loadfile(VEAF_DYNAMIC_PATH .. \\\"/src/scripts/community/skynet-iads-compiled.lua\\\"))()\");a_do_script(\"assert(loadfile(VEAF_DYNAMIC_PATH .. \\\"/src/scripts/community/Hercules_Cargo.lua\\\"))()\");a_do_script(\"assert(loadfile(VEAF_DYNAMIC_PATH .. \\\"/src/scripts/VeafDynamicLoader.lua\\\"))()\");",
-            [3] = "a_do_script(\"env.info(\\\"STATIC LOADING\\\")\");a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10202\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_676\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10204\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10205\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10206\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10207\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10208\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10209\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10210\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10211\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10212\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10213\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10214\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10215\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10216\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10217\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10218\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10219\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10220\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10221\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10222\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10223\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10224\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10225\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10226\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10227\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10228\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10229\"));",
+            [1] = "a_do_script(\"VEAF_DYNAMIC_PATH = [[d:\\\\dev\\\\_VEAF\\\\VEAF-Mission-Creation-Tools]]\");a_do_script(\"VEAF_DYNAMIC_MISSIONPATH = [[d:\\\\dev\\\\_VEAF\\\\VEAF-Multiplayer-Missions\\\\VEAF-Helicopter-Training-2021\\\\]]\");",
+            [2] = "a_do_script(\"env.info(\\\"DYNAMIC LOADING\\\")\");a_do_script(\"assert(loadfile(VEAF_DYNAMIC_PATH .. \\\"/src/scripts/community/mist.lua\\\"))()\");a_do_script(\"assert(loadfile(VEAF_DYNAMIC_PATH .. \\\"/src/scripts/community/DCS-SimpleTextToSpeech.lua\\\"))()\");a_do_script(\"assert(loadfile(VEAF_DYNAMIC_PATH .. \\\"/src/scripts/community/CTLD.lua\\\"))()\");a_do_script(\"assert(loadfile(VEAF_DYNAMIC_PATH .. \\\"/src/scripts/community/WeatherMark.lua\\\"))()\");a_do_script(\"assert(loadfile(VEAF_DYNAMIC_PATH .. \\\"/src/scripts/community/skynet-iads-compiled.lua\\\"))()\");a_do_script(\"assert(loadfile(VEAF_DYNAMIC_PATH .. \\\"/src/scripts/community/Hercules_Cargo.lua\\\"))()\");a_do_script(\"assert(loadfile(VEAF_DYNAMIC_PATH .. \\\"/src/scripts/community/HoundElint.lua\\\"))()\");a_do_script(\"assert(loadfile(VEAF_DYNAMIC_PATH .. \\\"/src/scripts/VeafDynamicLoader.lua\\\"))()\");",
+            [3] = "a_do_script(\"env.info(\\\"STATIC LOADING\\\")\");a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10202\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_676\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10204\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10205\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10206\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10207\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_679\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10208\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10209\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10210\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10211\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10212\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10213\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10214\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10215\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10216\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10217\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10218\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10219\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10220\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10221\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10222\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10223\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10224\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10225\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10226\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10227\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10228\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10229\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_680\"));",
             [4] = "a_do_script(\"assert(loadfile(VEAF_DYNAMIC_MISSIONPATH .. \\\"/src/scripts/missionConfig.lua\\\"))()\");",
             [5] = "a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10401\"));",
         }, -- end of ["actions"]
@@ -17973,11 +18013,11 @@ mission = {
             ["actions"] = {
                 [1] = {
                     ["predicate"] = "a_do_script",
-                    ["text"] = "VEAF_DYNAMIC_PATH = [[D:\\dev\\_VEAF\\VEAF-Multiplayer-Missions\\VEAF-Helicopter-Training-2021\\node_modules\\veaf-mission-creation-tools\\]]",
+                    ["text"] = "VEAF_DYNAMIC_PATH = [[d:\\dev\\_VEAF\\VEAF-Mission-Creation-Tools]]",
                 }, -- end of [1]
                 [2] = {
                     ["predicate"] = "a_do_script",
-                    ["text"] = "VEAF_DYNAMIC_MISSIONPATH = [[D:\\dev\\_VEAF\\VEAF-Multiplayer-Missions\\VEAF-Helicopter-Training-2021\\]]",
+                    ["text"] = "VEAF_DYNAMIC_MISSIONPATH = [[d:\\dev\\_VEAF\\VEAF-Multiplayer-Missions\\VEAF-Helicopter-Training-2021\\]]",
                 }, -- end of [2]
             }, -- end of ["actions"]
             ["colorItem"] = "0x00ffffff",
@@ -18025,8 +18065,12 @@ mission = {
                 }, -- end of [7]
                 [8] = {
                     ["predicate"] = "a_do_script",
-                    ["text"] = "assert(loadfile(VEAF_DYNAMIC_PATH .. \"/src/scripts/VeafDynamicLoader.lua\"))()",
+                    ["text"] = "assert(loadfile(VEAF_DYNAMIC_PATH .. \"/src/scripts/community/HoundElint.lua\"))()",
                 }, -- end of [8]
+                [9] = {
+                    ["predicate"] = "a_do_script",
+                    ["text"] = "assert(loadfile(VEAF_DYNAMIC_PATH .. \"/src/scripts/VeafDynamicLoader.lua\"))()",
+                }, -- end of [9]
             }, -- end of ["actions"]
             ["colorItem"] = "0x00ff80ff",
             ["comment"] = "mission start - dynamic",
@@ -18071,93 +18115,101 @@ mission = {
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [7]
                 [8] = {
-                    ["file"] = "DictKey_ActionText_10208",
+                    ["file"] = "ResKey_Action_679",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [8]
                 [9] = {
-                    ["file"] = "DictKey_ActionText_10209",
+                    ["file"] = "DictKey_ActionText_10208",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [9]
                 [10] = {
-                    ["file"] = "DictKey_ActionText_10210",
+                    ["file"] = "DictKey_ActionText_10209",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [10]
                 [11] = {
-                    ["file"] = "DictKey_ActionText_10211",
+                    ["file"] = "DictKey_ActionText_10210",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [11]
                 [12] = {
-                    ["file"] = "DictKey_ActionText_10212",
+                    ["file"] = "DictKey_ActionText_10211",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [12]
                 [13] = {
-                    ["file"] = "DictKey_ActionText_10213",
+                    ["file"] = "DictKey_ActionText_10212",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [13]
                 [14] = {
-                    ["file"] = "DictKey_ActionText_10214",
+                    ["file"] = "DictKey_ActionText_10213",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [14]
                 [15] = {
-                    ["file"] = "DictKey_ActionText_10215",
+                    ["file"] = "DictKey_ActionText_10214",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [15]
                 [16] = {
-                    ["file"] = "DictKey_ActionText_10216",
+                    ["file"] = "DictKey_ActionText_10215",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [16]
                 [17] = {
-                    ["file"] = "DictKey_ActionText_10217",
+                    ["file"] = "DictKey_ActionText_10216",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [17]
                 [18] = {
-                    ["file"] = "DictKey_ActionText_10218",
+                    ["file"] = "DictKey_ActionText_10217",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [18]
                 [19] = {
-                    ["file"] = "DictKey_ActionText_10219",
+                    ["file"] = "DictKey_ActionText_10218",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [19]
                 [20] = {
-                    ["file"] = "DictKey_ActionText_10220",
+                    ["file"] = "DictKey_ActionText_10219",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [20]
                 [21] = {
-                    ["file"] = "DictKey_ActionText_10221",
+                    ["file"] = "DictKey_ActionText_10220",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [21]
                 [22] = {
-                    ["file"] = "DictKey_ActionText_10222",
+                    ["file"] = "DictKey_ActionText_10221",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [22]
                 [23] = {
-                    ["file"] = "DictKey_ActionText_10223",
+                    ["file"] = "DictKey_ActionText_10222",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [23]
                 [24] = {
-                    ["file"] = "DictKey_ActionText_10224",
+                    ["file"] = "DictKey_ActionText_10223",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [24]
                 [25] = {
-                    ["file"] = "DictKey_ActionText_10225",
+                    ["file"] = "DictKey_ActionText_10224",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [25]
                 [26] = {
-                    ["file"] = "DictKey_ActionText_10226",
+                    ["file"] = "DictKey_ActionText_10225",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [26]
                 [27] = {
-                    ["file"] = "DictKey_ActionText_10227",
+                    ["file"] = "DictKey_ActionText_10226",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [27]
                 [28] = {
-                    ["file"] = "DictKey_ActionText_10228",
+                    ["file"] = "DictKey_ActionText_10227",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [28]
                 [29] = {
-                    ["file"] = "DictKey_ActionText_10229",
+                    ["file"] = "DictKey_ActionText_10228",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [29]
+                [30] = {
+                    ["file"] = "DictKey_ActionText_10229",
+                    ["predicate"] = "a_do_script_file",
+                }, -- end of [30]
+                [31] = {
+                    ["file"] = "ResKey_Action_680",
+                    ["predicate"] = "a_do_script_file",
+                }, -- end of [31]
             }, -- end of ["actions"]
             ["colorItem"] = "0x00ff80ff",
             ["comment"] = "mission start - static",
