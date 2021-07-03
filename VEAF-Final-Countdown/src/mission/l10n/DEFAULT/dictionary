@@ -1,0 +1,13 @@
+dictionary = {
+    ["DictKey_ActionText_10"] = "Allez identifier bateau inconnu droit devant 17NM Cap 210.",
+    ["DictKey_ActionText_10501"] = "return false -- set to true for dynamic loading",
+    ["DictKey_ActionText_10601"] = "return VEAF_DYNAMIC_PATH~=nil",
+    ["DictKey_ActionText_10701"] = "return VEAF_DYNAMIC_PATH==nil",
+    ["DictKey_ActionText_10801"] = "return VEAF_DYNAMIC_PATH~=nil",
+    ["DictKey_ActionText_10901"] = "return VEAF_DYNAMIC_PATH==nil",
+    ["DictKey_descriptionBlueTask_3"] = "",
+    ["DictKey_descriptionNeutralsTask_4"] = "",
+    ["DictKey_descriptionRedTask_2"] = "",
+    ["DictKey_descriptionText_1"] = "",
+    ["DictKey_sortie_5"] = "",
+} -- end of dictionary
