@@ -2,7 +2,7 @@
 -- Mission configuration file for the VEAF framework
 -- see https://github.com/VEAF/VEAF-Mission-Creation-Tools
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
-veaf.config.MISSION_NAME = nil -- no specific name
+veaf.config.MISSION_NAME = "VEAF-Final-Countdown"
 veaf.config.MISSION_EXPORT_PATH = nil -- use default folder
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -185,7 +185,8 @@ end
 -- configure SECURITY
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 if veafSecurity then
-    veafSecurity.password_L9["SHA1 hash of the password"] = true -- set the L9 password (the lowest possible security)
+    --let's not set a password
+    --veafSecurity.password_L9["SHA1 hash of the password"] = true -- set the L9 password (the lowest possible security)
     veafSecurity.logInfo("Loading configuration")
     veaf.logInfo("init - veafSecurity")
     veafSecurity.initialize()
@@ -243,15 +244,15 @@ if ctld then
     ctld.transportPilotNames = {}
 
     for i = 1, 24 do
-        table.insert(ctld.transportPilotNames, "yak"..i)
+        table.insert(ctld.transportPilotNames, string.format("yak #%03d",i))
     end
 
     for i = 1, 10 do
-        table.insert(ctld.transportPilotNames, "transport"..i)
+        table.insert(ctld.transportPilotNames, string.format("transport #%03d",i))
     end
 
     for i = 1, 79 do
-        table.insert(ctld.transportPilotNames, "helicargo"..i)
+        table.insert(ctld.transportPilotNames, string.format("helicargo #%03d",i))
     end
 
     -- ************** Logistics UNITS FOR CRATE SPAWNING ******************
@@ -315,15 +316,14 @@ end
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- initialize Skynet-IADS
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
-if veafSkynet then
-    -- no skynet !
-    -- veaf.logInfo("init - veafSkynet")
-    -- veafSkynet.initialize(
-    --     false, --includeRedInRadio=true
-    --     false, --debugRed
-    --     false, --includeBlueInRadio
-    --     false --debugBlue
-    -- )
+if veafSkynet and false then -- no skynet !
+    veaf.logInfo("init - veafSkynet")
+    veafSkynet.initialize(
+        false, --includeRedInRadio=true
+        false, --debugRed
+        false, --includeBlueInRadio
+        false --debugBlue
+    )
 end
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------

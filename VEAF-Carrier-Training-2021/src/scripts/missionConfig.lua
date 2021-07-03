@@ -5,10 +5,6 @@
 veaf.config.MISSION_NAME = "Carrier-Training"
 veaf.config.MISSION_EXPORT_PATH = nil -- use default folder
 
--- play the radio beacons (for the public OT mission)
-veafBeacons = false
-
-
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- initialize all the scripts
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -139,6 +135,7 @@ if veafNamedPoints then
 
 	veafNamedPoints.Points = {
 		-- airbases in Georgia
+        --[[
 		{name="AIRBASE Batumi",  point={x=-356437,y=0,z=618211, atc=true, tower="V131, U260", tacan="16X BTM", runways={{name="13", hdg=125, ils="110.30"}, {name="31", hdg=305}}}},
 		{name="AIRBASE Gudauta", point={x=-196850,y=0,z=516496, atc=true, tower="V130, U259", runways={ {name="15", hdg=150}, {name="33", hdg=330}}}},
 		{name="AIRBASE Kobuleti",point={x=-318000,y=0,z=636620, atc=true, tower="V133, U262", tacan="67X KBL", runways={ {name="07", hdg=69, ils="111.50"}}}},
@@ -147,7 +144,9 @@ if veafNamedPoints then
 		{name="AIRBASE Sukhumi", point={x=-221382,y=0,z=565909, atc=true, tower="V129, U258", runways={{name="12", hdg=116}, {name="30", hdg=296}}}},
 		{name="AIRBASE Tbilisi", point={x=-314926,y=0,z=895724, atc=true, tower="V138, U267", tacan="25X GTB", runways={{name="13", hdg=127, ils="110.30"},{name="31", hdg=307, ils="108.90"}}}},
 		{name="AIRBASE Vaziani", point={x=-319000,y=0,z=903271, atc=true, tower="V140, U269", tacan="22X VAS", runways={ {name="13", hdg=135, ils="108.75"}, {name="31", hdg=315, ils="108.75"}}}},
+        ]]
 		-- airbases in Russia
+        --[[
 		{name="AIRBASE Anapa - Vityazevo",   point={x=-004448,y=0,z=244022, atc=true, tower="V121, U250" , runways={ {name="22", hdg=220}, {name="04", hdg=40}}}},
 		{name="AIRBASE Beslan",              point={x=-148472,y=0,z=842252, atc=true, tower="V141, U270", runways={ {name="10", hdg=93, ils="110.50"}, {name="28", hdg=273}}}},
 		{name="AIRBASE Krymsk",              point={x=-007349,y=0,z=293712, atc=true, tower="V124, U253", runways={ {name="04", hdg=39}, {name="22", hdg=219}}}},
@@ -160,6 +159,7 @@ if veafNamedPoints then
 		{name="AIRBASE Nalchik",             point={x=-125500,y=0,z=759543, atc=true, tower="V136, U265", runways={ {name="06", hdg=55}, {name="24", hdg=235, ils="110.50"}}}},
 		{name="AIRBASE Novorossiysk",        point={x=-040299,y=0,z=279854, atc=true, tower="V123, U252", runways={ {name="04", hdg=40}, {name="22", hdg=220}}}},
 		{name="AIRBASE Sochi",               point={x=-165163,y=0,z=460902, atc=true, tower="V127, U256", runways={ {name="06", hdg=62, ils="111.10"}, {name="24", hdg=242}}}},
+        ]]
 	}
 
     veafNamedPoints.logInfo("Loading configuration")
@@ -174,6 +174,8 @@ if veafNamedPoints then
         veafNamedPoints.addAllPersianGulfCities()
     elseif theatre == "thechannel" then
         veafNamedPoints.addAllTheChannelCities()
+    elseif theatre == "marianaislands" then
+        veafNamedPoints.addAllMarianasIslandsCities()
     else
         veafNamedPoints.logWarning(string.format("theatre %s is not yet supported by veafNamedPoints", theatre))
     end
@@ -243,22 +245,16 @@ if ctld then
     -- Use any of the predefined names or set your own ones
     ctld.transportPilotNames = {}
 
-    for i = 1, 10 do
-        local name = string.format("yak #%03d",i)
-        veaf.logTrace(string.format("name=%s", veaf.p(name)))
-        table.insert(ctld.transportPilotNames, name)
+    for i = 1, 24 do
+        table.insert(ctld.transportPilotNames, string.format("yak #%03d",i))
     end
 
     for i = 1, 10 do
-        local name = string.format("transport #%03d",i)
-        veaf.logTrace(string.format("name=%s", veaf.p(name)))
-        table.insert(ctld.transportPilotNames, name)
+        table.insert(ctld.transportPilotNames, string.format("transport #%03d",i))
     end
 
     for i = 1, 79 do
-        local name = string.format("helicargo #%03d",i)
-        veaf.logTrace(string.format("name=%s", veaf.p(name)))
-        table.insert(ctld.transportPilotNames, name)
+        table.insert(ctld.transportPilotNames, string.format("helicargo #%03d",i))
     end
 
     -- ************** Logistics UNITS FOR CRATE SPAWNING ******************
@@ -289,11 +285,14 @@ if ctld then
         "logistic #020",
     }
 
-    -- automatically add all the human-manned transport helicopters to ctld.transportPilotNames
-    veafTransportMission.initializeAllHelosInCTLD()
+    if veafTransportMission then
 
-    -- automatically add all the carriers and FARPs to ctld.logisticUnits
-    veafTransportMission.initializeAllLogisticInCTLD()
+        -- automatically add all the human-manned transport helicopters to ctld.transportPilotNames
+        veafTransportMission.initializeAllHelosInCTLD()
+
+        -- automatically add all the carriers and FARPs to ctld.logisticUnits
+        veafTransportMission.initializeAllLogisticInCTLD()
+    end
     
     veaf.logInfo("init - ctld")
     ctld.initialize()
@@ -329,3 +328,9 @@ if veafSkynet then
     )
 end
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- initialize veafSanctuary
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+if veafSanctuary then
+    veafSanctuary.initialize()
+end
