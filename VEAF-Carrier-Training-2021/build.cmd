@@ -124,8 +124,8 @@ echo Building %MISSION_FILE%.miz
 
 echo.
 echo prepare the folders
-rd /s /q .\build
-mkdir .\build
+rd /s /q .\build >nul 2>&1
+mkdir .\build >nul 2>&1
 
 IF ["%NPM_UPDATE%"] == [""] GOTO DontNPM_UPDATE
 echo fetch the veaf-mission-creation-tools package
@@ -135,6 +135,7 @@ goto DoNPM_UPDATE
 echo skipping npm update
 :DoNPM_UPDATE
 
+echo.
 echo prepare the veaf-mission-creation-tools scripts
 rem -- copy the scripts folder
 xcopy /s /y /e %DYNAMIC_SCRIPTS_PATH%\src\scripts\* .\build\tempscripts\ >nul 2>&1
@@ -147,7 +148,7 @@ powershell -File replace.ps1 .\build\tempscripts\veaf\veaf.lua "veaf.SecurityDis
 if %VERBOSE_LOG_FLAG%==false (
 	rem -- comment all the trace and debug code
 	echo comment all the trace and debug code
-	FOR %%f IN (.\build\tempscripts\veaf\*.lua) DO powershell -File replace.ps1 %%f "(^\s*)(veaf.*\.[^\(^\s]*log(Trace|Debug|Marker))" "$1--$2" >nul 2>&1
+	FOR %%f IN (.\build\tempscripts\veaf\*.lua) DO powershell -File replace.ps1 %%f "(^\s*)(.*veaf\.loggers.get\(.*\):(trace|debug|marker|cleanupMarkers))" "$1--$2" >nul 2>&1
 )
 
 echo building the mission
@@ -195,10 +196,10 @@ rem -- compile the mission
 "%SEVENZIP%" a -r -tzip %MISSION_FILE%.miz .\build\tempsrc\* -mem=AES256 >nul 2>&1
 
 rem -- cleanup the mission files
-rd /s /q .\build\tempsrc
+rd /s /q .\build\tempsrc >nul 2>&1
 
 rem -- cleanup the veaf-mission-creation-tools scripts
-rd /s /q .\build\tempscripts
+rd /s /q .\build\tempscripts >nul 2>&1
 
 rem -- generate the time and weather versions
 echo generate the time and weather versions
