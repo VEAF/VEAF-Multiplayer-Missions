@@ -1,0 +1,8 @@
+{
+  "name": "VEAF-Attack-on-Zugdidi",
+  "version": "1.0.0",
+  "description": "DCS mission with VEAF scripting",
+  "dependencies": {
+    "veaf-mission-creation-tools": "^4.0.0"
+  }
+}

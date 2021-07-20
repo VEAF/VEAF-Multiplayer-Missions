@@ -1,0 +1,58 @@
+dictionary = {
+    ["DictKey_ActionComment_34"] = "",
+    ["DictKey_ActionComment_36"] = "",
+    ["DictKey_ActionComment_38"] = "",
+    ["DictKey_ActionText_10501"] = "return false -- scripts",
+    ["DictKey_ActionText_10502"] = "return false -- config",
+    ["DictKey_ActionText_10601"] = "return VEAF_DYNAMIC_PATH~=nil",
+    ["DictKey_ActionText_10701"] = "return VEAF_DYNAMIC_PATH==nil",
+    ["DictKey_ActionText_10801"] = "return VEAF_DYNAMIC_MISSIONPATH~=nil",
+    ["DictKey_ActionText_10901"] = "return VEAF_DYNAMIC_MISSIONPATH==nil",
+    ["DictKey_ActionText_33"] = "Destroyed RR Bridge spans",
+    ["DictKey_ActionText_35"] = "Inguri River Highway Bridge",
+    ["DictKey_ActionText_37"] = "Abkhaz Army Garrison - Gali",
+    ["DictKey_ActionText_39"] = "Buk SAM sighted near RR bridge !\
+They're rallying and starting to move up.",
+    ["DictKey_ActionText_40"] = "All the BMPs have been destroyed.",
+    ["DictKey_ActionText_41"] = "BMP sighted near the river, east of the RR bridge ! We need urgent help before we're overrun !",
+    ["DictKey_descriptionBlueTask_3"] = "You are GUNSHIP 54, the flight lead for the pair of Georgian Mi-24Ps deployed to Zugdidi Base. You are armed with 8 x ATGMs and two GUV-8700 gun-pods. Your wingman is armed with 8 x ATGMs and 40 x S-8OFP2 rockets.\
+\
+According to the most recent information available, the train carrying the Buk SAM is heading for the border. It will probably move to near the remains of the rail bridge that previously crossed the Inguri river (destroyed in the 2008 war), and deploy the SAM in that area. Finding and destroying the Buk SAM is your first priority.\
+\
+Meanwhile, the Abkhaz army is converging on Zugdidi with two forces, to trap the city in a pincer maneuver. A tank column is heading to cross the river via the Inguri bridge, on the highway between Zugdidi and Gali. A BMP force is heading towards an amphibious crossing of the river further to the south. \
+\
+A task force of Georgian Army tanks and APCs is heading to Zugdidi but will not arrive for several hours. In the mean time, your Mi-24s and the small Zugdidi garrison are the only defense for the beleaguered city.\
+\
+Communications:\
+Tactical Command  / FARP - 129.50  MHz; R863 CH-0\
+    - FARP callsign \"Dallas\"\
+    - Tactical Command - \"Zugdidi Base\"\
+    - Mi-24P callsigns \"Dodge 5-1; Dodge 5-2\"\
+    - Mi-8 Callsign \"Chevy 8-1\"\
+Senaki AB - 132.00 MHz; R863 CH-15\
+(Senaki NDB 688 kHz; \"B\")\
+\
+Pre Flight Checklist:\
+    - Begin weapons systems warm up\
+    - Set RWR ON; RWR Sound ON\
+    - Counter Measures - ON BOTH SIDES\
+    (Set I is Chaff; Sets II, III are Flare)\
+    - Nav Lights, Rotor Tip Lights OFF",
+    ["DictKey_descriptionNeutralsTask_4"] = "",
+    ["DictKey_descriptionRedTask_2"] = "",
+    ["DictKey_descriptionText_1"] = "The \"Inguri River Dispute\" between Georgia and Abkhazia has reached a flashpoint. Following the withdrawal of Russian Peacekeeping Forces from the border last year, violent incidents have increased. Abkhaz-supported insurgents operating in the Zugdidi area are responsible for these hostile acts. The insurgency has called for a partitioned Zugdidi, divided roughly in half at the Chkhoushi river; Abkhaz nationals to control the northwestern half and Georgia to retain sovereignty over the rest of the city. \
+\
+Tbilisi has responded by reopening a Soviet-era military facility in Zugdidi and is using it as a base for counter-insurgency (COIN) operations. In addition to special COIN troops, light armor, and helicopter air-mobility support, a pair of Mi-24P helicopter gunships  has been deployed to \"Zugdidi Base\".\
+\
+Sukhumi has denounced these deployments and declared that the area around Zugdidi should be a No Fly Zone (NFZ), stating that \"Abkhaz armed forces are prepared to impose this NFZ!\"\
+\
+Since yesterday, Intelligence, supplied to Tbilisi by friendly western nations, revealed an Abkhaz BUK SAM battery at a military train depot near Sukhumi, less than an hour's transit by rail to the conflict area. When deployed, it's Missile Engagement Zone (MEZ) will cover all of Zugdidi, effectively establishing a NFZ. Further, the bulk of Abkhazia's most capable armored forces - 5 of its 9 T-72 tanks and several BMP-2s- have been seen moving to tactical staging areas near the border. Clearly, once the Buk SAM is in place and providing local air denial over Zugdidi, the Abkhaz army will attack to capture the city.\
+",
+    ["DictKey_sortie_5"] = "Caucasus: Battle for Zugdidi",
+    ["DictKey_subtitle_19"] = "Dodge flight, Zugdidi Base:  SAM train sighted near railroad bridge ruins, on the Abkhaz side of the Inguri river. Buk vehicles unloading and moving out.",
+    ["DictKey_subtitle_23"] = "Dodge flight, Zugdidi Base: Observation posts report Buk vehicles badly damaged or destroyed. SAM is out of commission. Shift targets to attacking Abkhaz armored forces.",
+    ["DictKey_subtitle_25"] = "Dodge flight, Zugdidi Base: Enemy armor contact. Inguri River highway bridge. At least 4 x T-72 tanks. Communications lost with border control point.",
+    ["DictKey_subtitle_27"] = "Dodge flight, Zugdidi Base: Enemy BMPs sighted crossing Inguri river near northern end of Shamgona Island.",
+    ["DictKey_subtitle_29"] = "Dodge flight, Zugdidi Base: Enemy columns entering Zugdidi city.",
+    ["DictKey_subtitle_31"] = "Dodge flight, Zugdidi Base: We are under direct fire [STATIC]…being overrun.  FARP Dallas is closed. Divert to Senaki AB.",
+} -- end of dictionary

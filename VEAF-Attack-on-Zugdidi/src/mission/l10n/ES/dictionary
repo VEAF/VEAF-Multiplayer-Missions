@@ -1,0 +1,61 @@
+dictionary = 
+{
+    ["DictKey_ActionText_10"] = "Train with Buk SAM inbound - ETA 7 Minutes",
+    ["DictKey_subtitle_31"] = "Vuelo Dodge, Base Zugdidi: Estamos bajo fuego directo [ESTÁTICA]... siendo invadidos.  FARP Dallas está cerrado. Desvíen a Senaki AB.",
+    ["DictKey_ActionComment_34"] = "",
+    ["DictKey_ActionText_40"] = "All the BMPs have been destroyed.\
+Go restock and let's protect this base !",
+    ["DictKey_ActionText_18"] = "Abkhaz Buk SAM is OOC!",
+    ["DictKey_ActionText_35"] = "Inguri River Highway Bridge",
+    ["DictKey_ActionText_39"] = "Mission is GO !",
+    ["DictKey_sortie_5"] = "Cáucaso: La batalla por Zugdidi",
+    ["DictKey_ActionText_41"] = "BMP sighted near the river, east of the RR bridge !",
+    ["DictKey_subtitle_27"] = "Vuelo Dodge, Base de Zugdidi: BMPs enemigos avistados cruzando el río Inguri cerca del extremo norte de la isla de Shamgona.",
+    ["DictKey_ActionText_14"] = "Abkhaz Buk SAM is OOC!",
+    ["DictKey_descriptionRedTask_2"] = "",
+    ["DictKey_ActionText_16"] = "Abkhaz Buk SAM is OOC!",
+    ["DictKey_ActionComment_36"] = "",
+    ["DictKey_descriptionBlueTask_3"] = "Eres GUNSHIP 54, el jefe de vuelo de un par de Mi-24P georgianos desplegados en la base de Zugdidi. Estáis armados con 8 ATGMs y dos cañones GUV-8700. Su copiloto está armado con 8 ATGM y 40 cohetes S-8OFP2.\
+\
+Según la información más reciente disponible, el tren que transporta los Buk SAM se dirige a la frontera. Probablemente se dirigirá a los restos del puente ferroviario que anteriormente cruzaba el río Inguri (destruido en la guerra de 2008), y desplegará el SAM en esa zona. Encontrar y destruir el Buk SAM es su primera prioridad.\
+\
+Mientras tanto, el ejército abjasio está convergiendo en Zugdidi con dos fuerzas, para atrapar la ciudad en una maniobra de pinza. Una columna de tanques se dirige a cruzar el río por el puente de Inguri, en la carretera entre Zugdidi y Gali. Una fuerza de BMP se dirige a un cruce anfibio del río más al sur. \
+\
+Un grupo de tanques y APC del ejército georgiano se dirige a Zugdidi, pero no llegará hasta dentro de unas horas. Mientras tanto, sus Mi-24 y la pequeña guarnición de Zugdidi son la única defensa de la ciudad asediada.\
+\
+Comunicaciones:\
+Mando Táctico / FARP - 129,50 MHz; R863 CH-0\
+    - Indicativo FARP \"Dallas\"\
+    - Mando Táctico - \"Base Zugdidi\"\
+    - Indicativo Mi-24P \"Dodge 5-1; Dodge 5-2\"\
+    - Indicativo Mi-8 \"Chevy 8-1\"\
+Senaki AB - 132.00 MHz; R863 CH-15\
+(Senaki NDB 688 kHz; \"B\")\
+\
+Lista de comprobación previa al vuelo:\
+    - Comenzar el calentamiento de los sistemas de armas\
+    - Poner el RWR en ON; Sonido RWR en ON\
+    - Contramedidas - EN AMBOS LADOS ON\
+    (Set I es Chaff; Sets II, III son Bengalas)\
+    - Luces de navegación, luces de punta de rotor apagadas",
+    ["DictKey_subtitle_25"] = "Vuelo Dodge, Base de Zugdidi: Contacto blindado enemigo. Puente de la carretera del río Inguri. Al menos 4 tanques T-72. Comunicaciones perdidas con el punto de control fronterizo.",
+    ["DictKey_ActionComment_38"] = "",
+    ["DictKey_subtitle_23"] = "Vuelo Dodge, Base Zugdidi: Los puestos de observación informan de vehículos Buk muy dañados o destruidos. SAM fuera de servicio. Cambie de objetivos para atacar a las fuerzas blindadas de Abjasia.",
+    ["DictKey_ActionText_33"] = "Destroyed RR Bridge spans",
+    ["DictKey_ActionText_6"] = "Train In Zone",
+    ["DictKey_descriptionText_1"] = "La \"disputa del río Inguri\" entre Georgia y Abjasia ha llegado a un punto álgido. Tras la retirada de las fuerzas rusas de mantenimiento de la paz de la frontera el año pasado, han aumentado los incidentes violentos. Los responsables de estos actos hostiles son los insurgentes apoyados por Abjasia que operan en la zona de Zugdidi. La insurgencia ha reclamado Zugdidi dividida aproximadamente por la mitad, a la altura del río Chkhoushi; los abjasios controlarían la mitad noroeste y Georgia mantendría la soberanía sobre el resto de la ciudad. \
+\
+Tbilisi ha respondido reabriendo una instalación militar de la época soviética en Zugdidi y la está utilizando como base para operaciones de contrainsurgencia (COIN). Además de las tropas especiales de contrainsurgencia, los blindados ligeros y los helicópteros de apoyo a la movilidad aérea, se han desplegado en la \"Base de Zugdidi\" un par de helicópteros de combate Mi-24P.\
+\
+Sukhumi ha denunciado estos despliegues y ha declarado que el área alrededor de Zugdidi debería ser una Zona de No Vuelo (NFZ), afirmando que \"¡Las fuerzas armadas abjasias están preparadas para imponer esta NFZ!\"\
+\
+Desde ayer, los servicios de inteligencia, suministrados a Tbilisi por naciones occidentales amigas, revelaron la existencia de una batería SAM BUK abjasia en un depósito de trenes militares cerca de Sukhumi, a menos de una hora de viaje en tren hasta la zona de conflicto. Cuando se despliegue, su Zona de Enfrentamiento de Misiles (MEZ) cubrirá todo Zugdidi, estableciendo efectivamente una NFZ. Además, el grueso de las fuerzas blindadas más capaces de Abjasia -5 de sus 9 tanques T-72 y varios BMP-2- han sido vistos trasladándose a zonas de concentración táctica cerca de la frontera. Evidentemente, una vez que el Buk SAM esté instalado y proporcione un rechazo aéreo local sobre Zugdidi, el ejército abjaso atacará para capturar la ciudad.\
+",
+    ["DictKey_descriptionNeutralsTask_4"] = "",
+    ["DictKey_ActionText_9"] = "Train B Go",
+    ["DictKey_subtitle_19"] = "Vuelo Dodge, base de Zugdidi:  Tren SAM avistado cerca de las ruinas del puente ferroviario, en el lado abjaso del río Inguri. Vehículos Buk descargando y saliendo.",
+    ["DictKey_ActionText_11"] = "Train with Buk SAM inbound - ETA 5 Minutes",
+    ["DictKey_ActionText_8"] = "Train A Go",
+    ["DictKey_ActionText_37"] = "Abkhaz Army Garrison - Gali",
+    ["DictKey_subtitle_29"] = "Vuelo Dodge, Base de Zugdidi: Columnas enemigas entrando en la ciudad de Zugdidi.",
+} -- end of dictionary

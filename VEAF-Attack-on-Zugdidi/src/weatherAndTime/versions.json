@@ -1,0 +1,29 @@
+{
+  "variableForMetar": "METAR",
+  "moments": [
+    {
+      "night" : 7200,
+      "dawn" : 19800,
+      "morning" : 23400,
+      "day" : 54000,
+      "evening" : 68400
+    }
+  ],
+  "targets": [
+    {
+      "version": "morning-scattered",
+      "weatherfile": "scattered-1.lua",
+      "moment": "morning"
+    },
+    {
+      "version": "morning-overcast-rain",
+      "weatherfile": "overcast-rain-1.lua",
+      "moment": "morning"
+    },
+    {
+      "version": "evening-scattered",
+      "weatherfile": "scattered-1.lua",
+      "moment": "evening"
+    }
+  ]
+}
