@@ -17021,7 +17021,7 @@ mission = {
             [13] = 47,
         }, -- end of ["red"]
     }, -- end of ["coalitions"]
-    ["currentKey"] = 179804,
+    ["currentKey"] = 180945,
     ["customFormations"] = {
         [1] = {
             ["name"] = "ABK SA-11 Field Deployed",
@@ -23311,14 +23311,14 @@ mission = {
         ["isPilotControlVehicles"] = true,
         ["roles"] = {
             ["artillery_commander"] = {
-                ["blue"] = 0,
+                ["blue"] = 2,
                 ["neutrals"] = 0,
-                ["red"] = 0,
+                ["red"] = 2,
             }, -- end of ["artillery_commander"]
             ["forward_observer"] = {
-                ["blue"] = 0,
+                ["blue"] = 2,
                 ["neutrals"] = 0,
-                ["red"] = 0,
+                ["red"] = 2,
             }, -- end of ["forward_observer"]
             ["instructor"] = {
                 ["blue"] = 2,
@@ -23326,9 +23326,9 @@ mission = {
                 ["red"] = 2,
             }, -- end of ["instructor"]
             ["observer"] = {
-                ["blue"] = 0,
+                ["blue"] = 10,
                 ["neutrals"] = 0,
-                ["red"] = 0,
+                ["red"] = 10,
             }, -- end of ["observer"]
         }, -- end of ["roles"]
     }, -- end of ["groundControl"]

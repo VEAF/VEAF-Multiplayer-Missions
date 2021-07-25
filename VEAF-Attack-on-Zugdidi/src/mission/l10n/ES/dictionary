@@ -5,16 +5,16 @@ dictionary =
     ["DictKey_ActionComment_34"] = "",
     ["DictKey_ActionText_40"] = "All the BMPs have been destroyed.\
 Go restock and let's protect this base !",
-    ["DictKey_ActionText_18"] = "Abkhaz Buk SAM is OOC!",
+    ["DictKey_ActionComment_36"] = "",
     ["DictKey_ActionText_35"] = "Inguri River Highway Bridge",
     ["DictKey_ActionText_39"] = "Mission is GO !",
     ["DictKey_sortie_5"] = "Cáucaso: La batalla por Zugdidi",
-    ["DictKey_ActionText_41"] = "BMP sighted near the river, east of the RR bridge !",
+    ["DictKey_ActionText_16"] = "Abkhaz Buk SAM is OOC!",
     ["DictKey_subtitle_27"] = "Vuelo Dodge, Base de Zugdidi: BMPs enemigos avistados cruzando el río Inguri cerca del extremo norte de la isla de Shamgona.",
     ["DictKey_ActionText_14"] = "Abkhaz Buk SAM is OOC!",
     ["DictKey_descriptionRedTask_2"] = "",
-    ["DictKey_ActionText_16"] = "Abkhaz Buk SAM is OOC!",
-    ["DictKey_ActionComment_36"] = "",
+    ["DictKey_ActionText_41"] = "BMP sighted near the river, east of the RR bridge !",
+    ["DictKey_ActionText_18"] = "Abkhaz Buk SAM is OOC!",
     ["DictKey_descriptionBlueTask_3"] = "Eres GUNSHIP 54, el jefe de vuelo de un par de Mi-24P georgianos desplegados en la base de Zugdidi. Estáis armados con 8 ATGMs y dos cañones GUV-8700. Su copiloto está armado con 8 ATGM y 40 cohetes S-8OFP2.\
 \
 Según la información más reciente disponible, el tren que transporta los Buk SAM se dirige a la frontera. Probablemente se dirigirá a los restos del puente ferroviario que anteriormente cruzaba el río Inguri (destruido en la guerra de 2008), y desplegará el SAM en esa zona. Encontrar y destruir el Buk SAM es su primera prioridad.\
