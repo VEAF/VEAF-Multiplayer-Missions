@@ -138,8 +138,12 @@ rd /s /q .\build >nul 2>&1
 mkdir .\build >nul 2>&1
 
 IF ["%NPM_UPDATE%"] == [""] GOTO DontNPM_UPDATE
-echo fetch the veaf-mission-creation-tools package
-call yarn install
+echo fetching the veaf-mission-creation-tools package
+if exist yarn.lock (
+	call yarn upgrade
+) else (
+	call yarn install
+)
 goto DoNPM_UPDATE
 :DontNPM_UPDATE
 echo skipping npm update

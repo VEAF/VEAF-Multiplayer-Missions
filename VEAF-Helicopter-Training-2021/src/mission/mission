@@ -4626,7 +4626,7 @@ mission = {
                                 ["groupId"] = 31,
                                 ["heading"] = 0,
                                 ["linkOffset"] = false,
-                                ["name"] = "logistic1",
+                                ["name"] = "logistic #001",
                                 ["route"] = {
                                     ["points"] = {
                                         [1] = {
@@ -4646,7 +4646,7 @@ mission = {
                                         ["category"] = "Fortifications",
                                         ["heading"] = 0,
                                         ["livery_id"] = "GRC_autumn",
-                                        ["name"] = "logistic1",
+                                        ["name"] = "logistic #001",
                                         ["rate"] = 50,
                                         ["shape_name"] = "SetkaKP",
                                         ["type"] = "FARP Ammo Dump Coating",
@@ -18001,7 +18001,7 @@ mission = {
                     [4] = 0.15,
                 }, -- end of ["color"]
                 ["hidden"] = false,
-                ["name"] = "pickzone1",
+                ["name"] = "pickzone #001",
                 ["properties"] = {
                 }, -- end of ["properties"]
                 ["radius"] = 381,

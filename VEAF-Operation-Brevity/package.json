@@ -3,6 +3,6 @@
   "version": "1.0.0",
   "description": "DCS mission with VEAF scripting",
   "dependencies": {
-    "veaf-mission-creation-tools": "^3.0.0"
+    "veaf-mission-creation-tools": "^4.0.0"
   }
 }
