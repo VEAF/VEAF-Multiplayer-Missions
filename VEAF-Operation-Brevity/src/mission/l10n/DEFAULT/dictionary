@@ -1,17 +1,18 @@
 dictionary = {
     ["DictKey_ActionComment_258"] = "DictKey_ActionComment_258",
-    ["DictKey_ActionText_10501"] = "return false -- set to true for dynamic loading",
+    ["DictKey_ActionText_10501"] = "return false -- scripts",
+    ["DictKey_ActionText_10502"] = "return false -- config",
     ["DictKey_ActionText_10601"] = "return VEAF_DYNAMIC_PATH~=nil",
     ["DictKey_ActionText_107"] = "Attention! L équipe de récupération sera sur site d ici 15m.",
     ["DictKey_ActionText_10701"] = "return VEAF_DYNAMIC_PATH==nil",
     ["DictKey_ActionText_108"] = "Equipe de récupération sur site.\
 Début de l exfiltration.\
 Temps estimé: 3m",
-    ["DictKey_ActionText_10801"] = "return VEAF_DYNAMIC_PATH~=nil",
+    ["DictKey_ActionText_10801"] = "return VEAF_DYNAMIC_MISSIONPATH~=nil",
     ["DictKey_ActionText_109"] = "Exfiltration terminée.\
 L équipe de récupération quitte la zone du crash.\
 Maintenez la couverture aérienne.",
-    ["DictKey_ActionText_10901"] = "return VEAF_DYNAMIC_PATH==nil",
+    ["DictKey_ActionText_10901"] = "return VEAF_DYNAMIC_MISSIONPATH==nil",
     ["DictKey_ActionText_252"] = "L équipe de sauvetage a été abattue.\
 Mission de protection échouée.",
     ["DictKey_ActionText_253"] = "On nous signale le décollage de plusieurs hélicoptères Russe de Kislovodsk.",
@@ -27,18 +28,23 @@ Mission de protection de l équipe de sauvetage accomplie.",
     ["DictKey_ActionText_264"] = "On nous rapporte le décollage d un hélicoptere a Solonoe, la bombe est dedans, abattez le immediatement ou la mission sera un echec. ",
     ["DictKey_ActionText_265"] = "L helico est hors de portée, la mission de neutralisation de la bombe est un échec.",
     ["DictKey_ActionText_266"] = "L hélico a été détruit, mission accomplie.",
-    ["DictKey_descriptionBlueTask_3"] = "Le Uh doit survivre",
+    ["DictKey_ActionText_267"] = "Le Radar de recherche du Sa10 à été neutralisé.",
+    ["DictKey_descriptionBlueTask_3"] = "Deux objectifs : Trouver les convois et les détruire. Ou trouver celui contenant la bombe directement.\
+Assurer la protection de l’équipe d’exfiltration.",
     ["DictKey_descriptionNeutralsTask_4"] = "",
     ["DictKey_descriptionRedTask_2"] = "",
-    ["DictKey_descriptionText_1"] = "Protection de l équipe de récupération\
+    ["DictKey_descriptionText_1"] = "Freqs plan:\
 \
+Sochi: 256 Am \
+Gudauta: 259 Am\
+Sukhumi: 258 Am\
+Senaki: 261 Am-----31x\
+Kutaisi: 263 Am-----44x\
+Kobuleti: 262 Am----67x\
+Batumi: 260 Am------16x\
 \
-Awacs 282 Am\
-Gudauta 259 Am\
-Sukumi  258 Am\
-\
-\
-\
+Awacs: 282.2 Am\
+Arco: 290.5 Am--------64y\
 ",
     ["DictKey_sortie_5"] = "Shadow's Dawn",
 } -- end of dictionary
