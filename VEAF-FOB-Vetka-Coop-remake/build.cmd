@@ -219,6 +219,9 @@ powershell -File replace.ps1 .\build\tempsrc\mission "\[\"A-4E-C\"\] = \"A-4E-C\
 rem -- disable the T-45 module requirement
 powershell -File replace.ps1 .\build\tempsrc\mission "\[\"T-45\"\] = \"T-45\"," " " >nul 2>&1
 
+rem -- disable the AM2 module requirement
+powershell -File replace.ps1 .\build\tempsrc\mission "\[\"AM2\"\] = \"AM2\"," " " >nul 2>&1
+
 rem -- copy the documentation images to the kneeboard
 xcopy /y /e doc\*.jpg .\build\tempsrc\KNEEBOARD\IMAGES\ >nul 2>&1
 

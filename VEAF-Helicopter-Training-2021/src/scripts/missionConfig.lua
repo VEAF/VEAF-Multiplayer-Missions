@@ -210,7 +210,6 @@ if veafNamedPoints then
     veaf.loggers.get(veaf.Id):info("Loading configuration")
 
     veaf.loggers.get(veaf.Id):info("init - veafNamedPoints")
-    veafNamedPoints.initialize()
     if theatre == "syria" then
         veafNamedPoints.Points = {
             -- Turkish Airports
@@ -320,6 +319,7 @@ if veafNamedPoints then
     --table.insert(veafNamedPoints.Points,
     --    {name="RANGE KhalKhalah",point=coord.LLtoLO("33.036180", "37.196608")},
     --)
+    veafNamedPoints.initialize()
 end
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -327,6 +327,7 @@ end
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 if veafSecurity then
     --let's not set a password
+    veaf.SecurityDisabled = true
     --veafSecurity.password_L9["SHA1 hash of the password"] = true -- set the L9 password (the lowest possible security)
     veaf.loggers.get(veaf.Id):info("Loading configuration")
     veaf.loggers.get(veaf.Id):info("init - veafSecurity")
@@ -340,7 +341,7 @@ if veafSecurity then
 end
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
--- configure CARRIER OPERATIONS 
+-- configure CARRIER OPERATIONS
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 if veafCarrierOperations then
     veaf.loggers.get(veaf.Id):info("init - veafCarrierOperations")
@@ -379,7 +380,7 @@ end
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- initialize veafSanctuary
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
-if veafSanctuary then
+if veafSanctuary and false then -- don't use 
     veaf.loggers.get(veaf.Id):info("init - veafSanctuary")
     veafSanctuary.initialize()
 end
@@ -413,3 +414,6 @@ if veafHoundElint and false then -- don't use Hound Elint
         }
     )
 end
+
+-- Silence ATC on all the airdromes
+veaf.silenceAtcOnAllAirbases()

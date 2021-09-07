@@ -7,4 +7,5 @@ cache/
 
 configuration.json
 
-build-zip.cmd
+build-*.cmd
+init-*.cmd
