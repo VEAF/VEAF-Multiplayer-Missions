@@ -9,3 +9,4 @@ configuration.json
 
 build-*.cmd
 init-*.cmd
+extract-*.cmd
