@@ -1,4 +1,4 @@
-rem @echo off
+@echo off
 set MISSION_NAME=Crisis-in-PG-Warthog
 set MISSION_NUMBER=%1
 echo.

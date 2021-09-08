@@ -1,23 +1,12 @@
-@echo off
+rem @echo off
 set MISSION_NAME=Crisis-in-PG-Warthog
+set MISSION_NUMBER=%1
 echo.
 echo ----------------------------------------
-echo extracting %MISSION_NAME%
+echo extracting %MISSION_NAME%, mission %MISSION_NUMBER%
 echo ----------------------------------------
 echo.
 
-echo ----------------------------------------
-echo MISSION_NUMBER : set to the mission number (in the missions\ folder)
-echo defaults to this script's first parameter, or "1"
-IF [%MISSION_NUMBER%] == [] GOTO DefineDefaultMISSION_NUMBER
-goto DontDefineDefaultMISSION_NUMBER
-:DefineDefaultMISSION_NUMBER
-set MISSION_NUMBER=%1
-IF [%MISSION_NUMBER%] == [] (
-	set MISSION_NUMBER=1
-)
-:DontDefineDefault
-echo current value is "%MISSION_NUMBER%"
 
 rem -- default options values
 echo This script can use these environment variables to customize its behavior :
@@ -87,7 +76,8 @@ echo defaults this folder
 IF ["%DYNAMIC_MISSION_PATH%"] == [""] GOTO DefineDefaultDYNAMIC_MISSION_PATH
 goto DontDefineDefaultDYNAMIC_MISSION_PATH
 :DefineDefaultDYNAMIC_MISSION_PATH
-set DYNAMIC_MISSION_PATH=%~dp0
+set BASE_PATH=%~dp0
+set DYNAMIC_MISSION_PATH=%BASE_PATH%missions\%MISSION_NUMBER%
 :DontDefineDefaultDYNAMIC_MISSION_PATH
 echo current value is "%DYNAMIC_MISSION_PATH%"
 
@@ -98,7 +88,6 @@ IF ["%DYNAMIC_SCRIPTS_PATH%"] == [""] GOTO DefineDefaultDYNAMIC_SCRIPTS_PATH
 goto DontDefineDefaultDYNAMIC_SCRIPTS_PATH
 :DefineDefaultDYNAMIC_SCRIPTS_PATH
 set DYNAMIC_SCRIPTS_PATH=%~dp0node_modules\veaf-mission-creation-tools\
-set NPM_UPDATE=true
 :DontDefineDefaultDYNAMIC_SCRIPTS_PATH
 echo current value is "%DYNAMIC_SCRIPTS_PATH%"
 
@@ -113,23 +102,25 @@ set DYNAMIC_LOAD_SCRIPTS=false
 echo current value is "%DYNAMIC_LOAD_SCRIPTS%"
 
 echo.
-IF ["%NPM_UPDATE%"] == [""] GOTO DontNPM_UPDATE
-echo fetching the veaf-mission-creation-tools package
-if exist yarn.lock (
-	call yarn upgrade
+
+IF ["%NPM_UPDATE%"] == ["false"] (
+	echo skipping npm update
 ) else (
-	call yarn install
+	echo fetching the veaf-mission-creation-tools package
+	if exist yarn.lock (
+		call yarn upgrade
+	) else (
+		call yarn install
+	)
 )
-goto DoNPM_UPDATE
-:DontNPM_UPDATE
-echo skipping npm update
-:DoNPM_UPDATE
 
 set MISSION_SRC_FOLDER=%DYNAMIC_MISSION_PATH%\src
 
 rem extracting MIZ files
 echo extracting MIZ files
 set MISSION_PATH=%MISSION_SRC_FOLDER%\mission
+echo MISSION_PATH=%MISSION_PATH%
+
 "%SEVENZIP%" x -y *%MISSION_NAME%*.miz -o"%MISSION_PATH%\"
 
 rem -- set the loading to static in the mission file
@@ -182,7 +173,7 @@ pushd node_modules\veaf-mission-creation-tools\src\scripts\veaf
 popd
 pause
 rem -- cleanup
-del *%MISSION_NAME%*.miz
+rem del *%MISSION_NAME%*.miz
 
 echo.
 echo ----------------------------------------
