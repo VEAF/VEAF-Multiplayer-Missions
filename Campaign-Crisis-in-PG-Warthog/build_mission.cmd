@@ -1,23 +1,12 @@
-@echo off
+rem @echo off
 set MISSION_NAME=Crisis-in-PG-Warthog
+set MISSION_NUMBER=%1
 echo.
 echo ----------------------------------------
-echo building %MISSION_NAME%
+echo building %MISSION_NAME%, mission %MISSION_NUMBER%
 echo ----------------------------------------
 echo.
 
-echo ----------------------------------------
-echo MISSION_NUMBER : set to the mission number (in the missions\ folder)
-echo defaults to this script's first parameter, or "1"
-IF [%MISSION_NUMBER%] == [] GOTO DefineDefaultMISSION_NUMBER
-goto DontDefineDefaultMISSION_NUMBER
-:DefineDefaultMISSION_NUMBER
-set MISSION_NUMBER=%1
-IF [%MISSION_NUMBER%] == [] (
-	set MISSION_NUMBER=1
-)
-:DontDefineDefault
-echo current value is "%MISSION_NUMBER%"
 
 rem -- default options values
 echo This script can use these environment variables to customize its behavior :
@@ -87,7 +76,8 @@ echo defaults this folder
 IF ["%DYNAMIC_MISSION_PATH%"] == [""] GOTO DefineDefaultDYNAMIC_MISSION_PATH
 goto DontDefineDefaultDYNAMIC_MISSION_PATH
 :DefineDefaultDYNAMIC_MISSION_PATH
-set DYNAMIC_MISSION_PATH=%~dp0
+set BASE_PATH=%~dp0
+set DYNAMIC_MISSION_PATH=%BASE_PATH%missions\%MISSION_NUMBER%
 :DontDefineDefaultDYNAMIC_MISSION_PATH
 echo current value is "%DYNAMIC_MISSION_PATH%"
 
@@ -98,7 +88,6 @@ IF ["%DYNAMIC_SCRIPTS_PATH%"] == [""] GOTO DefineDefaultDYNAMIC_SCRIPTS_PATH
 goto DontDefineDefaultDYNAMIC_SCRIPTS_PATH
 :DefineDefaultDYNAMIC_SCRIPTS_PATH
 set DYNAMIC_SCRIPTS_PATH=%~dp0node_modules\veaf-mission-creation-tools\
-set NPM_UPDATE=true
 :DontDefineDefaultDYNAMIC_SCRIPTS_PATH
 echo current value is "%DYNAMIC_SCRIPTS_PATH%"
 
@@ -115,11 +104,7 @@ echo current value is "%DYNAMIC_LOAD_SCRIPTS%"
 echo ----------------------------------------
 echo MISSION_FILE_SUFFIX1 (a string) will be appended to the mission file name to make it more unique
 echo defaults to the mission number
-IF [%MISSION_FILE_SUFFIX1%] == [] GOTO DefineDefaultMISSION_FILE_SUFFIX1
-goto DontDefineDefaultMISSION_FILE_SUFFIX1
-:DefineDefaultMISSION_FILE_SUFFIX1
 set MISSION_FILE_SUFFIX1=mission%MISSION_NUMBER%
-:DontDefineDefaultMISSION_FILE_SUFFIX1
 echo current value is "%MISSION_FILE_SUFFIX1%"
 
 echo ----------------------------------------
@@ -136,67 +121,66 @@ echo current value is "%MISSION_FILE_SUFFIX2%"
 echo ----------------------------------------
 
 IF [%MISSION_FILE_SUFFIX1%] == [] GOTO DontUseSuffix1
-set MISSION_FILE=.\build\%MISSION_NAME%_%MISSION_FILE_SUFFIX1%_%MISSION_FILE_SUFFIX2%
+set MISSION_FILE=%BASE_PATH%\build\%MISSION_NAME%_%MISSION_FILE_SUFFIX1%_%MISSION_FILE_SUFFIX2%
 goto EndOfSuffix1
 :DontUseSuffix1
-set MISSION_FILE=.\build\%MISSION_NAME%_%MISSION_FILE_SUFFIX2%
+set MISSION_FILE=%BASE_PATH%\build\%MISSION_NAME%_%MISSION_FILE_SUFFIX2%
 :EndOfSuffix1
-
-echo.
-echo Building %MISSION_FILE%.miz
-
-echo.
-echo prepare the folders
-rd /s /q .\build >nul 2>&1
-mkdir .\build >nul 2>&1
-
-IF ["%NPM_UPDATE%"] == [""] GOTO DontNPM_UPDATE
-echo fetching the veaf-mission-creation-tools package
-if exist yarn.lock (
-	call yarn upgrade
-) else (
-	call yarn install
-)
-goto DoNPM_UPDATE
-:DontNPM_UPDATE
-echo skipping npm update
-:DoNPM_UPDATE
 
 set MISSION_SRC_FOLDER=%DYNAMIC_MISSION_PATH%\src
 
 echo.
+echo Building %MISSION_FILE%.miz from %DYNAMIC_MISSION_PATH%
+
+echo.
+echo prepare the folders
+rd /s /q %BASE_PATH%\build >nul 2>&1
+mkdir %BASE_PATH%\build >nul 2>&1
+
+IF ["%NPM_UPDATE%"] == ["false"] (
+	echo skipping npm update
+) else (
+	echo fetching the veaf-mission-creation-tools package
+	if exist yarn.lock (
+		call yarn upgrade
+	) else (
+		call yarn install
+	)
+)
+
+echo.
 echo prepare the veaf-mission-creation-tools scripts
 rem -- copy the scripts folder
-xcopy /s /y /e %DYNAMIC_SCRIPTS_PATH%\src\scripts\* .\build\tempscripts\ >nul 2>&1
+xcopy /s /y /e %DYNAMIC_SCRIPTS_PATH%\src\scripts\* %BASE_PATH%\build\tempscripts\ >nul 2>&1
 
 rem -- set the flags in the scripts according to the options
 echo set the flags in the scripts according to the options
-powershell -File replace.ps1 .\build\tempscripts\veaf\veaf.lua "veaf.Development = (true|false)" "veaf.Development = %VERBOSE_LOG_FLAG%" >nul 2>&1
-powershell -File replace.ps1 .\build\tempscripts\veaf\veaf.lua "veaf.SecurityDisabled = (true|false)" "veaf.SecurityDisabled = %SECURITY_DISABLED_FLAG%" >nul 2>&1
+powershell -File replace.ps1 %BASE_PATH%\build\tempscripts\veaf\veaf.lua "veaf.Development = (true|false)" "veaf.Development = %VERBOSE_LOG_FLAG%" >nul 2>&1
+powershell -File replace.ps1 %BASE_PATH%\build\tempscripts\veaf\veaf.lua "veaf.SecurityDisabled = (true|false)" "veaf.SecurityDisabled = %SECURITY_DISABLED_FLAG%" >nul 2>&1
 
 if %VERBOSE_LOG_FLAG%==false (
 	rem -- comment all the trace and debug code
 	echo comment all the trace and debug code
-	FOR %%f IN (.\build\tempscripts\veaf\*.lua) DO powershell -File replace.ps1 %%f "(^\s*)(.*veaf\.loggers.get\(.*\):(trace|debug|marker|cleanupMarkers))" "$1--$2" >nul 2>&1
+	FOR %%f IN (%BASE_PATH%\build\tempscripts\veaf\*.lua) DO powershell -File replace.ps1 %%f "(^\s*)(.*veaf\.loggers.get\(.*\):(trace|debug|marker|cleanupMarkers))" "$1--$2" >nul 2>&1
 )
 
 echo building the mission
 rem -- copy all the source mission files and mission-specific scripts
-xcopy /y /e %MISSION_SRC_FOLDER%\mission .\build\tempsrc\ >nul 2>&1
-xcopy /y %MISSION_SRC_FOLDER%\options .\build\tempsrc\  >nul 2>&1
-xcopy /y /e %MISSION_SRC_FOLDER%\scripts\*.lua .\build\tempsrc\l10n\Default\  >nul 2>&1
+xcopy /y /e %DYNAMIC_MISSION_PATH%\src\mission %BASE_PATH%\build\tempsrc\ >nul 2>&1
+xcopy /y %DYNAMIC_MISSION_PATH%\src\options %BASE_PATH%\build\tempsrc\  >nul 2>&1
+xcopy /y /e %DYNAMIC_MISSION_PATH%\src\scripts\*.lua %BASE_PATH%\build\tempsrc\l10n\Default\  >nul 2>&1
 
 rem -- set the radio presets according to the settings file
 echo set the radio presets according to the settings file
 pushd %DYNAMIC_SCRIPTS_PATH%\src\scripts\veaf
-"%LUA%" veafMissionRadioPresetsEditor.lua  %DYNAMIC_MISSION_PATH%\build\tempsrc %MISSION_SRC_FOLDER%\radio\radioSettings.lua %LUA_SCRIPTS_DEBUG_PARAMETER%
+"%LUA%" veafMissionRadioPresetsEditor.lua  %BASE_PATH%\build\tempsrc %DYNAMIC_MISSION_PATH%\src\radio\radioSettings.lua %LUA_SCRIPTS_DEBUG_PARAMETER%
 popd
 
 rem -- set the waypoints according to the settings file
 if exist %DYNAMIC_MISSION_PATH%\src\waypoints\waypointsSettings.lua (
 	echo set the waypoints according to the settings file
 	pushd %DYNAMIC_SCRIPTS_PATH%\src\scripts\veaf
-	"%LUA%" veafMissionFlightPlanEditor.lua  %DYNAMIC_MISSION_PATH%\build\tempsrc %MISSION_SRC_FOLDER%\waypoints\waypointsSettings.lua %LUA_SCRIPTS_DEBUG_PARAMETER%
+	"%LUA%" veafMissionFlightPlanEditor.lua  %BASE_PATH%\build\tempsrc %DYNAMIC_MISSION_PATH%\src\waypoints\waypointsSettings.lua %LUA_SCRIPTS_DEBUG_PARAMETER%
 	popd
 )
 
@@ -204,62 +188,62 @@ rem -- set the spawnable aircrafts according to the settings file
 if exist %DYNAMIC_MISSION_PATH%\src\spawnableAircrafts\settings.lua (
 	echo set the spawnable aircrafts according to the settings file
 	pushd %DYNAMIC_SCRIPTS_PATH%\src\scripts\veaf
-	"%LUA%" veafSpawnableAircraftsEditor.lua  %DYNAMIC_MISSION_PATH%\build\tempsrc %MISSION_SRC_FOLDER%\spawnableAircrafts\settings.lua %LUA_SCRIPTS_DEBUG_PARAMETER%
+	"%LUA%" veafSpawnableAircraftsEditor.lua  %BASE_PATH%\build\tempsrc %DYNAMIC_MISSION_PATH%\src\spawnableAircrafts\settings.lua %LUA_SCRIPTS_DEBUG_PARAMETER%
 	popd
 )
 
 rem -- set the dynamic load variables in the dictionary
 echo set the dynamic load variables in the dictionary
-powershell -Command "$temp='VEAF_DYNAMIC_PATH = [[' + [regex]::escape('%DYNAMIC_SCRIPTS_PATH%') + ']]'; (gc .\build\tempsrc\mission) -replace 'VEAF_DYNAMIC_PATH(\s*)=(\s*)\[\[.*\]\]', $temp | sc .\build\tempsrc\mission" >nul 2>&1
-powershell -Command "$temp='VEAF_DYNAMIC_MISSIONPATH = [[' + [regex]::escape('%DYNAMIC_MISSION_PATH%') + ']]'; (gc .\build\tempsrc\mission) -replace 'VEAF_DYNAMIC_MISSIONPATH(\s*)=(\s*)\[\[.*\]\]', $temp | sc .\build\tempsrc\mission" >nul 2>&1
+powershell -Command "$temp='VEAF_DYNAMIC_PATH = [[' + [regex]::escape('%DYNAMIC_SCRIPTS_PATH%') + ']]'; (gc %BASE_PATH%\build\tempsrc\mission) -replace 'VEAF_DYNAMIC_PATH(\s*)=(\s*)\[\[.*\]\]', $temp | sc %BASE_PATH%\build\tempsrc\mission" >nul 2>&1
+powershell -Command "$temp='VEAF_DYNAMIC_MISSIONPATH = [[' + [regex]::escape('%DYNAMIC_MISSION_PATH%') + ']]'; (gc %BASE_PATH%\build\tempsrc\mission) -replace 'VEAF_DYNAMIC_MISSIONPATH(\s*)=(\s*)\[\[.*\]\]', $temp | sc %BASE_PATH%\build\tempsrc\mission" >nul 2>&1
 
 if %DYNAMIC_LOAD_SCRIPTS%==true (
 	rem -- set the loading to dynamic in the mission file
 	echo set the loading to dynamic in the mission file
-	powershell -Command "(gc '.\build\tempsrc\l10n\Default\dictionary') -replace 'return(\s*[^\s]+\s*)-- scripts', 'return true -- scripts' | sc '.\build\tempsrc\l10n\Default\dictionary'"
-	powershell -Command "(gc '.\build\tempsrc\l10n\Default\dictionary') -replace 'return(\s*[^\s]+\s*)-- config', 'return true -- config' | sc '.\build\tempsrc\l10n\Default\dictionary'"
+	powershell -Command "(gc '%BASE_PATH%\build\tempsrc\l10n\Default\dictionary') -replace 'return(\s*[^\s]+\s*)-- scripts', 'return true -- scripts' | sc '%BASE_PATH%\build\tempsrc\l10n\Default\dictionary'"
+	powershell -Command "(gc '%BASE_PATH%\build\tempsrc\l10n\Default\dictionary') -replace 'return(\s*[^\s]+\s*)-- config', 'return true -- config' | sc '%BASE_PATH%\build\tempsrc\l10n\Default\dictionary'"
 ) else (
 	rem -- set the loading to static in the mission file
 	echo set the loading to static in the mission file
-	powershell -Command "(gc '.\build\tempsrc\l10n\Default\dictionary') -replace 'return(\s*[^\s]+\s*)-- scripts', 'return false -- scripts' | sc '.\build\tempsrc\l10n\Default\dictionary'"
-	powershell -Command "(gc '.\build\tempsrc\l10n\Default\dictionary') -replace 'return(\s*[^\s]+\s*)-- config', 'return false -- config' | sc '.\build\tempsrc\l10n\Default\dictionary'"
+	powershell -Command "(gc '%BASE_PATH%\build\tempsrc\l10n\Default\dictionary') -replace 'return(\s*[^\s]+\s*)-- scripts', 'return false -- scripts' | sc '%BASE_PATH%\build\tempsrc\l10n\Default\dictionary'"
+	powershell -Command "(gc '%BASE_PATH%\build\tempsrc\l10n\Default\dictionary') -replace 'return(\s*[^\s]+\s*)-- config', 'return false -- config' | sc '%BASE_PATH%\build\tempsrc\l10n\Default\dictionary'"
 )
 
 rem -- disable the C130 module requirement
-powershell -File replace.ps1 .\build\tempsrc\mission "\[\"Hercules\"\] = \"Hercules\"," " " >nul 2>&1
+powershell -File replace.ps1 %BASE_PATH%\build\tempsrc\mission "\[\"Hercules\"\] = \"Hercules\"," " " >nul 2>&1
 
 rem -- disable the A-4E-C module requirement
-powershell -File replace.ps1 .\build\tempsrc\mission "\[\"A-4E-C\"\] = \"A-4E-C\"," " " >nul 2>&1
+powershell -File replace.ps1 %BASE_PATH%\build\tempsrc\mission "\[\"A-4E-C\"\] = \"A-4E-C\"," " " >nul 2>&1
 
 rem -- disable the T-45 module requirement
-powershell -File replace.ps1 .\build\tempsrc\mission "\[\"T-45\"\] = \"T-45\"," " " >nul 2>&1
+powershell -File replace.ps1 %BASE_PATH%\build\tempsrc\mission "\[\"T-45\"\] = \"T-45\"," " " >nul 2>&1
 
 rem -- disable the AM2 module requirement
-powershell -File replace.ps1 .\build\tempsrc\mission "\[\"AM2\"\] = \"AM2\"," " " >nul 2>&1
+powershell -File replace.ps1 %BASE_PATH%\build\tempsrc\mission "\[\"AM2\"\] = \"AM2\"," " " >nul 2>&1
 
 rem -- copy the documentation images to the kneeboard
-xcopy /y /e doc\*.jpg .\build\tempsrc\KNEEBOARD\IMAGES\ >nul 2>&1
+xcopy /y /e doc\*.jpg %BASE_PATH%\build\tempsrc\KNEEBOARD\IMAGES\ >nul 2>&1
 
 rem -- copy all the community scripts
-copy %MISSION_SRC_FOLDER%\scripts\community\*.lua .\build\tempsrc\l10n\Default  >nul 2>&1
-copy .\build\tempscripts\community\*.lua .\build\tempsrc\l10n\Default >nul 2>&1
+copy %DYNAMIC_MISSION_PATH%\src\scripts\community\*.lua %BASE_PATH%\build\tempsrc\l10n\Default  >nul 2>&1
+copy %BASE_PATH%\build\tempscripts\community\*.lua %BASE_PATH%\build\tempsrc\l10n\Default >nul 2>&1
 
 rem -- copy all the common scripts
-copy .\build\tempscripts\veaf\*.lua .\build\tempsrc\l10n\Default >nul 2>&1
+copy %BASE_PATH%\build\tempscripts\veaf\*.lua %BASE_PATH%\build\tempsrc\l10n\Default >nul 2>&1
 
 rem -- normalize the mission files
 pushd %DYNAMIC_SCRIPTS_PATH%\src\scripts\veaf
-"%LUA%" veafMissionNormalizer.lua %DYNAMIC_MISSION_PATH%\build\tempsrc %LUA_SCRIPTS_DEBUG_PARAMETER%
+"%LUA%" veafMissionNormalizer.lua %BASE_PATH%\build\tempsrc %LUA_SCRIPTS_DEBUG_PARAMETER%
 popd
 
 rem -- compile the mission
-"%SEVENZIP%" a -r -tzip %MISSION_FILE%.miz .\build\tempsrc\* -mem=AES256 >nul 2>&1
+"%SEVENZIP%" a -r -tzip %MISSION_FILE%.miz %BASE_PATH%\build\tempsrc\* -mem=AES256 >nul 2>&1
 
 rem -- cleanup the mission files
-rd /s /q .\build\tempsrc >nul 2>&1
+rd /s /q %BASE_PATH%\build\tempsrc >nul 2>&1
 
 rem -- cleanup the veaf-mission-creation-tools scripts
-rd /s /q .\build\tempscripts >nul 2>&1
+rd /s /q %BASE_PATH%\build\tempscripts >nul 2>&1
 
 rem -- generate the time and weather versions
 IF ["%SKIP_WEATHER%"] == [""] GOTO GenerateWeather
@@ -267,7 +251,7 @@ GOTO DontGenerateWeather
 :GenerateWeather
 echo generate the time and weather versions
 echo ----------------------------------------
-node node_modules\veaf-mission-creation-tools\src\nodejs\app.js injectall --quiet "%MISSION_FILE%.miz" "%MISSION_FILE%-${version}.miz" %MISSION_SRC_FOLDER%\weatherAndTime\versions.json
+node node_modules\veaf-mission-creation-tools\src\nodejs\app.js injectall --quiet "%MISSION_FILE%.miz" "%MISSION_FILE%-${version}.miz" %DYNAMIC_MISSION_PATH%\src\weatherAndTime\versions.json
 :DontGenerateWeather
 
 echo.

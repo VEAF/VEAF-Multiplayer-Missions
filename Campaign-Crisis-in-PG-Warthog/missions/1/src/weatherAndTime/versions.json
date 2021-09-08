@@ -1,0 +1,51 @@
+{
+  "variableForMetar": "METAR",
+  "position": 
+    {
+      "lat": 42.355691,
+      "lon": 43.323853,
+      "tz": "Asia/Tbilisi"
+    },
+  "moments": 
+    {
+      "night" : "02:00",
+      "beforedawn" : "sunrise-90*60",
+      "dawn" : "sunrise-15*60",
+      "morning" : "sunrise+45*60",
+      "day" : "15:00",
+      "beforesunset" : "sunset-90*60",
+      "sunset" : "sunset+15*60"
+    },
+  "targets": [
+    {
+      "version": "dawn-scattered",
+      "weatherfile": "scattered-1.lua",
+      "moment": "dawn"
+    },
+    {
+      "version": "morning-scattered",
+      "weatherfile": "scattered-1.lua",
+      "moment": "morning"
+    },
+    {
+      "version": "morning-overcast-rain",
+      "weatherfile": "overcast-rain-1.lua",
+      "moment": "morning"
+    },
+    {
+      "version": "day-scattered",
+      "weatherfile": "scattered-1.lua",
+      "moment": "day"
+    },
+    {
+      "version": "day-overcast-rain",
+      "weatherfile": "overcast-rain-1.lua",
+      "moment": "day"
+    },
+    {
+      "version": "evening-scattered",
+      "weatherfile": "scattered-1.lua",
+      "moment": "beforesunset"
+    }
+  ]
+}
