@@ -15,8 +15,8 @@ waypoints =
         ["speed"] = 999,
         ["speed_locked"] = true,
         ["name"] = "BULLSEYE",
-        ["x"] = 75869,
-        ["y"] = 48674,
+        ["x"] = -00291007,
+        ["y"] = 00617416,
     }, -- end of [BULLSEYE]
     ["FARP-LONDON"] = 
     {
@@ -32,6 +32,20 @@ waypoints =
         ["x"] = -273259.22843865,
         ["name"] = "FARP-LONDON",
     }, -- end of [FARP-LONDON]
+    ["KOBULETI"] = 
+    {
+        ["type"] = "Turning Point",
+        ["action"] = "Turning Point",
+        ["alt"] = 0, -- 0 ft
+        ["alt_type"] = "BARO",
+        ["ETA"] = 364.89432745775,
+        ["ETA_locked"] = false,
+        ["speed"] = 999,
+        ["speed_locked"] = true,
+        ["y"] = 635647,
+        ["x"] = -317962,
+        ["name"] = "KOBULETI",
+    }, -- end of [KOBULETI]
     ["SENAKI"] = 
     {
         ["type"] = "Turning Point",
@@ -148,6 +162,8 @@ settings =
         ["waypoints"] =
         {
             "FARP-LONDON",
+            "SENAKI",
+            "KOBULETI",
             "ZONE EASY-0",
             "ZONE EASY-1",
             "ZONE MEDIUM-2",
@@ -168,7 +184,9 @@ settings =
 
         ["waypoints"] =
         {
+            "FARP-LONDON",
             "SENAKI",
+            "KOBULETI",
             "ZONE EASY-0",
             "ZONE EASY-1",
             "ZONE MEDIUM-2",
