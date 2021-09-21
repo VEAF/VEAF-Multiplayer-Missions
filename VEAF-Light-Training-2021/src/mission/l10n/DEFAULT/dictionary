@@ -1,0 +1,18 @@
+dictionary = {
+    ["DictKey_ActionText_10501"] = "return false -- scripts",
+    ["DictKey_ActionText_10502"] = "return false -- config",
+    ["DictKey_ActionText_10601"] = "return VEAF_DYNAMIC_PATH~=nil",
+    ["DictKey_ActionText_10701"] = "return VEAF_DYNAMIC_PATH==nil",
+    ["DictKey_ActionText_10801"] = "return VEAF_DYNAMIC_MISSIONPATH~=nil",
+    ["DictKey_ActionText_10901"] = "return VEAF_DYNAMIC_MISSIONPATH==nil",
+    ["DictKey_descriptionBlueTask_3"] = "",
+    ["DictKey_descriptionNeutralsTask_4"] = "",
+    ["DictKey_descriptionRedTask_2"] = "",
+    ["DictKey_descriptionText_1"] = "Mission d'entraînement Ka-50\
+Décollage de FARP London (127.00Mhz)\
+5 zones d'entrainement disponibles dans le menu radio \"F10. Other\" -> \"VEAF\" -> \"Combat zones\"\
+Pour chaque zone, il y a un petit descriptif et la possibilité de l'activer, la désactiver (retire tous les ennemis), obtenir des informations (coordonnées, nombre d'unités en vie) et demander une balise fumigène ou un éclairage par fusée.\
+\
+Météo : ${METAR}",
+    ["DictKey_sortie_5"] = "",
+} -- end of dictionary
