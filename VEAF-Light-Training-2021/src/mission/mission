@@ -1298,6 +1298,7 @@ mission = {
                                         ["name"] = "helicargo #001",
                                         ["onboard_num"] = "050",
                                         ["payload"] = {
+                                            ["ammo_type"] = 1,
                                             ["chaff"] = 0,
                                             ["flare"] = 192,
                                             ["fuel"] = 851,
@@ -1327,7 +1328,7 @@ mission = {
                                         ["Radio"] = {
                                             [1] = {
                                                 ["channels"] = {
-                                                    [1] = 243,
+                                                    [1] = 127.5,
                                                     [2] = 260,
                                                     [3] = 270,
                                                     [4] = 259,
@@ -1589,6 +1590,7 @@ mission = {
                                         ["name"] = "helicargo #002",
                                         ["onboard_num"] = "050",
                                         ["payload"] = {
+                                            ["ammo_type"] = 1,
                                             ["chaff"] = 0,
                                             ["flare"] = 192,
                                             ["fuel"] = 851,
@@ -1618,7 +1620,7 @@ mission = {
                                         ["Radio"] = {
                                             [1] = {
                                                 ["channels"] = {
-                                                    [1] = 243,
+                                                    [1] = 127.5,
                                                     [2] = 260,
                                                     [3] = 270,
                                                     [4] = 259,
@@ -1880,6 +1882,7 @@ mission = {
                                         ["name"] = "helicargo #003",
                                         ["onboard_num"] = "050",
                                         ["payload"] = {
+                                            ["ammo_type"] = 1,
                                             ["chaff"] = 0,
                                             ["flare"] = 192,
                                             ["fuel"] = 851,
@@ -1909,7 +1912,7 @@ mission = {
                                         ["Radio"] = {
                                             [1] = {
                                                 ["channels"] = {
-                                                    [1] = 243,
+                                                    [1] = 127.5,
                                                     [2] = 260,
                                                     [3] = 270,
                                                     [4] = 259,
@@ -2171,6 +2174,7 @@ mission = {
                                         ["name"] = "helicargo #004",
                                         ["onboard_num"] = "050",
                                         ["payload"] = {
+                                            ["ammo_type"] = 1,
                                             ["chaff"] = 0,
                                             ["flare"] = 192,
                                             ["fuel"] = 851,
@@ -2200,7 +2204,7 @@ mission = {
                                         ["Radio"] = {
                                             [1] = {
                                                 ["channels"] = {
-                                                    [1] = 243,
+                                                    [1] = 127.5,
                                                     [2] = 260,
                                                     [3] = 270,
                                                     [4] = 259,
@@ -2462,6 +2466,7 @@ mission = {
                                         ["name"] = "helicargo #005",
                                         ["onboard_num"] = "050",
                                         ["payload"] = {
+                                            ["ammo_type"] = 1,
                                             ["chaff"] = 0,
                                             ["flare"] = 192,
                                             ["fuel"] = 851,
@@ -2491,7 +2496,7 @@ mission = {
                                         ["Radio"] = {
                                             [1] = {
                                                 ["channels"] = {
-                                                    [1] = 243,
+                                                    [1] = 127.5,
                                                     [2] = 260,
                                                     [3] = 270,
                                                     [4] = 259,
@@ -2753,6 +2758,7 @@ mission = {
                                         ["name"] = "helicargo #006",
                                         ["onboard_num"] = "050",
                                         ["payload"] = {
+                                            ["ammo_type"] = 1,
                                             ["chaff"] = 0,
                                             ["flare"] = 192,
                                             ["fuel"] = 851,
@@ -2782,7 +2788,7 @@ mission = {
                                         ["Radio"] = {
                                             [1] = {
                                                 ["channels"] = {
-                                                    [1] = 243,
+                                                    [1] = 127.5,
                                                     [2] = 260,
                                                     [3] = 270,
                                                     [4] = 259,
@@ -3044,6 +3050,7 @@ mission = {
                                         ["name"] = "helicargo #007",
                                         ["onboard_num"] = "050",
                                         ["payload"] = {
+                                            ["ammo_type"] = 1,
                                             ["chaff"] = 0,
                                             ["flare"] = 192,
                                             ["fuel"] = 851,
@@ -3073,7 +3080,7 @@ mission = {
                                         ["Radio"] = {
                                             [1] = {
                                                 ["channels"] = {
-                                                    [1] = 243,
+                                                    [1] = 127.5,
                                                     [2] = 260,
                                                     [3] = 270,
                                                     [4] = 259,
@@ -3335,6 +3342,7 @@ mission = {
                                         ["name"] = "helicargo #008",
                                         ["onboard_num"] = "050",
                                         ["payload"] = {
+                                            ["ammo_type"] = 1,
                                             ["chaff"] = 0,
                                             ["flare"] = 192,
                                             ["fuel"] = 851,
@@ -3364,7 +3372,7 @@ mission = {
                                         ["Radio"] = {
                                             [1] = {
                                                 ["channels"] = {
-                                                    [1] = 243,
+                                                    [1] = 127.5,
                                                     [2] = 260,
                                                     [3] = 270,
                                                     [4] = 259,
@@ -3417,6 +3425,1086 @@ mission = {
                                 ["x"] = -273322.3804524,
                                 ["y"] = 697379.75141894,
                             }, -- end of [12]
+                            [13] = {
+                                ["communication"] = true,
+                                ["frequency"] = 127.5,
+                                ["groupId"] = 1814,
+                                ["hidden"] = false,
+                                ["modulation"] = 0,
+                                ["name"] = "Mi-8MTV2 HOT #001",
+                                ["radioSet"] = false,
+                                ["route"] = {
+                                    ["points"] = {
+                                        [1] = {
+                                            ["action"] = "From Ground Area Hot",
+                                            ["alt"] = 500,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 0,
+                                            ["ETA_locked"] = true,
+                                            ["formation_template"] = "",
+                                            ["name"] = "",
+                                            ["speed"] = 46.25,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                        [1] = {
+                                                            ["auto"] = true,
+                                                            ["enabled"] = true,
+                                                            ["id"] = "EngageTargets",
+                                                            ["key"] = "CAS",
+                                                            ["number"] = 1,
+                                                            ["params"] = {
+                                                                ["priority"] = 0,
+                                                                ["targetTypes"] = {
+                                                                    [1] = "Helicopters",
+                                                                    [2] = "Ground Units",
+                                                                    [3] = "Light armed ships",
+                                                                }, -- end of ["targetTypes"]
+                                                            }, -- end of ["params"]
+                                                        }, -- end of [1]
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "TakeOffGroundHot",
+                                            ["x"] = -273283.28457867,
+                                            ["y"] = 696998.42221256,
+                                        }, -- end of [1]
+                                        [2] = {
+                                            ["action"] = "Turning Point",
+                                            ["alt"] = 170.00871544803,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 364.89432745775,
+                                            ["ETA_locked"] = false,
+                                            ["name"] = "FARP-LONDON",
+                                            ["speed"] = 999,
+                                            ["speed_locked"] = true,
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -273258.71089562,
+                                            ["y"] = 696780.08894301,
+                                        }, -- end of [2]
+                                        [3] = {
+                                            ["action"] = "Turning Point",
+                                            ["alt"] = 43.239942439148,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 364.89432745775,
+                                            ["ETA_locked"] = false,
+                                            ["name"] = "SENAKI",
+                                            ["speed"] = 999,
+                                            ["speed_locked"] = true,
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -281724.29495697,
+                                            ["y"] = 647976.2839358,
+                                        }, -- end of [3]
+                                        [4] = {
+                                            ["action"] = "Turning Point",
+                                            ["alt"] = 48.010018238882,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 364.89432745775,
+                                            ["ETA_locked"] = false,
+                                            ["name"] = "KOBULETI",
+                                            ["speed"] = 999,
+                                            ["speed_locked"] = true,
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -317961.48245697,
+                                            ["y"] = 635560.6589358,
+                                        }, -- end of [4]
+                                        [5] = {
+                                            ["action"] = "Turning Point",
+                                            ["alt"] = 6096,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 364.89432745775,
+                                            ["ETA_locked"] = false,
+                                            ["name"] = "ZONE EASY-0",
+                                            ["speed"] = 999,
+                                            ["speed_locked"] = true,
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -272366.95373197,
+                                            ["y"] = 690734.79359998,
+                                        }, -- end of [5]
+                                        [6] = {
+                                            ["action"] = "Turning Point",
+                                            ["alt"] = 6096,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 364.89432745775,
+                                            ["ETA_locked"] = false,
+                                            ["name"] = "ZONE EASY-1",
+                                            ["speed"] = 999,
+                                            ["speed_locked"] = true,
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -284441.65279491,
+                                            ["y"] = 684023.02564233,
+                                        }, -- end of [6]
+                                        [7] = {
+                                            ["action"] = "Turning Point",
+                                            ["alt"] = 6096,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 364.89432745775,
+                                            ["ETA_locked"] = false,
+                                            ["name"] = "ZONE MEDIUM-2",
+                                            ["speed"] = 999,
+                                            ["speed_locked"] = true,
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -253541.39797096,
+                                            ["y"] = 713149.10315581,
+                                        }, -- end of [7]
+                                        [8] = {
+                                            ["action"] = "Turning Point",
+                                            ["alt"] = 6096,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 364.89432745775,
+                                            ["ETA_locked"] = false,
+                                            ["name"] = "ZONE MEDIUM-3",
+                                            ["speed"] = 999,
+                                            ["speed_locked"] = true,
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -249475.5749678,
+                                            ["y"] = 687497.45620865,
+                                        }, -- end of [8]
+                                        [9] = {
+                                            ["action"] = "Turning Point",
+                                            ["alt"] = 6096,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 364.89432745775,
+                                            ["ETA_locked"] = false,
+                                            ["name"] = "ZONE HARD-4",
+                                            ["speed"] = 999,
+                                            ["speed_locked"] = true,
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -262634.05668709,
+                                            ["y"] = 730299.48382365,
+                                        }, -- end of [9]
+                                        [10] = {
+                                            ["action"] = "Turning Point",
+                                            ["alt"] = 6096,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 364.89432745775,
+                                            ["ETA_locked"] = false,
+                                            ["name"] = "ZONE HARD-5",
+                                            ["speed"] = 999,
+                                            ["speed_locked"] = true,
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -251397.60038748,
+                                            ["y"] = 666503.02470147,
+                                        }, -- end of [10]
+                                        [11] = {
+                                            ["action"] = "Turning Point",
+                                            ["alt"] = 6096,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 364.89432745775,
+                                            ["ETA_locked"] = false,
+                                            ["name"] = "BULLSEYE",
+                                            ["speed"] = 999,
+                                            ["speed_locked"] = true,
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -291006.48245697,
+                                            ["y"] = 617329.6589358,
+                                        }, -- end of [11]
+                                    }, -- end of ["points"]
+                                }, -- end of ["route"]
+                                ["start_time"] = 0,
+                                ["task"] = "CAS",
+                                ["tasks"] = {
+                                }, -- end of ["tasks"]
+                                ["taskSelected"] = true,
+                                ["uncontrollable"] = false,
+                                ["uncontrolled"] = false,
+                                ["units"] = {
+                                    [1] = {
+                                        ["AddPropAircraft"] = {
+                                            ["AdditionalArmor"] = true,
+                                            ["CargoHalfdoor"] = true,
+                                            ["ExhaustScreen"] = true,
+                                            ["GunnersAISkill"] = 90,
+                                            ["LeftEngineResource"] = 90,
+                                            ["NetCrewControlPriority"] = 1,
+                                            ["NS430allow"] = true,
+                                            ["RightEngineResource"] = 90,
+                                        }, -- end of ["AddPropAircraft"]
+                                        ["alt"] = 500,
+                                        ["alt_type"] = "BARO",
+                                        ["callsign"] = 107,
+                                        ["hardpoint_racks"] = true,
+                                        ["heading"] = -2.2964679785977,
+                                        ["livery_id"] = "Russia_VVS_Standard",
+                                        ["name"] = "helicargo #018",
+                                        ["onboard_num"] = "012",
+                                        ["payload"] = {
+                                            ["chaff"] = 0,
+                                            ["flare"] = 128,
+                                            ["fuel"] = "1929",
+                                            ["gun"] = 100,
+                                            ["pylons"] = {
+                                            }, -- end of ["pylons"]
+                                        }, -- end of ["payload"]
+                                        ["psi"] = 2.2964679785977,
+                                        ["Radio"] = {
+                                            [1] = {
+                                                ["channels"] = {
+                                                    [1] = 127.5,
+                                                    [2] = 135,
+                                                    [3] = 136,
+                                                    [4] = 127,
+                                                    [5] = 125,
+                                                    [6] = 121,
+                                                    [7] = 141,
+                                                    [8] = 128,
+                                                    [9] = 126,
+                                                    [10] = 133,
+                                                    [11] = 130,
+                                                    [12] = 129,
+                                                    [13] = 123,
+                                                    [14] = 131,
+                                                    [15] = 134,
+                                                    [16] = 132,
+                                                    [17] = 138,
+                                                    [18] = 122,
+                                                    [19] = 124,
+                                                    [20] = 137,
+                                                }, -- end of ["channels"]
+                                                ["modulations"] = {
+                                                }, -- end of ["modulations"]
+                                            }, -- end of [1]
+                                            [2] = {
+                                                ["channels"] = {
+                                                    [1] = 21.5,
+                                                    [2] = 25.7,
+                                                    [3] = 27,
+                                                    [4] = 28,
+                                                    [5] = 30,
+                                                    [6] = 32,
+                                                    [7] = 40,
+                                                    [8] = 50,
+                                                    [9] = 55.5,
+                                                    [10] = 59.9,
+                                                }, -- end of ["channels"]
+                                                ["modulations"] = {
+                                                }, -- end of ["modulations"]
+                                            }, -- end of [2]
+                                        }, -- end of ["Radio"]
+                                        ["ropeLength"] = 15,
+                                        ["skill"] = "Client",
+                                        ["speed"] = 46.25,
+                                        ["type"] = "Mi-8MT",
+                                        ["unitId"] = 3799,
+                                        ["x"] = -273283.28457867,
+                                        ["y"] = 696998.42221256,
+                                    }, -- end of [1]
+                                }, -- end of ["units"]
+                                ["x"] = -273283.28457867,
+                                ["y"] = 696998.42221256,
+                            }, -- end of [13]
+                            [14] = {
+                                ["communication"] = true,
+                                ["frequency"] = 127.5,
+                                ["groupId"] = 1815,
+                                ["hidden"] = false,
+                                ["modulation"] = 0,
+                                ["name"] = "Mi-8MTV2 HOT #002",
+                                ["radioSet"] = false,
+                                ["route"] = {
+                                    ["points"] = {
+                                        [1] = {
+                                            ["action"] = "From Ground Area Hot",
+                                            ["alt"] = 500,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 0,
+                                            ["ETA_locked"] = true,
+                                            ["formation_template"] = "",
+                                            ["name"] = "",
+                                            ["speed"] = 46.25,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                        [1] = {
+                                                            ["auto"] = true,
+                                                            ["enabled"] = true,
+                                                            ["id"] = "EngageTargets",
+                                                            ["key"] = "CAS",
+                                                            ["number"] = 1,
+                                                            ["params"] = {
+                                                                ["priority"] = 0,
+                                                                ["targetTypes"] = {
+                                                                    [1] = "Helicopters",
+                                                                    [2] = "Ground Units",
+                                                                    [3] = "Light armed ships",
+                                                                }, -- end of ["targetTypes"]
+                                                            }, -- end of ["params"]
+                                                        }, -- end of [1]
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "TakeOffGroundHot",
+                                            ["x"] = -273282.48329395,
+                                            ["y"] = 697030.27328006,
+                                        }, -- end of [1]
+                                        [2] = {
+                                            ["action"] = "Turning Point",
+                                            ["alt"] = 170.00871544803,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 364.89432745775,
+                                            ["ETA_locked"] = false,
+                                            ["name"] = "FARP-LONDON",
+                                            ["speed"] = 999,
+                                            ["speed_locked"] = true,
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -273256.90800501,
+                                            ["y"] = 696810.1371199,
+                                        }, -- end of [2]
+                                        [3] = {
+                                            ["action"] = "Turning Point",
+                                            ["alt"] = 43.239942439148,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 364.89432745775,
+                                            ["ETA_locked"] = false,
+                                            ["name"] = "SENAKI",
+                                            ["speed"] = 999,
+                                            ["speed_locked"] = true,
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -281722.49206636,
+                                            ["y"] = 648006.33211269,
+                                        }, -- end of [3]
+                                        [4] = {
+                                            ["action"] = "Turning Point",
+                                            ["alt"] = 48.010020146233,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 364.89432745775,
+                                            ["ETA_locked"] = false,
+                                            ["name"] = "KOBULETI",
+                                            ["speed"] = 999,
+                                            ["speed_locked"] = true,
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -317959.67956636,
+                                            ["y"] = 635590.70711269,
+                                        }, -- end of [4]
+                                        [5] = {
+                                            ["action"] = "Turning Point",
+                                            ["alt"] = 6096,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 364.89432745775,
+                                            ["ETA_locked"] = false,
+                                            ["name"] = "ZONE EASY-0",
+                                            ["speed"] = 999,
+                                            ["speed_locked"] = true,
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -272365.15084136,
+                                            ["y"] = 690764.84177687,
+                                        }, -- end of [5]
+                                        [6] = {
+                                            ["action"] = "Turning Point",
+                                            ["alt"] = 6096,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 364.89432745775,
+                                            ["ETA_locked"] = false,
+                                            ["name"] = "ZONE EASY-1",
+                                            ["speed"] = 999,
+                                            ["speed_locked"] = true,
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -284439.8499043,
+                                            ["y"] = 684053.07381922,
+                                        }, -- end of [6]
+                                        [7] = {
+                                            ["action"] = "Turning Point",
+                                            ["alt"] = 6096,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 364.89432745775,
+                                            ["ETA_locked"] = false,
+                                            ["name"] = "ZONE MEDIUM-2",
+                                            ["speed"] = 999,
+                                            ["speed_locked"] = true,
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -253539.59508035,
+                                            ["y"] = 713179.1513327,
+                                        }, -- end of [7]
+                                        [8] = {
+                                            ["action"] = "Turning Point",
+                                            ["alt"] = 6096,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 364.89432745775,
+                                            ["ETA_locked"] = false,
+                                            ["name"] = "ZONE MEDIUM-3",
+                                            ["speed"] = 999,
+                                            ["speed_locked"] = true,
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -249473.77207719,
+                                            ["y"] = 687527.50438554,
+                                        }, -- end of [8]
+                                        [9] = {
+                                            ["action"] = "Turning Point",
+                                            ["alt"] = 6096,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 364.89432745775,
+                                            ["ETA_locked"] = false,
+                                            ["name"] = "ZONE HARD-4",
+                                            ["speed"] = 999,
+                                            ["speed_locked"] = true,
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -262632.25379648,
+                                            ["y"] = 730329.53200054,
+                                        }, -- end of [9]
+                                        [10] = {
+                                            ["action"] = "Turning Point",
+                                            ["alt"] = 6096,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 364.89432745775,
+                                            ["ETA_locked"] = false,
+                                            ["name"] = "ZONE HARD-5",
+                                            ["speed"] = 999,
+                                            ["speed_locked"] = true,
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -251395.79749687,
+                                            ["y"] = 666533.07287836,
+                                        }, -- end of [10]
+                                        [11] = {
+                                            ["action"] = "Turning Point",
+                                            ["alt"] = 6096,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 364.89432745775,
+                                            ["ETA_locked"] = false,
+                                            ["name"] = "BULLSEYE",
+                                            ["speed"] = 999,
+                                            ["speed_locked"] = true,
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -291004.67956636,
+                                            ["y"] = 617359.70711269,
+                                        }, -- end of [11]
+                                    }, -- end of ["points"]
+                                }, -- end of ["route"]
+                                ["start_time"] = 0,
+                                ["task"] = "CAS",
+                                ["tasks"] = {
+                                }, -- end of ["tasks"]
+                                ["taskSelected"] = true,
+                                ["uncontrollable"] = false,
+                                ["uncontrolled"] = false,
+                                ["units"] = {
+                                    [1] = {
+                                        ["AddPropAircraft"] = {
+                                            ["AdditionalArmor"] = true,
+                                            ["CargoHalfdoor"] = true,
+                                            ["ExhaustScreen"] = true,
+                                            ["GunnersAISkill"] = 90,
+                                            ["LeftEngineResource"] = 90,
+                                            ["NetCrewControlPriority"] = 1,
+                                            ["NS430allow"] = true,
+                                            ["RightEngineResource"] = 90,
+                                        }, -- end of ["AddPropAircraft"]
+                                        ["alt"] = 500,
+                                        ["alt_type"] = "BARO",
+                                        ["callsign"] = 109,
+                                        ["hardpoint_racks"] = true,
+                                        ["heading"] = -2.2964679785977,
+                                        ["livery_id"] = "Russia_VVS_Standard",
+                                        ["name"] = "helicargo #019",
+                                        ["onboard_num"] = "013",
+                                        ["payload"] = {
+                                            ["chaff"] = 0,
+                                            ["flare"] = 128,
+                                            ["fuel"] = "1929",
+                                            ["gun"] = 100,
+                                            ["pylons"] = {
+                                            }, -- end of ["pylons"]
+                                        }, -- end of ["payload"]
+                                        ["psi"] = 2.2964679785977,
+                                        ["Radio"] = {
+                                            [1] = {
+                                                ["channels"] = {
+                                                    [1] = 127.5,
+                                                    [2] = 135,
+                                                    [3] = 136,
+                                                    [4] = 127,
+                                                    [5] = 125,
+                                                    [6] = 121,
+                                                    [7] = 141,
+                                                    [8] = 128,
+                                                    [9] = 126,
+                                                    [10] = 133,
+                                                    [11] = 130,
+                                                    [12] = 129,
+                                                    [13] = 123,
+                                                    [14] = 131,
+                                                    [15] = 134,
+                                                    [16] = 132,
+                                                    [17] = 138,
+                                                    [18] = 122,
+                                                    [19] = 124,
+                                                    [20] = 137,
+                                                }, -- end of ["channels"]
+                                                ["modulations"] = {
+                                                }, -- end of ["modulations"]
+                                            }, -- end of [1]
+                                            [2] = {
+                                                ["channels"] = {
+                                                    [1] = 21.5,
+                                                    [2] = 25.7,
+                                                    [3] = 27,
+                                                    [4] = 28,
+                                                    [5] = 30,
+                                                    [6] = 32,
+                                                    [7] = 40,
+                                                    [8] = 50,
+                                                    [9] = 55.5,
+                                                    [10] = 59.9,
+                                                }, -- end of ["channels"]
+                                                ["modulations"] = {
+                                                }, -- end of ["modulations"]
+                                            }, -- end of [2]
+                                        }, -- end of ["Radio"]
+                                        ["ropeLength"] = 15,
+                                        ["skill"] = "Client",
+                                        ["speed"] = 46.25,
+                                        ["type"] = "Mi-8MT",
+                                        ["unitId"] = 3800,
+                                        ["x"] = -273282.48329395,
+                                        ["y"] = 697030.27328006,
+                                    }, -- end of [1]
+                                }, -- end of ["units"]
+                                ["x"] = -273282.48329395,
+                                ["y"] = 697030.27328006,
+                            }, -- end of [14]
+                            [15] = {
+                                ["communication"] = true,
+                                ["frequency"] = 127.5,
+                                ["groupId"] = 1816,
+                                ["hidden"] = false,
+                                ["modulation"] = 0,
+                                ["name"] = "Mi-8MTV2 HOT #003",
+                                ["radioSet"] = false,
+                                ["route"] = {
+                                    ["points"] = {
+                                        [1] = {
+                                            ["action"] = "From Ground Area Hot",
+                                            ["alt"] = 500,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 0,
+                                            ["ETA_locked"] = true,
+                                            ["formation_template"] = "",
+                                            ["name"] = "",
+                                            ["speed"] = 46.25,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                        [1] = {
+                                                            ["auto"] = true,
+                                                            ["enabled"] = true,
+                                                            ["id"] = "EngageTargets",
+                                                            ["key"] = "CAS",
+                                                            ["number"] = 1,
+                                                            ["params"] = {
+                                                                ["priority"] = 0,
+                                                                ["targetTypes"] = {
+                                                                    [1] = "Helicopters",
+                                                                    [2] = "Ground Units",
+                                                                    [3] = "Light armed ships",
+                                                                }, -- end of ["targetTypes"]
+                                                            }, -- end of ["params"]
+                                                        }, -- end of [1]
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "TakeOffGroundHot",
+                                            ["x"] = -273312.33114966,
+                                            ["y"] = 696999.62413964,
+                                        }, -- end of [1]
+                                        [2] = {
+                                            ["action"] = "Turning Point",
+                                            ["alt"] = 170.00871544803,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 364.89432745775,
+                                            ["ETA_locked"] = false,
+                                            ["name"] = "FARP-LONDON",
+                                            ["speed"] = 999,
+                                            ["speed_locked"] = true,
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -273256.50736265,
+                                            ["y"] = 696842.58915094,
+                                        }, -- end of [2]
+                                        [3] = {
+                                            ["action"] = "Turning Point",
+                                            ["alt"] = 43.239942439148,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 364.89432745775,
+                                            ["ETA_locked"] = false,
+                                            ["name"] = "SENAKI",
+                                            ["speed"] = 999,
+                                            ["speed_locked"] = true,
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -281722.091424,
+                                            ["y"] = 648038.78414373,
+                                        }, -- end of [3]
+                                        [4] = {
+                                            ["action"] = "Turning Point",
+                                            ["alt"] = 48.010018238882,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 364.89432745775,
+                                            ["ETA_locked"] = false,
+                                            ["name"] = "KOBULETI",
+                                            ["speed"] = 999,
+                                            ["speed_locked"] = true,
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -317959.278924,
+                                            ["y"] = 635623.15914373,
+                                        }, -- end of [4]
+                                        [5] = {
+                                            ["action"] = "Turning Point",
+                                            ["alt"] = 6096,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 364.89432745775,
+                                            ["ETA_locked"] = false,
+                                            ["name"] = "ZONE EASY-0",
+                                            ["speed"] = 999,
+                                            ["speed_locked"] = true,
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -272364.750199,
+                                            ["y"] = 690797.29380791,
+                                        }, -- end of [5]
+                                        [6] = {
+                                            ["action"] = "Turning Point",
+                                            ["alt"] = 6096,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 364.89432745775,
+                                            ["ETA_locked"] = false,
+                                            ["name"] = "ZONE EASY-1",
+                                            ["speed"] = 999,
+                                            ["speed_locked"] = true,
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -284439.44926194,
+                                            ["y"] = 684085.52585026,
+                                        }, -- end of [6]
+                                        [7] = {
+                                            ["action"] = "Turning Point",
+                                            ["alt"] = 6096,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 364.89432745775,
+                                            ["ETA_locked"] = false,
+                                            ["name"] = "ZONE MEDIUM-2",
+                                            ["speed"] = 999,
+                                            ["speed_locked"] = true,
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -253539.19443799,
+                                            ["y"] = 713211.60336374,
+                                        }, -- end of [7]
+                                        [8] = {
+                                            ["action"] = "Turning Point",
+                                            ["alt"] = 6096,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 364.89432745775,
+                                            ["ETA_locked"] = false,
+                                            ["name"] = "ZONE MEDIUM-3",
+                                            ["speed"] = 999,
+                                            ["speed_locked"] = true,
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -249473.37143483,
+                                            ["y"] = 687559.95641658,
+                                        }, -- end of [8]
+                                        [9] = {
+                                            ["action"] = "Turning Point",
+                                            ["alt"] = 6096,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 364.89432745775,
+                                            ["ETA_locked"] = false,
+                                            ["name"] = "ZONE HARD-4",
+                                            ["speed"] = 999,
+                                            ["speed_locked"] = true,
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -262631.85315412,
+                                            ["y"] = 730361.98403158,
+                                        }, -- end of [9]
+                                        [10] = {
+                                            ["action"] = "Turning Point",
+                                            ["alt"] = 6096,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 364.89432745775,
+                                            ["ETA_locked"] = false,
+                                            ["name"] = "ZONE HARD-5",
+                                            ["speed"] = 999,
+                                            ["speed_locked"] = true,
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -251395.39685451,
+                                            ["y"] = 666565.5249094,
+                                        }, -- end of [10]
+                                        [11] = {
+                                            ["action"] = "Turning Point",
+                                            ["alt"] = 6096,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 364.89432745775,
+                                            ["ETA_locked"] = false,
+                                            ["name"] = "BULLSEYE",
+                                            ["speed"] = 999,
+                                            ["speed_locked"] = true,
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -291004.278924,
+                                            ["y"] = 617392.15914373,
+                                        }, -- end of [11]
+                                    }, -- end of ["points"]
+                                }, -- end of ["route"]
+                                ["start_time"] = 0,
+                                ["task"] = "CAS",
+                                ["tasks"] = {
+                                }, -- end of ["tasks"]
+                                ["taskSelected"] = true,
+                                ["uncontrollable"] = false,
+                                ["uncontrolled"] = false,
+                                ["units"] = {
+                                    [1] = {
+                                        ["AddPropAircraft"] = {
+                                            ["AdditionalArmor"] = true,
+                                            ["CargoHalfdoor"] = true,
+                                            ["ExhaustScreen"] = true,
+                                            ["GunnersAISkill"] = 90,
+                                            ["LeftEngineResource"] = 90,
+                                            ["NetCrewControlPriority"] = 1,
+                                            ["NS430allow"] = true,
+                                            ["RightEngineResource"] = 90,
+                                        }, -- end of ["AddPropAircraft"]
+                                        ["alt"] = 500,
+                                        ["alt_type"] = "BARO",
+                                        ["callsign"] = 110,
+                                        ["hardpoint_racks"] = true,
+                                        ["heading"] = -2.2964679785977,
+                                        ["livery_id"] = "Russia_VVS_Standard",
+                                        ["name"] = "helicargo #020",
+                                        ["onboard_num"] = "014",
+                                        ["payload"] = {
+                                            ["chaff"] = 0,
+                                            ["flare"] = 128,
+                                            ["fuel"] = "1929",
+                                            ["gun"] = 100,
+                                            ["pylons"] = {
+                                            }, -- end of ["pylons"]
+                                        }, -- end of ["payload"]
+                                        ["psi"] = 2.2964679785977,
+                                        ["Radio"] = {
+                                            [1] = {
+                                                ["channels"] = {
+                                                    [1] = 127.5,
+                                                    [2] = 135,
+                                                    [3] = 136,
+                                                    [4] = 127,
+                                                    [5] = 125,
+                                                    [6] = 121,
+                                                    [7] = 141,
+                                                    [8] = 128,
+                                                    [9] = 126,
+                                                    [10] = 133,
+                                                    [11] = 130,
+                                                    [12] = 129,
+                                                    [13] = 123,
+                                                    [14] = 131,
+                                                    [15] = 134,
+                                                    [16] = 132,
+                                                    [17] = 138,
+                                                    [18] = 122,
+                                                    [19] = 124,
+                                                    [20] = 137,
+                                                }, -- end of ["channels"]
+                                                ["modulations"] = {
+                                                }, -- end of ["modulations"]
+                                            }, -- end of [1]
+                                            [2] = {
+                                                ["channels"] = {
+                                                    [1] = 21.5,
+                                                    [2] = 25.7,
+                                                    [3] = 27,
+                                                    [4] = 28,
+                                                    [5] = 30,
+                                                    [6] = 32,
+                                                    [7] = 40,
+                                                    [8] = 50,
+                                                    [9] = 55.5,
+                                                    [10] = 59.9,
+                                                }, -- end of ["channels"]
+                                                ["modulations"] = {
+                                                }, -- end of ["modulations"]
+                                            }, -- end of [2]
+                                        }, -- end of ["Radio"]
+                                        ["ropeLength"] = 15,
+                                        ["skill"] = "Client",
+                                        ["speed"] = 46.25,
+                                        ["type"] = "Mi-8MT",
+                                        ["unitId"] = 3801,
+                                        ["x"] = -273312.33114966,
+                                        ["y"] = 696999.62413964,
+                                    }, -- end of [1]
+                                }, -- end of ["units"]
+                                ["x"] = -273312.33114966,
+                                ["y"] = 696999.62413964,
+                            }, -- end of [15]
+                            [16] = {
+                                ["communication"] = true,
+                                ["frequency"] = 127.5,
+                                ["groupId"] = 1817,
+                                ["hidden"] = false,
+                                ["modulation"] = 0,
+                                ["name"] = "Mi-8MTV2 HOT #004",
+                                ["radioSet"] = false,
+                                ["route"] = {
+                                    ["points"] = {
+                                        [1] = {
+                                            ["action"] = "From Ground Area Hot",
+                                            ["alt"] = 500,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 0,
+                                            ["ETA_locked"] = true,
+                                            ["formation_template"] = "",
+                                            ["name"] = "",
+                                            ["speed"] = 46.25,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                        [1] = {
+                                                            ["auto"] = true,
+                                                            ["enabled"] = true,
+                                                            ["id"] = "EngageTargets",
+                                                            ["key"] = "CAS",
+                                                            ["number"] = 1,
+                                                            ["params"] = {
+                                                                ["priority"] = 0,
+                                                                ["targetTypes"] = {
+                                                                    [1] = "Helicopters",
+                                                                    [2] = "Ground Units",
+                                                                    [3] = "Light armed ships",
+                                                                }, -- end of ["targetTypes"]
+                                                            }, -- end of ["params"]
+                                                        }, -- end of [1]
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "TakeOffGroundHot",
+                                            ["x"] = -273340.37611476,
+                                            ["y"] = 697000.62574554,
+                                        }, -- end of [1]
+                                        [2] = {
+                                            ["action"] = "Turning Point",
+                                            ["alt"] = 170.00871544803,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 364.89432745775,
+                                            ["ETA_locked"] = false,
+                                            ["name"] = "FARP-LONDON",
+                                            ["speed"] = 999,
+                                            ["speed_locked"] = true,
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -273306.78797865,
+                                            ["y"] = 696811.73968933,
+                                        }, -- end of [2]
+                                        [3] = {
+                                            ["action"] = "Turning Point",
+                                            ["alt"] = 43.239942439148,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 364.89432745775,
+                                            ["ETA_locked"] = false,
+                                            ["name"] = "SENAKI",
+                                            ["speed"] = 999,
+                                            ["speed_locked"] = true,
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -281772.37204,
+                                            ["y"] = 648007.93468212,
+                                        }, -- end of [3]
+                                        [4] = {
+                                            ["action"] = "Turning Point",
+                                            ["alt"] = 48.010018238882,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 364.89432745775,
+                                            ["ETA_locked"] = false,
+                                            ["name"] = "KOBULETI",
+                                            ["speed"] = 999,
+                                            ["speed_locked"] = true,
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -318009.55954,
+                                            ["y"] = 635592.30968212,
+                                        }, -- end of [4]
+                                        [5] = {
+                                            ["action"] = "Turning Point",
+                                            ["alt"] = 6096,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 364.89432745775,
+                                            ["ETA_locked"] = false,
+                                            ["name"] = "ZONE EASY-0",
+                                            ["speed"] = 999,
+                                            ["speed_locked"] = true,
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -272415.030815,
+                                            ["y"] = 690766.4443463,
+                                        }, -- end of [5]
+                                        [6] = {
+                                            ["action"] = "Turning Point",
+                                            ["alt"] = 6096,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 364.89432745775,
+                                            ["ETA_locked"] = false,
+                                            ["name"] = "ZONE EASY-1",
+                                            ["speed"] = 999,
+                                            ["speed_locked"] = true,
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -284489.72987794,
+                                            ["y"] = 684054.67638865,
+                                        }, -- end of [6]
+                                        [7] = {
+                                            ["action"] = "Turning Point",
+                                            ["alt"] = 6096,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 364.89432745775,
+                                            ["ETA_locked"] = false,
+                                            ["name"] = "ZONE MEDIUM-2",
+                                            ["speed"] = 999,
+                                            ["speed_locked"] = true,
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -253589.47505399,
+                                            ["y"] = 713180.75390213,
+                                        }, -- end of [7]
+                                        [8] = {
+                                            ["action"] = "Turning Point",
+                                            ["alt"] = 6096,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 364.89432745775,
+                                            ["ETA_locked"] = false,
+                                            ["name"] = "ZONE MEDIUM-3",
+                                            ["speed"] = 999,
+                                            ["speed_locked"] = true,
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -249523.65205083,
+                                            ["y"] = 687529.10695497,
+                                        }, -- end of [8]
+                                        [9] = {
+                                            ["action"] = "Turning Point",
+                                            ["alt"] = 6096,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 364.89432745775,
+                                            ["ETA_locked"] = false,
+                                            ["name"] = "ZONE HARD-4",
+                                            ["speed"] = 999,
+                                            ["speed_locked"] = true,
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -262682.13377012,
+                                            ["y"] = 730331.13456997,
+                                        }, -- end of [9]
+                                        [10] = {
+                                            ["action"] = "Turning Point",
+                                            ["alt"] = 6096,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 364.89432745775,
+                                            ["ETA_locked"] = false,
+                                            ["name"] = "ZONE HARD-5",
+                                            ["speed"] = 999,
+                                            ["speed_locked"] = true,
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -251445.67747051,
+                                            ["y"] = 666534.67544779,
+                                        }, -- end of [10]
+                                        [11] = {
+                                            ["action"] = "Turning Point",
+                                            ["alt"] = 6096,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 364.89432745775,
+                                            ["ETA_locked"] = false,
+                                            ["name"] = "BULLSEYE",
+                                            ["speed"] = 999,
+                                            ["speed_locked"] = true,
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -291054.55954,
+                                            ["y"] = 617361.30968212,
+                                        }, -- end of [11]
+                                    }, -- end of ["points"]
+                                }, -- end of ["route"]
+                                ["start_time"] = 0,
+                                ["task"] = "CAS",
+                                ["tasks"] = {
+                                }, -- end of ["tasks"]
+                                ["taskSelected"] = true,
+                                ["uncontrollable"] = false,
+                                ["uncontrolled"] = false,
+                                ["units"] = {
+                                    [1] = {
+                                        ["AddPropAircraft"] = {
+                                            ["AdditionalArmor"] = true,
+                                            ["CargoHalfdoor"] = true,
+                                            ["ExhaustScreen"] = true,
+                                            ["GunnersAISkill"] = 90,
+                                            ["LeftEngineResource"] = 90,
+                                            ["NetCrewControlPriority"] = 1,
+                                            ["NS430allow"] = true,
+                                            ["RightEngineResource"] = 90,
+                                        }, -- end of ["AddPropAircraft"]
+                                        ["alt"] = 500,
+                                        ["alt_type"] = "BARO",
+                                        ["callsign"] = 111,
+                                        ["hardpoint_racks"] = true,
+                                        ["heading"] = -2.2964679785977,
+                                        ["livery_id"] = "Russia_VVS_Standard",
+                                        ["name"] = "helicargo #021",
+                                        ["onboard_num"] = "015",
+                                        ["payload"] = {
+                                            ["chaff"] = 0,
+                                            ["flare"] = 128,
+                                            ["fuel"] = "1929",
+                                            ["gun"] = 100,
+                                            ["pylons"] = {
+                                            }, -- end of ["pylons"]
+                                        }, -- end of ["payload"]
+                                        ["psi"] = 2.2964679785977,
+                                        ["Radio"] = {
+                                            [1] = {
+                                                ["channels"] = {
+                                                    [1] = 127.5,
+                                                    [2] = 135,
+                                                    [3] = 136,
+                                                    [4] = 127,
+                                                    [5] = 125,
+                                                    [6] = 121,
+                                                    [7] = 141,
+                                                    [8] = 128,
+                                                    [9] = 126,
+                                                    [10] = 133,
+                                                    [11] = 130,
+                                                    [12] = 129,
+                                                    [13] = 123,
+                                                    [14] = 131,
+                                                    [15] = 134,
+                                                    [16] = 132,
+                                                    [17] = 138,
+                                                    [18] = 122,
+                                                    [19] = 124,
+                                                    [20] = 137,
+                                                }, -- end of ["channels"]
+                                                ["modulations"] = {
+                                                }, -- end of ["modulations"]
+                                            }, -- end of [1]
+                                            [2] = {
+                                                ["channels"] = {
+                                                    [1] = 21.5,
+                                                    [2] = 25.7,
+                                                    [3] = 27,
+                                                    [4] = 28,
+                                                    [5] = 30,
+                                                    [6] = 32,
+                                                    [7] = 40,
+                                                    [8] = 50,
+                                                    [9] = 55.5,
+                                                    [10] = 59.9,
+                                                }, -- end of ["channels"]
+                                                ["modulations"] = {
+                                                }, -- end of ["modulations"]
+                                            }, -- end of [2]
+                                        }, -- end of ["Radio"]
+                                        ["ropeLength"] = 15,
+                                        ["skill"] = "Client",
+                                        ["speed"] = 46.25,
+                                        ["type"] = "Mi-8MT",
+                                        ["unitId"] = 3802,
+                                        ["x"] = -273340.37611476,
+                                        ["y"] = 697000.62574554,
+                                    }, -- end of [1]
+                                }, -- end of ["units"]
+                                ["x"] = -273340.37611476,
+                                ["y"] = 697000.62574554,
+                            }, -- end of [16]
                         }, -- end of ["group"]
                     }, -- end of ["helicopter"]
                     ["id"] = 1,
@@ -40497,7 +41585,7 @@ mission = {
             [10] = 47,
         }, -- end of ["red"]
     }, -- end of ["coalitions"]
-    ["currentKey"] = 107836,
+    ["currentKey"] = 114207,
     ["date"] = {
         ["Day"] = 23,
         ["Month"] = 5,
@@ -46853,9 +47941,9 @@ mission = {
         }, -- end of ["roles"]
     }, -- end of ["groundControl"]
     ["map"] = {
-        ["centerX"] = -248560.25297842,
-        ["centerY"] = 688273.05427288,
-        ["zoom"] = 23064.236795017,
+        ["centerX"] = -273331.86246464,
+        ["centerY"] = 697119.61652602,
+        ["zoom"] = 701.12412743169,
     }, -- end of ["map"]
     ["maxDictId"] = 680,
     ["pictureFileNameB"] = {
@@ -47391,7 +48479,7 @@ mission = {
     ["weather"] = {
         ["atmosphere_type"] = 0,
         ["clouds"] = {
-            ["base"] = 3780,
+            ["base"] = 3800,
             ["density"] = 0,
             ["iprecptns"] = 0,
             ["preset"] = "Preset8",
