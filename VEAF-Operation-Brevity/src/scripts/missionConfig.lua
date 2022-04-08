@@ -359,54 +359,113 @@ end
 veaf.silenceAtcOnAllAirbases()
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
--- specific menus for Brevity
+-- mission-specific menus
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
--- paramètres
-local MISSION_MASTER_GROUP_NAME = "ERGO ----"
-local MISSION_MASTER_GROUPID = 696
-local LOG_NAME = "BREVITY"
-local LOG_LEVEL = "trace"
-----------------------------------------
+if (veafRadio) then
+    local MISSION_MASTER_GROUPID = 696
+    local LOG_NAME = "BREVITY"
+    local LOG_LEVEL = "trace"
+    ----------------------------------------
 
-veaf.loggers.new(LOG_NAME, LOG_LEVEL)
+    veaf.loggers.new(LOG_NAME, LOG_LEVEL)
 
-local function _respawnCap(groupName)
-    local message = string.format("On va respawner le groupe [%s]", veaf.p(groupName))
-    veaf.loggers.get(LOG_NAME):debug(message)
-    trigger.action.outTextForGroup(MISSION_MASTER_GROUPID, message, 5)
-    
-    local newGroup = mist.respawnGroup(groupName)
-
-    if newGroup == nil then
-        local message = string.format("Impossible de trouver le groupe [%s] pour le respawner", veaf.p(groupName))
-        veaf.loggers.get(LOG_NAME):error(message)
+    local function _respawnCap(groupName)
+        local message = string.format("On va respawner le groupe [%s]", veaf.p(groupName))
+        veaf.loggers.get(LOG_NAME):debug(message)
         trigger.action.outTextForGroup(MISSION_MASTER_GROUPID, message, 5)
-    else
-        local message = string.format("Groupe [%s] respawné avec succès", veaf.p(groupName))
-        veaf.loggers.get(LOG_NAME):info(message)
-        trigger.action.outTextForGroup(MISSION_MASTER_GROUPID, message, 5)
+        
+        local newGroup = mist.respawnGroup(groupName)
+
+        if newGroup == nil then
+            local message = string.format("Impossible de trouver le groupe [%s] pour le respawner", veaf.p(groupName))
+            veaf.loggers.get(LOG_NAME):error(message)
+            trigger.action.outTextForGroup(MISSION_MASTER_GROUPID, message, 5)
+        else
+            local message = string.format("Groupe [%s] respawné avec succès", veaf.p(groupName))
+            veaf.loggers.get(LOG_NAME):info(message)
+            trigger.action.outTextForGroup(MISSION_MASTER_GROUPID, message, 5)
+        end
     end
+
+    local function menu(name, items)
+        return {
+            "menu", name, items
+        }
+    end
+
+    local function command(name, aFunction, parameters)
+        return {
+            "command", name, aFunction, parameters
+        }
+    end
+
+    local userMenu = {
+        menu("Gestion CAP", {
+            menu("CAP EST", {
+                menu("Facile", {
+                    command("Mig21", _respawnCap, "EST on Demand MIG21"),
+                    command("Mig21x3", _respawnCap, "EST on Demand MIG21x3"),
+                    command("SU27-R73", _respawnCap, "EST on Demand SU27FOX2"),
+                    command("MIG23", _respawnCap, "EST on Demand MIG23"),
+                    command("MIG23x3", _respawnCap, "EST on Demand MIG23 x3"),
+                    }),
+                menu("Moyen", {
+                    command("MIG31", _respawnCap, "EST on Demand mig31"),
+                    command("J11FOX2x3", _respawnCap, "EST on Demand j11FOX2 x3"),
+                    command("MIG29A", _respawnCap, "EST on Demand MIG29A"),
+                    command("F4E", _respawnCap, "EST on Demand F4E"),
+                    command("MIG25", _respawnCap, "EST on Demand MIG25"),
+                }),
+                menu("Hard", {
+                    command("J11", _respawnCap, "EST on Demand J11FOX3"),
+                    command("JF17-1", _respawnCap, "EST on Demand JF17FOX3"),
+                    command("SU30", _respawnCap, "EST On Demand SU30"),
+                    command("JF17-2", _respawnCap, "EST on Demand JF17FOX3-2"),
+                    command("MIG31x3", _respawnCap, "EST on Demand mig31x3"),                  
+                }),
+                menu("Mission", {
+                    command("Mission SEAD Kutaisi", _respawnCap, "EST on Demand MISSION SU25"),
+                }),
+            }),
+            menu("CAP OUEST", {
+                menu("Facile", {
+                    command("MIG21x3", _respawnCap, "MAYKOP On demand MIG21"),
+                    command("MIG23", _respawnCap, "MAYKOP On demand MIG23"),
+                    command("SU27-R73", _respawnCap, "MAYKOP On demand SU27FOX2-1"),
+                    command("JF17-FOX2", _respawnCap, "MAYKOP On demand JF17FOX2-1"),
+                    command("MIG29A", _respawnCap, "MAYKOP On demand MIG29A"),
+                }),
+                menu("Moyen", {
+                    command("J11FOX1", _respawnCap, "Maykop On Demand J11FOX1"),
+                    command("MIG25", _respawnCap, "MAYKOP On demand MIG25"),
+                    command("F4E", _respawnCap, "MAYKOP On demand F4E"),
+                    command("MIG31", _respawnCap, "MAYKOP On demand mig31"),
+                }),
+                menu("Hard", {
+                    command("SU30", _respawnCap, "Maykop On Demand SU30"),
+                    command("SU27x3", _respawnCap, "Maykop On Demand SU27 X3"),
+                    command("J11x3", _respawnCap, "MAYKOP On Demand J11FOX3"),
+                    command("JF17x3", _respawnCap, "Maykop On Demand JF17FOX3"),
+                    command("JF17", _respawnCap, "Maykop On Demand JF17-1"),
+                    command("MIG29SFOX3", _respawnCap, "MAYKOP On demand MIG29S"),                  
+                }),
+                menu("Mission", {
+                    command("Mission Anti-Ship", _respawnCap, "VIGGEN RED"),
+                }),
+            }),
+            menu("CAP NORD", {
+                menu("Secteur Myneralnye", {
+                    command("MIG29S", _respawnCap, "MOZDOK On Demand MIG29S"),
+                    command("MIG31x3", _respawnCap, "MOZDOK On Demand MIG31x3"),
+                    command("SU30", _respawnCap, "MOZDOK On Demand su30"),
+                }),
+                menu("Secteur Mozdok", {
+                    command("SU27", _respawnCap, "MOZDOK On Demand su27"),
+                    command("SNEAKY-21", _respawnCap, "MOZDOK On Demand MIG21"),                   
+                }),
+            }),
+        }),
+    }
+
+    veafRadio.createUserMenu(userMenu, MISSION_MASTER_GROUPID)
 end
-
--- le menu principal pour les CAP
-local capMenu = missionCommands.addSubMenuForGroup(MISSION_MASTER_GROUPID, "Gestion CAP")
-
--- le sous-menu CAP / EST
-local capMenuEst = missionCommands.addSubMenuForGroup(MISSION_MASTER_GROUPID, "CAP EST", capMenu)
-
--- le sous-menu CAP / EST / Facile
-local capMenuEstFacile = missionCommands.addSubMenuForGroup(MISSION_MASTER_GROUPID, "FACILE", capMenuEst)
-missionCommands.addCommandForGroup(MISSION_MASTER_GROUPID, "Mig21", capMenuEstFacile, _respawnCap, "EST on Demand MIG21")
-missionCommands.addCommandForGroup(MISSION_MASTER_GROUPID, "Mig21x3", capMenuEstFacile, _respawnCap, "EST on Demand MIG21x3")
-
--- le sous-menu CAP / EST / Moyen
-local capMenuEstMoyen = missionCommands.addSubMenuForGroup(MISSION_MASTER_GROUPID, "MOYEN", capMenuEst)
-missionCommands.addCommandForGroup(MISSION_MASTER_GROUPID, "Mig31", capMenuEstMoyen, _respawnCap, "EST on Demand mig31")
-missionCommands.addCommandForGroup(MISSION_MASTER_GROUPID, "Mig31x3", capMenuEstMoyen, _respawnCap, "EST on Demand mig31x3")
-
--- le sous-menu CAP / OUEST
-local capMenuOuest = missionCommands.addSubMenuForGroup(MISSION_MASTER_GROUPID, "CAP OUEST", capMenu)
--- le sous-menu CAP / OUEST / Facile
-local capMenuOuestFacile = missionCommands.addSubMenuForGroup(MISSION_MASTER_GROUPID, "FACILE", capMenuOuest)
--- le sous-menu CAP / OUEST / Moyen
-local capMenuOuestMoyen = missionCommands.addSubMenuForGroup(MISSION_MASTER_GROUPID, "MOYEN", capMenuOuest)
