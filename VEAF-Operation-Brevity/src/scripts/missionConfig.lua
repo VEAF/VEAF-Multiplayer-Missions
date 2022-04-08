@@ -357,3 +357,56 @@ end
 
 -- Silence ATC on all the airdromes
 veaf.silenceAtcOnAllAirbases()
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- specific menus for Brevity
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- paramètres
+local MISSION_MASTER_GROUP_NAME = "ERGO ----"
+local MISSION_MASTER_GROUPID = 696
+local LOG_NAME = "BREVITY"
+local LOG_LEVEL = "trace"
+----------------------------------------
+
+veaf.loggers.new(LOG_NAME, LOG_LEVEL)
+
+local function _respawnCap(groupName)
+    local message = string.format("On va respawner le groupe [%s]", veaf.p(groupName))
+    veaf.loggers.get(LOG_NAME):debug(message)
+    trigger.action.outTextForGroup(MISSION_MASTER_GROUPID, message, 5)
+    
+    local newGroup = mist.respawnGroup(groupName)
+
+    if newGroup == nil then
+        local message = string.format("Impossible de trouver le groupe [%s] pour le respawner", veaf.p(groupName))
+        veaf.loggers.get(LOG_NAME):error(message)
+        trigger.action.outTextForGroup(MISSION_MASTER_GROUPID, message, 5)
+    else
+        local message = string.format("Groupe [%s] respawné avec succès", veaf.p(groupName))
+        veaf.loggers.get(LOG_NAME):info(message)
+        trigger.action.outTextForGroup(MISSION_MASTER_GROUPID, message, 5)
+    end
+end
+
+-- le menu principal pour les CAP
+local capMenu = missionCommands.addSubMenuForGroup(MISSION_MASTER_GROUPID, "Gestion CAP")
+
+-- le sous-menu CAP / EST
+local capMenuEst = missionCommands.addSubMenuForGroup(MISSION_MASTER_GROUPID, "CAP EST", capMenu)
+
+-- le sous-menu CAP / EST / Facile
+local capMenuEstFacile = missionCommands.addSubMenuForGroup(MISSION_MASTER_GROUPID, "FACILE", capMenuEst)
+missionCommands.addCommandForGroup(MISSION_MASTER_GROUPID, "Mig21", capMenuEstFacile, _respawnCap, "EST on Demand MIG21")
+missionCommands.addCommandForGroup(MISSION_MASTER_GROUPID, "Mig21x3", capMenuEstFacile, _respawnCap, "EST on Demand MIG21x3")
+
+-- le sous-menu CAP / EST / Moyen
+local capMenuEstMoyen = missionCommands.addSubMenuForGroup(MISSION_MASTER_GROUPID, "MOYEN", capMenuEst)
+missionCommands.addCommandForGroup(MISSION_MASTER_GROUPID, "Mig31", capMenuEstMoyen, _respawnCap, "EST on Demand mig31")
+missionCommands.addCommandForGroup(MISSION_MASTER_GROUPID, "Mig31x3", capMenuEstMoyen, _respawnCap, "EST on Demand mig31x3")
+
+-- le sous-menu CAP / OUEST
+local capMenuOuest = missionCommands.addSubMenuForGroup(MISSION_MASTER_GROUPID, "CAP OUEST", capMenu)
+-- le sous-menu CAP / OUEST / Facile
+local capMenuOuestFacile = missionCommands.addSubMenuForGroup(MISSION_MASTER_GROUPID, "FACILE", capMenuOuest)
+-- le sous-menu CAP / OUEST / Moyen
+local capMenuOuestMoyen = missionCommands.addSubMenuForGroup(MISSION_MASTER_GROUPID, "MOYEN", capMenuOuest)

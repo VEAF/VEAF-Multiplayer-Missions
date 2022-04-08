@@ -1,50 +1,143 @@
 dictionary = {
-    ["DictKey_ActionComment_258"] = "DictKey_ActionComment_258",
+    ["DictKey_ActionRadioText_450"] = "CAP-EST FACILE",
+    ["DictKey_ActionRadioText_451"] = "CAP-EST FACILE",
+    ["DictKey_ActionRadioText_453"] = "CAP-EST FACILE",
+    ["DictKey_ActionRadioText_454"] = "CAP-EST FACILE",
+    ["DictKey_ActionRadioText_455"] = "CAP-EST FACILE",
+    ["DictKey_ActionRadioText_456"] = "CAP-EST FACILE",
+    ["DictKey_ActionRadioText_457"] = "CAP-EST FACILE",
+    ["DictKey_ActionRadioText_458"] = "CAP-EST FACILE",
+    ["DictKey_ActionRadioText_459"] = "CAP-EST FACILE",
+    ["DictKey_ActionRadioText_460"] = "CAP-EST FACILE",
+    ["DictKey_ActionRadioText_462"] = "CAP-EST MOYEN",
+    ["DictKey_ActionRadioText_464"] = "CAP-EST MOYEN",
+    ["DictKey_ActionRadioText_465"] = "CAP-EST MOYEN",
+    ["DictKey_ActionRadioText_466"] = "CAP-EST MOYEN",
+    ["DictKey_ActionRadioText_467"] = "CAP-EST MOYEN",
+    ["DictKey_ActionRadioText_468"] = "CAP-EST MOYEN",
+    ["DictKey_ActionRadioText_469"] = "CAP-EST MOYEN",
+    ["DictKey_ActionRadioText_470"] = "CAP-EST MOYEN",
+    ["DictKey_ActionRadioText_471"] = "CAP-EST MOYEN",
+    ["DictKey_ActionRadioText_472"] = "CAP-EST MOYEN",
+    ["DictKey_ActionRadioText_474"] = "CAP-EST HARD",
+    ["DictKey_ActionRadioText_475"] = "CAP-EST HARD",
+    ["DictKey_ActionRadioText_476"] = "CAP-EST HARD",
+    ["DictKey_ActionRadioText_477"] = "CAP-EST HARD",
+    ["DictKey_ActionRadioText_478"] = "CAP-EST HARD",
+    ["DictKey_ActionRadioText_479"] = "CAP-EST HARD",
+    ["DictKey_ActionRadioText_480"] = "CAP-EST HARD",
+    ["DictKey_ActionRadioText_481"] = "CAP-EST HARD",
+    ["DictKey_ActionRadioText_482"] = "CAP-EST HARD",
+    ["DictKey_ActionRadioText_483"] = "CAP-EST HARD",
+    ["DictKey_ActionRadioText_485"] = "EST MISSION",
+    ["DictKey_ActionRadioText_486"] = "EST MISSION",
+    ["DictKey_ActionRadioText_492"] = "MOZDOK CAP ",
+    ["DictKey_ActionRadioText_501"] = "MOZDOK CAP ",
+    ["DictKey_ActionRadioText_502"] = "MOZDOK CAP ",
+    ["DictKey_ActionRadioText_503"] = "MOZDOK CAP ",
+    ["DictKey_ActionRadioText_504"] = "MOZDOK CAP ",
+    ["DictKey_ActionRadioText_505"] = "MOZDOK CAP ",
+    ["DictKey_ActionRadioText_506"] = "MOZDOK CAP ",
+    ["DictKey_ActionRadioText_507"] = "MOZDOK CAP ",
+    ["DictKey_ActionRadioText_508"] = "MOZDOK CAP ",
+    ["DictKey_ActionRadioText_509"] = "MOZDOK CAP ",
+    ["DictKey_ActionRadioText_511"] = "MAYKOP CAP FACILE",
+    ["DictKey_ActionRadioText_512"] = "MAYKOP CAP FACILE",
+    ["DictKey_ActionRadioText_513"] = "MAYKOP CAP FACILE",
+    ["DictKey_ActionRadioText_514"] = "MAYKOP CAP FACILE",
+    ["DictKey_ActionRadioText_515"] = "MAYKOP CAP FACILE",
+    ["DictKey_ActionRadioText_516"] = "MAYKOP CAP FACILE",
+    ["DictKey_ActionRadioText_517"] = "MAYKOP CAP FACILE",
+    ["DictKey_ActionRadioText_518"] = "MAYKOP CAP FACILE",
+    ["DictKey_ActionRadioText_519"] = "MAYKOP CAP FACILE",
+    ["DictKey_ActionRadioText_520"] = "MAYKOP CAP FACILE",
+    ["DictKey_ActionRadioText_522"] = "MAYKOP CAP MOYEN",
+    ["DictKey_ActionRadioText_524"] = "MAYKOP CAP MOYEN",
+    ["DictKey_ActionRadioText_525"] = "MAYKOP CAP MOYEN",
+    ["DictKey_ActionRadioText_526"] = "MAYKOP CAP MOYEN",
+    ["DictKey_ActionRadioText_527"] = "MAYKOP CAP MOYEN",
+    ["DictKey_ActionRadioText_528"] = "MAYKOP CAP MOYEN",
+    ["DictKey_ActionRadioText_529"] = "MAYKOP CAP MOYEN",
+    ["DictKey_ActionRadioText_530"] = "MAYKOP CAP MOYEN",
+    ["DictKey_ActionRadioText_532"] = "MAYKOP CAP HARD",
+    ["DictKey_ActionRadioText_534"] = "MAYKOP CAP HARD",
+    ["DictKey_ActionRadioText_535"] = "MAYKOP CAP HARD",
+    ["DictKey_ActionRadioText_536"] = "MAYKOP CAP HARD",
+    ["DictKey_ActionRadioText_537"] = "MAYKOP CAP HARD",
+    ["DictKey_ActionRadioText_538"] = "MAYKOP CAP HARD",
+    ["DictKey_ActionRadioText_539"] = "MAYKOP CAP HARD",
+    ["DictKey_ActionRadioText_540"] = "MAYKOP CAP HARD",
+    ["DictKey_ActionRadioText_541"] = "MAYKOP CAP HARD",
+    ["DictKey_ActionRadioText_542"] = "MAYKOP CAP HARD",
     ["DictKey_ActionText_10501"] = "return false -- scripts",
     ["DictKey_ActionText_10502"] = "return false -- config",
     ["DictKey_ActionText_10601"] = "return VEAF_DYNAMIC_PATH~=nil",
-    ["DictKey_ActionText_107"] = "Attention! L équipe de récupération sera sur site d ici 15m.",
     ["DictKey_ActionText_10701"] = "return VEAF_DYNAMIC_PATH==nil",
-    ["DictKey_ActionText_108"] = "Equipe de récupération sur site.\
-Début de l exfiltration.\
-Temps estimé: 3m",
     ["DictKey_ActionText_10801"] = "return VEAF_DYNAMIC_MISSIONPATH~=nil",
-    ["DictKey_ActionText_109"] = "Exfiltration terminée.\
-L équipe de récupération quitte la zone du crash.\
-Maintenez la couverture aérienne.",
     ["DictKey_ActionText_10901"] = "return VEAF_DYNAMIC_MISSIONPATH==nil",
-    ["DictKey_ActionText_252"] = "L équipe de sauvetage a été abattue.\
-Mission de protection échouée.",
-    ["DictKey_ActionText_253"] = "On nous signale le décollage de plusieurs hélicoptères Russe de Kislovodsk.",
-    ["DictKey_ActionText_255"] = "Le Camion contenant la tete nucleaire a été détruit.",
-    ["DictKey_ActionText_256"] = "Mission accomplie.\
-RTB Sochi",
-    ["DictKey_ActionText_259"] = "Le convoi ne contenait pas la bombe.",
-    ["DictKey_ActionText_260"] = "Le convoi ne contenait pas la bombe.",
-    ["DictKey_ActionText_261"] = "Le convoi ne contenait pas la bombe.",
-    ["DictKey_ActionText_263"] = "Le paquet a été livré.\
-L équipe de sauvetage RTB sur Gudauta.\
-Mission de protection de l équipe de sauvetage accomplie.",
-    ["DictKey_ActionText_264"] = "On nous rapporte le décollage d un hélicoptere a Solonoe, la bombe est dedans, abattez le immediatement ou la mission sera un echec. ",
-    ["DictKey_ActionText_265"] = "L helico est hors de portée, la mission de neutralisation de la bombe est un échec.",
-    ["DictKey_ActionText_266"] = "L hélico a été détruit, mission accomplie.",
-    ["DictKey_ActionText_267"] = "Le Radar de recherche du Sa10 à été neutralisé.",
-    ["DictKey_descriptionBlueTask_3"] = "Deux objectifs : Trouver les convois et les détruire. Ou trouver celui contenant la bombe directement.\
-Assurer la protection de l’équipe d’exfiltration.",
+    ["DictKey_ActionText_346"] = "Equipe de récupération sur site.\
+\
+Début de l exfiltration.\
+\
+Temps estimé: 3m",
+    ["DictKey_ActionText_347"] = "Exfiltration terminée.\
+\
+L équipe de récupération quitte la zone du crash.\
+\
+Maintenez la couverture aérienne.",
+    ["DictKey_ActionText_348"] = "Le paquet à été livré.\
+\
+L'équipe de sauvetage est RTB .\
+\
+Mission de protection accomplie.",
+    ["DictKey_ActionText_349"] = "La bombe à été mis en lieu sure.\
+\
+Mission échouée.",
+    ["DictKey_ActionText_350"] = "Le Camion contenant la tête nucléaire a été détruit.\
+\
+Mission accomplie.",
+    ["DictKey_ActionText_351"] = "Vous avez détruit le bon véhicule mais il ne contenait pas la bombe.\
+\
+Trouvez l' autre convoi.",
+    ["DictKey_ActionText_352"] = "Le camps d'EL'BRUS à été néttoyé.",
+    ["DictKey_ActionText_353"] = "Les forces au sol en direction du VIP ont été neutralisées.",
+    ["DictKey_ActionText_354"] = "Le camps de TEBERDA à été néttoyé.",
+    ["DictKey_ActionText_369"] = "Attention! L équipe de récupération sera sur site d ici 15m.",
+    ["DictKey_ActionText_383"] = "SENAKI à subit de lourds dégats et n'est plus accessible.\
+",
+    ["DictKey_ActionText_400"] = "Nous avons perdu le contact avec l'équipe CSAR.\
+\
+Mission de récupération échouée.",
+    ["DictKey_ActionText_404"] = "Le pilote à été executé.\
+\
+",
+    ["DictKey_ActionText_420"] = "Le Chef terro à été trouvé et tué.",
+    ["DictKey_ActionText_488"] = "MISE A JOUR DE LA MISSION:\
+\
+Plusieurs appareils ont décollés de TBILISSI, il semblerait que notre EWR KUTAISI soit visé, NEUTRALISEZ les.",
+    ["DictKey_ActionText_490"] = "Nous avons perdu l EWR.\
+\
+De nouveaux avions semblent décoller de TBILISSI.",
+    ["DictKey_descriptionBlueTask_3"] = "",
     ["DictKey_descriptionNeutralsTask_4"] = "",
     ["DictKey_descriptionRedTask_2"] = "",
     ["DictKey_descriptionText_1"] = "Freqs plan:\
 \
-Sochi: 256 Am \
-Gudauta: 259 Am\
-Sukhumi: 258 Am\
-Senaki: 261 Am-----31x\
-Kutaisi: 263 Am-----44x\
-Kobuleti: 262 Am----67x\
-Batumi: 260 Am------16x\
+Sochi : 256 AM\
+Gudauta : 259 AM\
+Sukhumi : 258 AM\
+Senaki : 261 AM    TACAN : 31x\
+Kutaisi: 263 AM     TACAN : 44x\
+Kobuleti: 262 AM   TACAN : 67x\
+Batumi: 260 AM    TACAN : 16x\
 \
-Awacs: 282.2 Am\
-Arco: 290.5 Am--------64y\
+Awacs IA : 282.2 AM\
+AWACS Humain : 280 AM\
+Arco MPRS : 290.5 Am TACAN : 64y\
+Texaco : 290.1 AM TACAN : 60y\
+SHELL: 290.3 AM TACAN : 63y\
+\
+\
 ",
-    ["DictKey_sortie_5"] = "Shadow's Dawn",
+    ["DictKey_sortie_5"] = "Brevity 2.0",
 } -- end of dictionary
