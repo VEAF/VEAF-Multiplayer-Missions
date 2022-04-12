@@ -307,7 +307,7 @@ end
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- initialize Skynet-IADS
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
-if veafSkynet and false then -- don't use 
+if veafSkynet then
     veaf.loggers.get(veaf.Id):info("init - veafSkynet")
     veafSkynet.initialize(
         false, --includeRedInRadio=true
@@ -365,6 +365,7 @@ if (veafRadio) then
     local MISSION_MASTER_GROUPID = 696
     local LOG_NAME = "BREVITY"
     local LOG_LEVEL = "trace"
+    local RESPAWN_RADIUS = 500 -- rayon de respawn, en mètres
     ----------------------------------------
 
     veaf.loggers.new(LOG_NAME, LOG_LEVEL)
@@ -374,14 +375,23 @@ if (veafRadio) then
         veaf.loggers.get(LOG_NAME):debug(message)
         trigger.action.outTextForGroup(MISSION_MASTER_GROUPID, message, 5)
         
-        local newGroup = mist.respawnGroup(groupName)
-
-        if newGroup == nil then
+        local group = Group.getByName(groupName)
+        if group == nil then
             local message = string.format("Impossible de trouver le groupe [%s] pour le respawner", veaf.p(groupName))
             veaf.loggers.get(LOG_NAME):error(message)
             trigger.action.outTextForGroup(MISSION_MASTER_GROUPID, message, 5)
         else
-            local message = string.format("Groupe [%s] respawné avec succès", veaf.p(groupName))
+            --group:activate()
+            local vars = {}
+            vars.gpName = groupName
+            vars.action = 'respawn'
+            vars.radius = RESPAWN_RADIUS
+            vars.route = mist.getGroupRoute(groupName, 'task')
+            group = mist.teleportToPoint(vars) -- respawn with radius
+            local message = string.format("Groupe [%s] réactivé avec succès", veaf.p(groupName))
+            if not(group) then
+                message = string.format("Impossible de réactiver le groupe [%s]", veaf.p(groupName))
+            end
             veaf.loggers.get(LOG_NAME):info(message)
             trigger.action.outTextForGroup(MISSION_MASTER_GROUPID, message, 5)
         end
@@ -401,7 +411,7 @@ if (veafRadio) then
 
     local userMenu = {
         menu("Gestion CAP", {
-            menu("CAP EST", {
+            menu("CAP Tbilissi", {
                 menu("Facile", {
                     command("Mig21", _respawnCap, "EST on Demand MIG21"),
                     command("Mig21x3", _respawnCap, "EST on Demand MIG21x3"),
@@ -421,19 +431,20 @@ if (veafRadio) then
                     command("JF17-1", _respawnCap, "EST on Demand JF17FOX3"),
                     command("SU30", _respawnCap, "EST On Demand SU30"),
                     command("JF17-2", _respawnCap, "EST on Demand JF17FOX3-2"),
-                    command("MIG31x3", _respawnCap, "EST on Demand mig31x3"),                  
+                    command("MIG31x3", _respawnCap, "EST on Demand mig31x3"),
+					command("SNEAKY-21", _respawnCap, "MIG-21 On demand-2"),
                 }),
                 menu("Mission", {
                     command("Mission SEAD Kutaisi", _respawnCap, "EST on Demand MISSION SU25"),
                 }),
             }),
-            menu("CAP OUEST", {
+            menu("CAP Maykop", {
                 menu("Facile", {
                     command("MIG21x3", _respawnCap, "MAYKOP On demand MIG21"),
                     command("MIG23", _respawnCap, "MAYKOP On demand MIG23"),
                     command("SU27-R73", _respawnCap, "MAYKOP On demand SU27FOX2-1"),
                     command("JF17-FOX2", _respawnCap, "MAYKOP On demand JF17FOX2-1"),
-                    command("MIG29A", _respawnCap, "MAYKOP On demand MIG29A"),
+                    command("MIG29A", _respawnCap, "MAYKOP On demand MIG29A T"),
                 }),
                 menu("Moyen", {
                     command("J11FOX1", _respawnCap, "Maykop On Demand J11FOX1"),
@@ -449,11 +460,8 @@ if (veafRadio) then
                     command("JF17", _respawnCap, "Maykop On Demand JF17-1"),
                     command("MIG29SFOX3", _respawnCap, "MAYKOP On demand MIG29S"),                  
                 }),
-                menu("Mission", {
-                    command("Mission Anti-Ship", _respawnCap, "VIGGEN RED"),
-                }),
             }),
-            menu("CAP NORD", {
+            menu("CAP Nord", {
                 menu("Secteur Myneralnye", {
                     command("MIG29S", _respawnCap, "MOZDOK On Demand MIG29S"),
                     command("MIG31x3", _respawnCap, "MOZDOK On Demand MIG31x3"),
@@ -463,6 +471,26 @@ if (veafRadio) then
                     command("SU27", _respawnCap, "MOZDOK On Demand su27"),
                     command("SNEAKY-21", _respawnCap, "MOZDOK On Demand MIG21"),                   
                 }),
+            }),
+			menu("CAP Gelendzhik", {
+                menu("Facile", {
+                    command("MIG21x3", _respawnCap, "GELEN On demand MIG21"),
+                    command("MIG23", _respawnCap, "GELEN On demand MIG23"),
+					command("SU27-R73", _respawnCap, "GELEN On demand SU27R73"),
+                }),
+			menu("Moyen", {
+                    command("J11FOX1", _respawnCap, "GELEN On Demand J11FOX1"),
+                    command("MIG25x3", _respawnCap, "GELEN On demand MIG25"),
+					command("MIG29A", _respawnCap, "GELEN On demand MIG29A T"),
+                }),
+			menu("Hard", {
+                    command("JF17x3", _respawnCap, "GELEN On Demand JF17FOX3"),
+                    command("MIG29SFOX3", _respawnCap, "GELEN On demand MIG29S"),
+					command("J11FOX3", _respawnCap, "GELEN On Demand J11FOX3"),
+                }),
+			menu("Mission", {
+                    command("Mission Anti-Ship", _respawnCap, "VIGGEN RED"),                  
+                }),	
             }),
         }),
     }
