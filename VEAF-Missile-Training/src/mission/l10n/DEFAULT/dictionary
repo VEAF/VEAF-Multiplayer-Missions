@@ -1,0 +1,52 @@
+dictionary = {
+    ["DictKey_ActionText_10501"] = "return false -- scripts",
+    ["DictKey_ActionText_10502"] = "return false -- config",
+    ["DictKey_ActionText_10601"] = "return VEAF_DYNAMIC_PATH~=nil",
+    ["DictKey_ActionText_10701"] = "return VEAF_DYNAMIC_PATH==nil",
+    ["DictKey_ActionText_10801"] = "return VEAF_DYNAMIC_MISSIONPATH~=nil",
+    ["DictKey_ActionText_10901"] = "return VEAF_DYNAMIC_MISSIONPATH==nil",
+    ["DictKey_descriptionBlueTask_3"] = "",
+    ["DictKey_descriptionRedTask_2"] = "",
+    ["DictKey_descriptionText_1"] = "Si vous vous aventurez au sud dans la zone sanctuaire, vous serez détruits après quelques secondes !\
+----------------\
+If you venture south in the sanctuary zone, you'll be destroyed in a matter of seconds !\
+\
+=======\
+\
+Le PvP n'est autorisé que dans le cadre de la zone Airquake et de la zone Red vs Blue PVP\
+------\
+PvP is only authorized in the Airquake zone and in the Red vs Blue PvP area\
+\
+=======\
+\
+Documentation de la mission http://veaf.org/opentraining\
+\
+AWACS : 282.200\
+ELINT ATIS : 282.175\
+ELINT NOTIFIER : 282.200\
+ELINT CONTROL : 282.225\
+\
+=================================\
+\
+Link4 frequencies for carriers are identical to the radio frequencies of the carriers in the Freq. Plan found in the kneeboard.\
+---------------------------------------------------------------------------\
+Les fréquences Liaison 4 des portes avions sont identiques aux fréquences des portes avions trouvées dans le Freq. Plan de vos kneeboard.\
+\
+\
+ICLS channels for carriers are identical to the TACAN channels of the carriers in the Freq. Plan found in the kneeboard.\
+---------------------------------------------------------------------------\
+Les channels ICLS des portes avions sont identiques aux channels TACAN des portes avions trouvées dans le Freq. Plan de vos kneeboard.\
+\
+=================================\
+\
+Nous contacter:\
+- Site : https://www.veaf.org/\
+- Discord: http://veaf.org/discord\
+- TeamSpeak: ts.veaf.org\
+\
+=======\
+\
+METAR : ${METAR}\
+",
+    ["DictKey_sortie_4"] = "Open Training",
+} -- end of dictionary
