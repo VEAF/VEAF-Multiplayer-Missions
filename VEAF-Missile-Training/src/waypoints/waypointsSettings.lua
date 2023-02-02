@@ -8,8 +8,8 @@ waypoints =
     ["BULLSEYE"] = {
         ["type"] = "Turning Point",
         ["action"] = "Turning Point",
-        ["alt"] = 6096, -- 20000 ft
-        ["alt_type"] = "BARO",
+        ["alt"] = 30,
+        ["alt_type"] = "RADIO",
         ["ETA"] = 364.89432745775,
         ["ETA_locked"] = false,
         ["speed"] = 999,
@@ -22,8 +22,8 @@ waypoints =
     ["TRAINING_SHORT"] = {
         ["type"] = "Turning Point",
         ["action"] = "Turning Point",
-        ["alt"] = 6096, -- 20000 ft
-        ["alt_type"] = "BARO",
+        ["alt"] = 30,
+        ["alt_type"] = "RADIO",
         ["ETA"] = 364.89432745775,
         ["ETA_locked"] = false,
         ["speed"] = 999,
@@ -36,8 +36,8 @@ waypoints =
     ["TRAINING_MEDIUM"] = {
         ["type"] = "Turning Point",
         ["action"] = "Turning Point",
-        ["alt"] = 6096, -- 20000 ft
-        ["alt_type"] = "BARO",
+        ["alt"] = 30,
+        ["alt_type"] = "RADIO",
         ["ETA"] = 364.89432745775,
         ["ETA_locked"] = false,
         ["speed"] = 999,
@@ -50,8 +50,8 @@ waypoints =
     ["TRAINING_LONG"] = {
         ["type"] = "Turning Point",
         ["action"] = "Turning Point",
-        ["alt"] = 6096, -- 20000 ft
-        ["alt_type"] = "BARO",
+        ["alt"] = 30,
+        ["alt_type"] = "RADIO",
         ["ETA"] = 364.89432745775,
         ["ETA_locked"] = false,
         ["speed"] = 999,
@@ -64,8 +64,8 @@ waypoints =
     ["TRAINING_SA10"] = {
         ["type"] = "Turning Point",
         ["action"] = "Turning Point",
-        ["alt"] = 6096, -- 20000 ft
-        ["alt_type"] = "BARO",
+        ["alt"] = 30,
+        ["alt_type"] = "RADIO",
         ["ETA"] = 364.89432745775,
         ["ETA_locked"] = false,
         ["speed"] = 999,
@@ -90,11 +90,11 @@ settings =
 
         ["waypoints"] =
         {
-            [1] = "BULLSEYE",
-            [2] = "TRAINING_SHORT",
-            [3] = "TRAINING_MEDIUM",
-            [4] = "TRAINING_LONG",
-            [5] = "TRAINING_SA10",
+            --[1] = "BULLSEYE",
+            [1] = "TRAINING_SHORT",
+            [2] = "TRAINING_MEDIUM",
+            [3] = "TRAINING_LONG",
+            [4] = "TRAINING_SA10",
         }, -- end of ["waypoints"]
     },
 
@@ -107,11 +107,11 @@ settings =
 
         ["waypoints"] =
         {
-            [1] = "BULLSEYE",
-            [2] = "TRAINING_SHORT",
-            [3] = "TRAINING_MEDIUM",
-            [4] = "TRAINING_LONG",
-            [5] = "TRAINING_SA10",
+            --[1] = "BULLSEYE",
+            [1] = "TRAINING_SHORT",
+            [2] = "TRAINING_MEDIUM",
+            [3] = "TRAINING_LONG",
+            [4] = "TRAINING_SA10",
         }, -- end of ["waypoints"]
     },
 }

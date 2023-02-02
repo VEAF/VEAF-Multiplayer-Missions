@@ -2,7 +2,8 @@
   "variableForMetar": "METAR",
   "moments": 
     {
-      "late_morning" : "sunrise+120*60"
+      "late_morning" : "sunrise+180*60",
+      "early_evening" : "sunset-180*60"
     },
   "position": 
     {
@@ -21,7 +22,17 @@
       "version": "evening-real-clear",
       "realweather": true,
       "clearsky": true,
-      "moment": "evening"
+      "moment": "early_evening"
+    },
+    {
+      "version": "morning-CAVOK",
+      "weather": "UG27 221130Z 04515KT CAVOK Q1020 NOSIG",
+      "moment": "late_morning"
+    },
+    {
+      "version": "evening-CAVOK",
+      "weather": "UG27 221130Z 04515KT CAVOK Q1020 NOSIG",
+      "moment": "early_evening"
     }
-  ]
+   ]
 }

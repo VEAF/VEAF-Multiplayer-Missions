@@ -30925,7 +30925,7 @@ function MISSILETRAINER:InitBearingOnOff(DetailsBearingOnOff)
 self:F(DetailsBearingOnOff)
 self.DetailsBearingOnOff=DetailsBearingOnOff
 if self.DetailsBearingOnOff==true then
-MESSAGE:New("Bearing display OFF",15,"Menu"):ToAll()
+MESSAGE:New("Bearing display ON",15,"Menu"):ToAll()
 else
 MESSAGE:New("Bearing display OFF",15,"Menu"):ToAll()
 end

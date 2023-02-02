@@ -544,18 +544,41 @@ veaf.silenceAtcOnAllAirbases()
 -- BASE:TraceClass("CLIENT")
 
 local Trainer = MISSILETRAINER
-  :New( 200, "Trainer: Welcome to the missile training, trainee! Missiles will be fired at you. Try to evade them. Good luck!" )
+  :New( 200, "Entrainement à la défense contre les missiles sol-air\nUtilisez le menu radio pour choisir la difficulté\nAttention, c'est global pour tous les pilotes !" )
   :InitMessagesOnOff(true)
-  :InitAlertsToAll(true) 
-  :InitAlertsHitsOnOff(true)
-  :InitAlertsLaunchesOnOff(false)
-  :InitBearingOnOff(true)
-  :InitRangeOnOff(true)
-  :InitTrackingOnOff(true)
-  :InitTrackingToAll(true)
-  :InitMenusOnOff(true)
+  :InitMenusOnOff(false)
 
-Trainer:InitAlertsToAll(true) -- Now alerts are also on
+function setModeEasy()
+    Trainer:InitAlertsHitsOnOff(true)
+    Trainer:InitAlertsLaunchesOnOff(true)
+    Trainer:InitBearingOnOff(true)
+    Trainer:InitRangeOnOff(true)
+    Trainer:InitTrackingOnOff(true)
+end
+
+function setModeHard()
+    Trainer:InitAlertsHitsOnOff(true)
+    Trainer:InitAlertsLaunchesOnOff(false)
+    Trainer:InitBearingOnOff(false)
+    Trainer:InitRangeOnOff(false)
+    Trainer:InitTrackingOnOff(false)
+end
+
+function setModeMedium()
+    Trainer:InitAlertsHitsOnOff(true)
+    Trainer:InitAlertsLaunchesOnOff(true)
+    Trainer:InitTrackingOnOff(true)
+    Trainer:InitBearingOnOff(false)
+    Trainer:InitRangeOnOff(false)
+end
+
+setModeMedium()
+
+-- automatically activate the Missile Defense zones
+veafCombatZone.ActivateZone("combatzone_sa10", true)
+veafCombatZone.ActivateZone("combatzone_shortrange", true)
+veafCombatZone.ActivateZone("combatzone_medrange", true)
+veafCombatZone.ActivateZone("combatzone_longrange", true)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- mission-specific menus
@@ -573,7 +596,7 @@ if (veafRadio) then
         Trainer:InitMenusOnOff(onOff)  
     end
 
-    local function setWarningMessages(onOff)
+    local function setAlertsToAll(onOff)
         Trainer:InitAlertsToAll(onOff)  
     end
 
@@ -621,30 +644,34 @@ if (veafRadio) then
         }
     end
 
-    local userMenu = {
+    local missionMasterMenu = {
         menu("Mission master", {
-            menu("Gestion Lièvres", {
-                menu("Côte SE - NW", {
-                    command("10nm", _respawnGroup, "IA Pilot SE-NW - 10nm"),
-                    command("20nm", _respawnGroup, "IA Pilot SE-NW - 20nm"),
-                    command("30nm", _respawnGroup, "IA Pilot SE-NW - 30nm"),
-                    }),
-                menu("Côte Direct-TO", {
-                    command("10nm NOREACT", _respawnGroup, "IA Pilot Direct-TO - 10nm - NOREACT"),
-                    command("10nm EVADE", _respawnGroup, "IA Pilot Direct-TO - 10nm- EVADE"),
-                    command("30nm", _respawnGroup, "IA Pilot Direct-TO - 30nm"),
-                    }),
-                }),	
             menu("Gestion mission", {
                 command("Menus ON", setMenus, true),
                 command("Menus OFF", setMenus, false),
                 command("Messages TO ALL", setToAll, true),
                 command("Messages TO PILOT", setToAll, false),
-                command("Warning messages ON", setWarningMessages, true),
-                command("Warning messages OFF", setWarningMessages, false),
+                command("Warning messages ON", setAlertsToAll, true),
+                command("Warning messages OFF", setAlertsToAll, false)
+            }),
+            menu("Difficulté mission", {
+                command("Facile - protection + alertes + tracking", setModeEasy),
+                command("Moyen - protection + alertes", setModeMedium),
+                command("Difficile - protection", setModeHard)
             }),
         }),
     }
     
-    veafRadio.createUserMenu(userMenu, MISSION_MASTER_GROUPID)
+    veafRadio.createUserMenu(missionMasterMenu, MISSION_MASTER_GROUPID)
+
+    local allMenu = {
+        menu("Difficulté mission", {
+            command("Facile - protection + alertes + tracking", setModeEasy),
+            command("Moyen - protection + alertes", setModeMedium),
+            command("Difficile - protection", setModeHard)
+    }),
+    }
+
+    veafRadio.createUserMenu(allMenu)
+
 end
