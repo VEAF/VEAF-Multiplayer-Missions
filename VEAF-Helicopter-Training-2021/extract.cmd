@@ -142,12 +142,8 @@ for %%f in (%DYNAMIC_SCRIPTS_PATH%\src\scripts\community\*.lua) do (
 		del /f /q "%MISSION_PATH%\l10n\Default\%%~nxf"
 	)
 )
-for %%f in (%DYNAMIC_SCRIPTS_PATH%\src\scripts\veaf\*.lua) do (
-	if exist "%MISSION_PATH%\l10n\Default\%%~nxf" (
-		echo deleting %%~nxf
-		del /f /q "%MISSION_PATH%\l10n\Default\%%~nxf"
-	)
-)
+echo deleting veaf-script*.lua
+del /f /q "%MISSION_PATH%\l10n\Default\veaf-script*.lua"
 del /f /q "%MISSION_PATH%\options"
 rd /s /q "%MISSION_PATH%\Config"
 rd /s /q "%MISSION_PATH%\Scripts"
@@ -167,7 +163,7 @@ pushd node_modules\veaf-mission-creation-tools\src\scripts\veaf
 popd
 
 rem -- cleanup
-rem del *%MISSION_NAME%*.miz
+del *%MISSION_NAME%*.miz
 
 echo.
 echo ----------------------------------------

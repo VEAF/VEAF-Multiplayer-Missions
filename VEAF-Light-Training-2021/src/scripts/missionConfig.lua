@@ -9,7 +9,7 @@ veaf.config.MISSION_EXPORT_PATH = nil -- use default folder
 -- initialize QRA
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 if veaf then
-    --VeafQRA.new()
+    --VeafQRA:new()
     --:setName("QRA_Minevody")
     --:addGroup("QRA_Minevody")
     --:setRadius(106680) -- 350,000 feet
@@ -59,7 +59,7 @@ if veafShortcuts then
     -- here are some examples :
 
     -- veafShortcuts.AddAlias(
-    --     VeafAlias.new()
+    --     VeafAlias:new()
     --         :setName("-sa11")
     --         :setDescription("SA-11 Gadfly (9K37 Buk) battery")
     --         :setVeafCommand("_spawn group, name sa11")
@@ -126,7 +126,7 @@ if veafCombatZone then
     veaf.loggers.get(veaf.Id):info("Loading configuration")
 
 	veafCombatZone.AddZone(
-		VeafCombatZone.new()
+		VeafCombatZone:new()
 			:setMissionEditorZoneName("Training zone EASY-0")
 			:setFriendlyName("Training zone EASY-0")
 			:setBriefing("A defenseless transport company is ready to be destroyed !")
@@ -136,7 +136,7 @@ if veafCombatZone then
 	:activate()
 
     veafCombatZone.AddZone(
-		VeafCombatZone.new()
+		VeafCombatZone:new()
 			:setMissionEditorZoneName("Training zone EASY-1")
 			:setFriendlyName("Training zone EASY-1")
 			:setBriefing("Training zone EASY-1")
@@ -146,7 +146,7 @@ if veafCombatZone then
 	--:activate()
 
     veafCombatZone.AddZone(
-		VeafCombatZone.new()
+		VeafCombatZone:new()
 			:setMissionEditorZoneName("Training zone MEDIUM-2")
 			:setFriendlyName("Training zone MEDIUM-2")
 			:setBriefing("Training zone MEDIUM-2")
@@ -156,7 +156,7 @@ if veafCombatZone then
 	--:activate()
 
     veafCombatZone.AddZone(
-		VeafCombatZone.new()
+		VeafCombatZone:new()
 			:setMissionEditorZoneName("Training zone MEDIUM-3")
 			:setFriendlyName("Training zone MEDIUM-3")
 			:setBriefing("Training zone MEDIUM-3")
@@ -166,7 +166,7 @@ if veafCombatZone then
 	--:activate()
 
 	veafCombatZone.AddZone(
-		VeafCombatZone.new()
+		VeafCombatZone:new()
 			:setMissionEditorZoneName("Training zone HARD-4")
 			:setFriendlyName("Training zone HARD-4")
 			:setBriefing("Training zone HARD-4")
@@ -176,7 +176,7 @@ if veafCombatZone then
 	--:activate()
 
 	veafCombatZone.AddZone(
-		VeafCombatZone.new()
+		VeafCombatZone:new()
 			:setMissionEditorZoneName("Training zone HARD-5")
 			:setFriendlyName("Training zone HARD-5")
 			:setBriefing("Training zone HARD-5")
@@ -186,7 +186,7 @@ if veafCombatZone then
 	--:activate()
 
 	veafCombatZone.AddZone(
-		VeafCombatZone.new()
+		VeafCombatZone:new()
 			:setMissionEditorZoneName("CombatZone_MountainHike")
 			:setFriendlyName("Mountain hike")
             :setCompletable(false)

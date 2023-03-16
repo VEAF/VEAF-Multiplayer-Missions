@@ -45,7 +45,7 @@ if veafShortcuts then
     -- here are some examples :
 
     -- veafShortcuts.AddAlias(
-    --     VeafAlias.new()
+    --     VeafAlias:new()
     --         :setName("-sa11")
     --         :setDescription("SA-11 Gadfly (9K37 Buk) battery")
     --         :setVeafCommand("_spawn group, name sa11")

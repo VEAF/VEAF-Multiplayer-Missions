@@ -14,7 +14,7 @@ if veaf then
     -- to use the QRA define it below. You can have a look at the following example to get started.
 
     --[[
-    QRA_Minevody = VeafQRA.new()
+    QRA_Minevody = VeafQRA:new()
     :setName("QRA_Minevody")
     :setTriggerZone("QRA_Minevody")
     :setZoneRadius(106680) -- 350,000 feet
@@ -129,7 +129,7 @@ if veafCombatMission then
     veaf.loggers.get(veaf.Id):info("Loading configuration")
 
     veafCombatMission.AddMission(
-		VeafCombatMission.new()
+		VeafCombatMission:new()
 		:setName("ELINT-Mission-West")
 		:setFriendlyName("ELINT gathering over the West zone")
 		:setBriefing([[
@@ -137,7 +137,7 @@ ATIS on 282.125, SAM CONTROL on 282.225
 A C-130 pair will fly reciprocical headings, trying to pinpoint enemy SAMS.
 Don't let them be destroyed by the enemy !]])
 		:addElement(
-			VeafCombatMissionElement.new()
+			VeafCombatMissionElement:new()
 			:setName("ELINT-W")
 			:setGroups({
 				"ELINT-C-130-W-1",
@@ -150,7 +150,7 @@ Don't let them be destroyed by the enemy !]])
 	)
 
     veafCombatMission.AddMission(
-		VeafCombatMission.new()
+		VeafCombatMission:new()
 		:setName("ELINT-Mission-East")
 		:setFriendlyName("ELINT gathering over the East zone")
 		:setBriefing([[
@@ -158,7 +158,7 @@ ATIS on 282.125, SAM CONTROL on 282.225
 A C-130 pair will fly reciprocical headings, trying to pinpoint enemy SAMS.
 Don't let them be destroyed by the enemy !]])
 		:addElement(
-			VeafCombatMissionElement.new()
+			VeafCombatMissionElement:new()
 			:setName("ELINT-E")
 			:setGroups({
 				"ELINT-C-130-E-1",
@@ -186,7 +186,7 @@ if veafCombatZone then
     
     -- Training operations
     veafCombatZone.AddZone(
-            VeafCombatZone.new()
+            VeafCombatZone:new()
                 :setMissionEditorZoneName("combatzone_shortrange")
                 :setFriendlyName("Short range SAM and MANPADS zone")
                 :setBriefing("MANPADS, SA9, SA13, SA19\n" ..
@@ -196,7 +196,7 @@ if veafCombatZone then
         )
 
     veafCombatZone.AddZone(
-        VeafCombatZone.new()
+        VeafCombatZone:new()
             :setMissionEditorZoneName("combatzone_medrange")
             :setFriendlyName("Medium range SAM zone")
             :setBriefing("SA8, SA15\n" ..
@@ -206,7 +206,7 @@ if veafCombatZone then
     )
 
     veafCombatZone.AddZone(
-        VeafCombatZone.new()
+        VeafCombatZone:new()
             :setMissionEditorZoneName("combatzone_longrange")
             :setFriendlyName("Long range SAM zone")
             :setBriefing("SA6, SA11\n" ..
@@ -216,7 +216,7 @@ if veafCombatZone then
     )
 
     veafCombatZone.AddZone(
-        VeafCombatZone.new()
+        VeafCombatZone:new()
             :setMissionEditorZoneName("combatzone_sa10")
             :setFriendlyName("Long range SA-10 zone")
             :setBriefing("SA10\n" ..
@@ -422,7 +422,7 @@ if veafSanctuary then
     --[[
     veaf.loggers.get(veaf.Id):info("init - veafSanctuary")
     veafSanctuary.addZone(
-        VeafSanctuaryZone.new()
+        VeafSanctuaryZone:new()
         :setName("Blue Sanctuary")
         :setPolygonFromUnitsInSequence("BlueSanctuary", true)
         :setCoalition(coalition.side.BLUE)
