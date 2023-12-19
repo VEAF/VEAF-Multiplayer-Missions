@@ -189,8 +189,11 @@ if veafCombatZone then
             VeafCombatZone:new()
                 :setMissionEditorZoneName("combatzone_shortrange")
                 :setFriendlyName("Short range SAM and MANPADS zone")
-                :setBriefing("MANPADS, SA9, SA13, SA19\n" ..
-                            "Target is marked by a red smoke")
+                :setBriefing(
+[[MANPADS east (red smoke, NO FLY ZONES marked on map)
+one SA-9 south (blue smoke),
+one SA-13 north (orange smoke),
+armor company east (green smoke)]])
                 :setTraining(true)
                 :setRadioGroupName("Training Missile Defense")
         )
@@ -199,7 +202,7 @@ if veafCombatZone then
         VeafCombatZone:new()
             :setMissionEditorZoneName("combatzone_medrange")
             :setFriendlyName("Medium range SAM zone")
-            :setBriefing("SA8, SA15\n" ..
+            :setBriefing("1xSA-8, 2xSA-15\n" ..
                         "Target is marked by a blue smoke")
             :setTraining(true)
             :setRadioGroupName("Training Missile Defense")
@@ -209,7 +212,7 @@ if veafCombatZone then
         VeafCombatZone:new()
             :setMissionEditorZoneName("combatzone_longrange")
             :setFriendlyName("Long range SAM zone")
-            :setBriefing("SA6, SA11\n" ..
+            :setBriefing("1xSA-6, 1xSA-11\n" ..
                         "Target is marked by a green smoke")
             :setTraining(true)
             :setRadioGroupName("Training Missile Defense")
@@ -219,7 +222,7 @@ if veafCombatZone then
         VeafCombatZone:new()
             :setMissionEditorZoneName("combatzone_sa10")
             :setFriendlyName("Long range SA-10 zone")
-            :setBriefing("SA10\n" ..
+            :setBriefing("1xSA-10\n" ..
                         "Target is marked by a green smoke")
             :setTraining(true)
             :setRadioGroupName("Training Missile Defense")
