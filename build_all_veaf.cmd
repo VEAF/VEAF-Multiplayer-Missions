@@ -1,4 +1,4 @@
-FOR /D %%f IN (VEAF-Carrier-Training-2021, VEAF-Light-Training-2021, VEAF-Missile-Training) DO (
+FOR /D %%f IN (VEAF-Carrier-Training-2021) DO (
 	pushd %%f
 	set NOPAUSE=true
 	set VERBOSE_LOG_FLAG=
@@ -13,7 +13,7 @@ FOR /D %%f IN (VEAF-Carrier-Training-2021, VEAF-Light-Training-2021, VEAF-Missil
 	set TIMEBUILD=
 	set MISSION_FILE_SUFFIX2=
 	set MISSION_FILE=
-	call build.cmd
+	call build-deploy.cmd
 	copy build\*.miz ..\
 	popd
 )
